@@ -1,0 +1,7 @@
+shutdownServer()
+shutdown()
+shutdown
+db.fruits.insertMany([ {name: "apple", origin: "usa", price: 5}, {name: "orange", origin: "italy", price: 3}, {name: "mango", origin: "malaysia", price: 3} ])
+db.createCollection("fruits")
+use food
+use data

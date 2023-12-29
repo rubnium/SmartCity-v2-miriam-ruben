@@ -7,6 +7,7 @@ var logger = require('morgan');
 //Rutas de ficheros
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var paradasRouter = require('./routes/paradas');
 
 var app = express();
 
@@ -20,7 +21,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true}))
 var mongoose = require('mongoose');
 require('dotenv').config();
 //lee la URI del .env
-mongoose.connect(process.env.MONGODB, { useNewUrlParser: true })
+mongoose.connect(process.env.MONGODB)
   .then(() => console.log('Mongo connection succesful'))
   .catch((err) => console.error(err));
 
@@ -37,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Rutas en la API
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/paradas', paradasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

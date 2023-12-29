@@ -1,0 +1,2043 @@
+[{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18be"
+  },
+  "lat": "40.49176762416515",
+  "lon": "-3.593336761776833",
+  "linea": "C-1",
+  "parada": "AEROPUERTO T4"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18bf"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-1",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18c0"
+  },
+  "lat": "40.47209555413991",
+  "lon": "-3.6824760485471546",
+  "linea": "C-1",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18c1"
+  },
+  "lat": "40.400367595318635",
+  "lon": "-3.6927692985734324",
+  "linea": "C-1",
+  "parada": "DELICIAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18c2"
+  },
+  "lat": "40.4847413558896",
+  "lon": "-3.662829237134829",
+  "linea": "C-1",
+  "parada": "FUENTE DE LA MORA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18c3"
+  },
+  "lat": "40.395373531545985",
+  "lon": "-3.678083333693072",
+  "linea": "C-1",
+  "parada": "MENDEZ ALVARO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18c4"
+  },
+  "lat": "40.44661350044421",
+  "lon": "-3.6923477073536035",
+  "linea": "C-1",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18c5"
+  },
+  "lat": "40.40258818141603",
+  "lon": "-3.711340844052455",
+  "linea": "C-1",
+  "parada": "PIRAMIDES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18c6"
+  },
+  "lat": "40.421064507994544",
+  "lon": "-3.7202701157641935",
+  "linea": "C-1",
+  "parada": "PRINCIPE PIO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18c7"
+  },
+  "lat": "40.42340615992542",
+  "lon": "-3.6908601632799383",
+  "linea": "C-1",
+  "parada": "RECOLETOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18c8"
+  },
+  "lat": "40.48229541766309",
+  "lon": "-3.616437309025623",
+  "linea": "C-1",
+  "parada": "VALDEBEBAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18c9"
+  },
+  "lat": "40.4483218454516",
+  "lon": "-3.785867623306033",
+  "linea": "C-10",
+  "parada": "ARAVACA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18ca"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-10",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18cb"
+  },
+  "lat": "40.46536911220596",
+  "lon": "-3.8077462504578428",
+  "linea": "C-10",
+  "parada": "EL BARRIAL-C.COM.POZUELO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18cc"
+  },
+  "lat": "40.47209555413991",
+  "lon": "-3.6824760485471546",
+  "linea": "C-10",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18cd"
+  },
+  "lat": "40.400367595318635",
+  "lon": "-3.6927692985734324",
+  "linea": "C-10",
+  "parada": "DELICIAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18ce"
+  },
+  "lat": "40.4847413558896",
+  "lon": "-3.662829237134829",
+  "linea": "C-10",
+  "parada": "FUENTE DE LA MORA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18cf"
+  },
+  "lat": "40.60010752011099",
+  "lon": "-3.9818645048730548",
+  "linea": "C-10",
+  "parada": "GALAPAGAR-LA NAVATA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18d0"
+  },
+  "lat": "40.47427123756694",
+  "lon": "-3.8453554464692945",
+  "linea": "C-10",
+  "parada": "MAJADAHONDA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18d1"
+  },
+  "lat": "40.552512233963505",
+  "lon": "-3.89684104191362",
+  "linea": "C-10",
+  "parada": "LAS MATAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18d2"
+  },
+  "lat": "40.395373531545985",
+  "lon": "-3.678083333693072",
+  "linea": "C-10",
+  "parada": "MENDEZ ALVARO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18d3"
+  },
+  "lat": "40.44661350044421",
+  "lon": "-3.6923477073536035",
+  "linea": "C-10",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18d4"
+  },
+  "lat": "40.52229261381278",
+  "lon": "-3.88216547527542",
+  "linea": "C-10",
+  "parada": "PINAR DE LAS ROZAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18d5"
+  },
+  "lat": "40.40258818141603",
+  "lon": "-3.711340844052455",
+  "linea": "C-10",
+  "parada": "PIRAMIDES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18d6"
+  },
+  "lat": "40.447260086569074",
+  "lon": "-3.8001238746529773",
+  "linea": "C-10",
+  "parada": "POZUELO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18d7"
+  },
+  "lat": "40.421064507994544",
+  "lon": "-3.7202701157641935",
+  "linea": "C-10",
+  "parada": "PRINCIPE PIO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18d8"
+  },
+  "lat": "40.42340615992542",
+  "lon": "-3.6908601632799383",
+  "linea": "C-10",
+  "parada": "RECOLETOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18d9"
+  },
+  "lat": "40.494228236957326",
+  "lon": "-3.8681329046096558",
+  "linea": "C-10",
+  "parada": "LAS ROZAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18da"
+  },
+  "lat": "40.57450104755433",
+  "lon": "-3.956549700643582",
+  "linea": "C-10",
+  "parada": "TORRELODONES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18db"
+  },
+  "lat": "40.62635780522544",
+  "lon": "-4.00810707481334",
+  "linea": "C-10",
+  "parada": "VILLALBA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18dc"
+  },
+  "lat": "40.489025382703794",
+  "lon": "-3.366345988497244",
+  "linea": "C-2",
+  "parada": "ALCALÁ DE HENARES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18dd"
+  },
+  "lat": "40.505335483779135",
+  "lon": "-3.335417591794884",
+  "linea": "C-2",
+  "parada": "ALCALÁ DE HENARES UNIVERSIDAD"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18de"
+  },
+  "lat": "40.381666238433745",
+  "lon": "-3.668014615023188",
+  "linea": "C-2",
+  "parada": "ASAMBLEA DE MADRID-ENTREVIAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18df"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-2",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18e0"
+  },
+  "lat": "40.561030509406315",
+  "lon": "-3.265471041498204",
+  "linea": "C-2",
+  "parada": "AZUQUECA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18e1"
+  },
+  "lat": "40.561030509406315",
+  "lon": "-3.265471041498204",
+  "linea": "C-2",
+  "parada": "AZUQUECA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18e2"
+  },
+  "lat": "40.47209555413991",
+  "lon": "-3.6824760485471546",
+  "linea": "C-2",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18e3"
+  },
+  "lat": "40.42373013416115",
+  "lon": "-3.561146077392619",
+  "linea": "C-2",
+  "parada": "COSLADA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18e4"
+  },
+  "lat": "40.48043271733471",
+  "lon": "-3.3931755498978244",
+  "linea": "C-2",
+  "parada": "LA GARENA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18e5"
+  },
+  "lat": "40.64408200371336",
+  "lon": "-3.1823959246544775",
+  "linea": "C-2",
+  "parada": "GUADALAJARA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18e6"
+  },
+  "lat": "40.53461637075031",
+  "lon": "-3.29866449650398",
+  "linea": "C-2",
+  "parada": "MECO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18e7"
+  },
+  "lat": "40.44661350044421",
+  "lon": "-3.6923477073536035",
+  "linea": "C-2",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18e8"
+  },
+  "lat": "40.37589576956187",
+  "lon": "-3.6562366719483803",
+  "linea": "C-2",
+  "parada": "EL POZO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18e9"
+  },
+  "lat": "40.42340615992542",
+  "lon": "-3.6908601632799383",
+  "linea": "C-2",
+  "parada": "RECOLETOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18ea"
+  },
+  "lat": "40.442661299211494",
+  "lon": "-3.5338527701769977",
+  "linea": "C-2",
+  "parada": "SAN FERNANDO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18eb"
+  },
+  "lat": "40.386982804664136",
+  "lon": "-3.6090639338426196",
+  "linea": "C-2",
+  "parada": "SANTA EUGENIA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18ec"
+  },
+  "lat": "40.463529069628066",
+  "lon": "-3.4413430244597802",
+  "linea": "C-2",
+  "parada": "SOTO DEL HENARES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18ed"
+  },
+  "lat": "40.454600927102526",
+  "lon": "-3.479826252209788",
+  "linea": "C-2",
+  "parada": "TORREJON DE ARDOZ"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18ee"
+  },
+  "lat": "40.38220639867893",
+  "lon": "-3.6245600075556976",
+  "linea": "C-2",
+  "parada": "VALLECAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18ef"
+  },
+  "lat": "40.40131262489014",
+  "lon": "-3.595935723437658",
+  "linea": "C-2",
+  "parada": "VICALVARO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18f0"
+  },
+  "lat": "40.03482894347343",
+  "lon": "-3.6183087108817347",
+  "linea": "C-3",
+  "parada": "ARANJUEZ"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18f1"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-3",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18f2"
+  },
+  "lat": "40.318461135545775",
+  "lon": "-3.709845112818798",
+  "linea": "C-3",
+  "parada": "EL CASAR"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18f3"
+  },
+  "lat": "40.47209555413991",
+  "lon": "-3.6824760485471546",
+  "linea": "C-3",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18f4"
+  },
+  "lat": "40.15906065556019",
+  "lon": "-3.610028566722413",
+  "linea": "C-3",
+  "parada": "CIEMPOZUELOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18f5"
+  },
+  "lat": "40.58526237431351",
+  "lon": "-4.132340864693605",
+  "linea": "C-3",
+  "parada": "EL ESCORIAL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18f6"
+  },
+  "lat": "40.60010752011099",
+  "lon": "-3.9818645048730548",
+  "linea": "C-3",
+  "parada": "GALAPAGAR-LA NAVATA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18f7"
+  },
+  "lat": "40.30547401855334",
+  "lon": "-3.7076968841602755",
+  "linea": "C-3",
+  "parada": "GETAFE INDUSTRIAL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18f8"
+  },
+  "lat": "40.552512233963505",
+  "lon": "-3.89684104191362",
+  "linea": "C-3",
+  "parada": "LAS MATAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18f9"
+  },
+  "lat": "40.44661350044421",
+  "lon": "-3.6923477073536035",
+  "linea": "C-3",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18fa"
+  },
+  "lat": "40.52229261381278",
+  "lon": "-3.88216547527542",
+  "linea": "C-3",
+  "parada": "PINAR DE LAS ROZAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18fb"
+  },
+  "lat": "40.2427846835347",
+  "lon": "-3.7037400093635178",
+  "linea": "C-3",
+  "parada": "PINTO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18fc"
+  },
+  "lat": "40.49510136352008",
+  "lon": "-3.7258523073891965",
+  "linea": "C-3",
+  "parada": "PITIS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18fd"
+  },
+  "lat": "40.48823855927127",
+  "lon": "-3.694745799781866",
+  "linea": "C-3",
+  "parada": "RAMON Y CAJAL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18fe"
+  },
+  "lat": "40.342356914115214",
+  "lon": "-3.683851282522325",
+  "linea": "C-3",
+  "parada": "SAN CRISTOBAL DE LOS ANGELES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b18ff"
+  },
+  "lat": "40.33190750723098",
+  "lon": "-3.698720010046481",
+  "linea": "C-3",
+  "parada": "SAN CRISTOBAL INDUSTRIAL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1900"
+  },
+  "lat": "40.61785773279367",
+  "lon": "-4.031115097086756",
+  "linea": "C-3",
+  "parada": "SAN YAGO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1901"
+  },
+  "lat": "40.41683686346023",
+  "lon": "-3.7030985648988053",
+  "linea": "C-3",
+  "parada": "SOL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1902"
+  },
+  "lat": "40.57450104755433",
+  "lon": "-3.956549700643582",
+  "linea": "C-3",
+  "parada": "TORRELODONES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1903"
+  },
+  "lat": "40.19604004241219",
+  "lon": "-3.6648149263178804",
+  "linea": "C-3",
+  "parada": "VALDEMORO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1904"
+  },
+  "lat": "40.62635780522544",
+  "lon": "-4.00810707481334",
+  "linea": "C-3",
+  "parada": "VILLALBA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1905"
+  },
+  "lat": "40.352635537500554",
+  "lon": "-3.6839904315941423",
+  "linea": "C-3",
+  "parada": "VILLAVERDE BAJO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1906"
+  },
+  "lat": "40.6094083043936",
+  "lon": "-4.0460682663228775",
+  "linea": "C-3",
+  "parada": "LAS ZORRERAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1907"
+  },
+  "lat": "40.546562556258245",
+  "lon": "-3.635189512222943",
+  "linea": "C-4A",
+  "parada": "ALCOBENDAS-S.S. DE LOS REYES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1908"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-4A",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1909"
+  },
+  "lat": "40.543780580469516",
+  "lon": "-3.700350083538947",
+  "linea": "C-4A",
+  "parada": "CANTOBLANCO UNIVERSIDAD"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b190a"
+  },
+  "lat": "40.47209555413991",
+  "lon": "-3.6824760485471546",
+  "linea": "C-4A",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b190b"
+  },
+  "lat": "40.5015555376017",
+  "lon": "-3.6823496669951212",
+  "linea": "C-4A",
+  "parada": "FUENCARRAL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b190c"
+  },
+  "lat": "40.310094381024776",
+  "lon": "-3.7339415328765986",
+  "linea": "C-4A",
+  "parada": "GETAFE CENTRO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b190d"
+  },
+  "lat": "40.2882434458623",
+  "lon": "-3.7373403731967767",
+  "linea": "C-4A",
+  "parada": "GETAFE SECTOR 3"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b190e"
+  },
+  "lat": "40.323036955698726",
+  "lon": "-3.727384201033014",
+  "linea": "C-4A",
+  "parada": "LAS MARGARITAS-UNIVERSIDAD"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b190f"
+  },
+  "lat": "40.44661350044421",
+  "lon": "-3.6923477073536035",
+  "linea": "C-4A",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1910"
+  },
+  "lat": "40.24076335209985",
+  "lon": "-3.769366602325555",
+  "linea": "C-4A",
+  "parada": "PARLA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1911"
+  },
+  "lat": "40.41683686346023",
+  "lon": "-3.7030985648988053",
+  "linea": "C-4A",
+  "parada": "SOL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1912"
+  },
+  "lat": "40.55405340698445",
+  "lon": "-3.6833429614279485",
+  "linea": "C-4A",
+  "parada": "UNIVERSIDAD P. COMILLAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1913"
+  },
+  "lat": "40.55405340698445",
+  "lon": "-3.6833429614279485",
+  "linea": "C-4A",
+  "parada": "UNIVERSIDAD P. COMILLAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1914"
+  },
+  "lat": "40.54743764052572",
+  "lon": "-3.654341568629256",
+  "linea": "C-4A",
+  "parada": "VALDELASFUENTES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1915"
+  },
+  "lat": "40.34122350120482",
+  "lon": "-3.7119321282791984",
+  "linea": "C-4A",
+  "parada": "VILLAVERDE ALTO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1916"
+  },
+  "lat": "40.352635537500554",
+  "lon": "-3.6839904315941423",
+  "linea": "C-4A",
+  "parada": "VILLAVERDE BAJO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1917"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-4B",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1918"
+  },
+  "lat": "40.543780580469516",
+  "lon": "-3.700350083538947",
+  "linea": "C-4B",
+  "parada": "CANTOBLANCO UNIVERSIDAD"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1919"
+  },
+  "lat": "40.47209555413991",
+  "lon": "-3.6824760485471546",
+  "linea": "C-4B",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b191a"
+  },
+  "lat": "40.64496269820276",
+  "lon": "-3.7757393915731905",
+  "linea": "C-4B",
+  "parada": "COLMENAR VIEJO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b191b"
+  },
+  "lat": "40.5015555376017",
+  "lon": "-3.6823496669951212",
+  "linea": "C-4B",
+  "parada": "FUENCARRAL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b191c"
+  },
+  "lat": "40.310094381024776",
+  "lon": "-3.7339415328765986",
+  "linea": "C-4B",
+  "parada": "GETAFE CENTRO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b191d"
+  },
+  "lat": "40.2882434458623",
+  "lon": "-3.7373403731967767",
+  "linea": "C-4B",
+  "parada": "GETAFE SECTOR 3"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b191e"
+  },
+  "lat": "40.55857014504328",
+  "lon": "-3.7140759416074705",
+  "linea": "C-4B",
+  "parada": "EL GOLOSO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b191f"
+  },
+  "lat": "40.323036955698726",
+  "lon": "-3.727384201033014",
+  "linea": "C-4B",
+  "parada": "LAS MARGARITAS-UNIVERSIDAD"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1920"
+  },
+  "lat": "40.44661350044421",
+  "lon": "-3.6923477073536035",
+  "linea": "C-4B",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1921"
+  },
+  "lat": "40.24076335209985",
+  "lon": "-3.769366602325555",
+  "linea": "C-4B",
+  "parada": "PARLA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1922"
+  },
+  "lat": "40.41683686346023",
+  "lon": "-3.7030985648988053",
+  "linea": "C-4B",
+  "parada": "SOL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1923"
+  },
+  "lat": "40.598433257758494",
+  "lon": "-3.715658181872107",
+  "linea": "C-4B",
+  "parada": "TRES CANTOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1924"
+  },
+  "lat": "40.34122350120482",
+  "lon": "-3.7119321282791984",
+  "linea": "C-4B",
+  "parada": "VILLAVERDE ALTO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1925"
+  },
+  "lat": "40.352635537500554",
+  "lon": "-3.6839904315941423",
+  "linea": "C-4B",
+  "parada": "VILLAVERDE BAJO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1926"
+  },
+  "lat": "40.38117943069571",
+  "lon": "-3.780280303693509",
+  "linea": "C-5",
+  "parada": "LAS AGUILAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1927"
+  },
+  "lat": "40.35007281809477",
+  "lon": "-3.831732961710275",
+  "linea": "C-5",
+  "parada": "ALCORCON"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1928"
+  },
+  "lat": "40.385624906494115",
+  "lon": "-3.760750749791809",
+  "linea": "C-5",
+  "parada": "ALUCHE"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1929"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-5",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b192a"
+  },
+  "lat": "40.37769814127518",
+  "lon": "-3.791443025609041",
+  "linea": "C-5",
+  "parada": "CUATRO VIENTOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b192b"
+  },
+  "lat": "40.37895385196138",
+  "lon": "-3.6986167964348917",
+  "linea": "C-5",
+  "parada": "DOCE DE OCTUBRE"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b192c"
+  },
+  "lat": "40.405118906181",
+  "lon": "-3.702634855778819",
+  "linea": "C-5",
+  "parada": "EMBAJADORES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b192d"
+  },
+  "lat": "40.38364522762784",
+  "lon": "-3.768574728023283",
+  "linea": "C-5",
+  "parada": "FANJUL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b192e"
+  },
+  "lat": "40.28267273426812",
+  "lon": "-3.7988623186055968",
+  "linea": "C-5",
+  "parada": "FUENLABRADA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b192f"
+  },
+  "lat": "40.255644047402015",
+  "lon": "-3.8284707650991487",
+  "linea": "C-5",
+  "parada": "HUMANES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1930"
+  },
+  "lat": "40.399173948035425",
+  "lon": "-3.7442290676830248",
+  "linea": "C-5",
+  "parada": "LAGUNA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1931"
+  },
+  "lat": "40.328976562989126",
+  "lon": "-3.771485710166074",
+  "linea": "C-5",
+  "parada": "LEGANES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1932"
+  },
+  "lat": "40.395373531545985",
+  "lon": "-3.678083333693072",
+  "linea": "C-5",
+  "parada": "MENDEZ ALVARO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1933"
+  },
+  "lat": "40.32849744728476",
+  "lon": "-3.863498351455414",
+  "linea": "C-5",
+  "parada": "MOSTOLES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1934"
+  },
+  "lat": "40.33088681443943",
+  "lon": "-3.8823403399691787",
+  "linea": "C-5",
+  "parada": "MOSTOLES EL SOTO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1935"
+  },
+  "lat": "40.366900514655114",
+  "lon": "-3.704416796700134",
+  "linea": "C-5",
+  "parada": "ORCASITAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1936"
+  },
+  "lat": "40.31250015059896",
+  "lon": "-3.7833493990779954",
+  "linea": "C-5",
+  "parada": "PARQUE POLVORANCA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1937"
+  },
+  "lat": "40.35028313244251",
+  "lon": "-3.705162346126635",
+  "linea": "C-5",
+  "parada": "PUENTE ALCOCER"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1938"
+  },
+  "lat": "40.341887210881154",
+  "lon": "-3.842429042631016",
+  "linea": "C-5",
+  "parada": "LAS RETAMAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1939"
+  },
+  "lat": "40.35652806930174",
+  "lon": "-3.8158905774589313",
+  "linea": "C-5",
+  "parada": "SAN JOSE DE VALDERAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b193a"
+  },
+  "lat": "40.29671689427977",
+  "lon": "-3.7924857886266117",
+  "linea": "C-5",
+  "parada": "LA SERNA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b193b"
+  },
+  "lat": "40.34122350120482",
+  "lon": "-3.7119321282791984",
+  "linea": "C-5",
+  "parada": "VILLAVERDE ALTO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b193c"
+  },
+  "lat": "40.340849729616316",
+  "lon": "-3.748309003520136",
+  "linea": "C-5",
+  "parada": "ZARZAQUEMADA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b193d"
+  },
+  "lat": "40.489025382703794",
+  "lon": "-3.366345988497244",
+  "linea": "C-7A",
+  "parada": "ALCALÁ DE HENARES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b193e"
+  },
+  "lat": "40.4483218454516",
+  "lon": "-3.785867623306033",
+  "linea": "C-7A",
+  "parada": "ARAVACA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b193f"
+  },
+  "lat": "40.381666238433745",
+  "lon": "-3.668014615023188",
+  "linea": "C-7A",
+  "parada": "ASAMBLEA DE MADRID-ENTREVIAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1940"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-7A",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1941"
+  },
+  "lat": "40.46536911220596",
+  "lon": "-3.8077462504578428",
+  "linea": "C-7A",
+  "parada": "EL BARRIAL-C.COM.POZUELO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1942"
+  },
+  "lat": "40.47209555413991",
+  "lon": "-3.6824760485471546",
+  "linea": "C-7A",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1943"
+  },
+  "lat": "40.42373013416115",
+  "lon": "-3.561146077392619",
+  "linea": "C-7A",
+  "parada": "COSLADA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1944"
+  },
+  "lat": "40.48043271733471",
+  "lon": "-3.3931755498978244",
+  "linea": "C-7A",
+  "parada": "LA GARENA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1945"
+  },
+  "lat": "40.47427123756694",
+  "lon": "-3.8453554464692945",
+  "linea": "C-7A",
+  "parada": "MAJADAHONDA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1946"
+  },
+  "lat": "40.44661350044421",
+  "lon": "-3.6923477073536035",
+  "linea": "C-7A",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1947"
+  },
+  "lat": "40.49510136352008",
+  "lon": "-3.7258523073891965",
+  "linea": "C-7A",
+  "parada": "PITIS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1948"
+  },
+  "lat": "40.37589576956187",
+  "lon": "-3.6562366719483803",
+  "linea": "C-7A",
+  "parada": "EL POZO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1949"
+  },
+  "lat": "40.447260086569074",
+  "lon": "-3.8001238746529773",
+  "linea": "C-7A",
+  "parada": "POZUELO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b194a"
+  },
+  "lat": "40.421064507994544",
+  "lon": "-3.7202701157641935",
+  "linea": "C-7A",
+  "parada": "PRINCIPE PIO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b194b"
+  },
+  "lat": "40.48823855927127",
+  "lon": "-3.694745799781866",
+  "linea": "C-7A",
+  "parada": "RAMON Y CAJAL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b194c"
+  },
+  "lat": "40.42340615992542",
+  "lon": "-3.6908601632799383",
+  "linea": "C-7A",
+  "parada": "RECOLETOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b194d"
+  },
+  "lat": "40.494228236957326",
+  "lon": "-3.8681329046096558",
+  "linea": "C-7A",
+  "parada": "LAS ROZAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b194e"
+  },
+  "lat": "40.442661299211494",
+  "lon": "-3.5338527701769977",
+  "linea": "C-7A",
+  "parada": "SAN FERNANDO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b194f"
+  },
+  "lat": "40.386982804664136",
+  "lon": "-3.6090639338426196",
+  "linea": "C-7A",
+  "parada": "SANTA EUGENIA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1950"
+  },
+  "lat": "40.463529069628066",
+  "lon": "-3.4413430244597802",
+  "linea": "C-7A",
+  "parada": "SOTO DEL HENARES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1951"
+  },
+  "lat": "40.454600927102526",
+  "lon": "-3.479826252209788",
+  "linea": "C-7A",
+  "parada": "TORREJON DE ARDOZ"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1952"
+  },
+  "lat": "40.38220639867893",
+  "lon": "-3.6245600075556976",
+  "linea": "C-7A",
+  "parada": "VALLECAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1953"
+  },
+  "lat": "40.40131262489014",
+  "lon": "-3.595935723437658",
+  "linea": "C-7A",
+  "parada": "VICALVARO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1954"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-7B",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1955"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-7B",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1956"
+  },
+  "lat": "40.47209555413991",
+  "lon": "-3.6824760485471546",
+  "linea": "C-7B",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1957"
+  },
+  "lat": "40.400367595318635",
+  "lon": "-3.6927692985734324",
+  "linea": "C-7B",
+  "parada": "DELICIAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1958"
+  },
+  "lat": "40.4847413558896",
+  "lon": "-3.662829237134829",
+  "linea": "C-7B",
+  "parada": "FUENTE DE LA MORA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1959"
+  },
+  "lat": "40.395373531545985",
+  "lon": "-3.678083333693072",
+  "linea": "C-7B",
+  "parada": "MENDEZ ALVARO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b195a"
+  },
+  "lat": "40.44661350044421",
+  "lon": "-3.6923477073536035",
+  "linea": "C-7B",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b195b"
+  },
+  "lat": "40.40258818141603",
+  "lon": "-3.711340844052455",
+  "linea": "C-7B",
+  "parada": "PIRAMIDES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b195c"
+  },
+  "lat": "40.421064507994544",
+  "lon": "-3.7202701157641935",
+  "linea": "C-7B",
+  "parada": "PRINCIPE PIO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b195d"
+  },
+  "lat": "40.42340615992542",
+  "lon": "-3.6908601632799383",
+  "linea": "C-7B",
+  "parada": "RECOLETOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b195e"
+  },
+  "lat": "40.489025382703794",
+  "lon": "-3.366345988497244",
+  "linea": "C-8A",
+  "parada": "ALCALÁ DE HENARES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b195f"
+  },
+  "lat": "40.505335483779135",
+  "lon": "-3.335417591794884",
+  "linea": "C-8A",
+  "parada": "ALCALÁ DE HENARES UNIVERSIDAD"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1960"
+  },
+  "lat": "40.381666238433745",
+  "lon": "-3.668014615023188",
+  "linea": "C-8A",
+  "parada": "ASAMBLEA DE MADRID-ENTREVIAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1961"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-8A",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1962"
+  },
+  "lat": "40.561030509406315",
+  "lon": "-3.265471041498204",
+  "linea": "C-8A",
+  "parada": "AZUQUECA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1963"
+  },
+  "lat": "40.561030509406315",
+  "lon": "-3.265471041498204",
+  "linea": "C-8A",
+  "parada": "AZUQUECA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1964"
+  },
+  "lat": "40.47209555413991",
+  "lon": "-3.6824760485471546",
+  "linea": "C-8A",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1965"
+  },
+  "lat": "40.42373013416115",
+  "lon": "-3.561146077392619",
+  "linea": "C-8A",
+  "parada": "COSLADA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1966"
+  },
+  "lat": "40.58526237431351",
+  "lon": "-4.132340864693605",
+  "linea": "C-8A",
+  "parada": "EL ESCORIAL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1967"
+  },
+  "lat": "40.60010752011099",
+  "lon": "-3.9818645048730548",
+  "linea": "C-8A",
+  "parada": "GALAPAGAR-LA NAVATA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1968"
+  },
+  "lat": "40.48043271733471",
+  "lon": "-3.3931755498978244",
+  "linea": "C-8A",
+  "parada": "LA GARENA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1969"
+  },
+  "lat": "40.64408200371336",
+  "lon": "-3.1823959246544775",
+  "linea": "C-8A",
+  "parada": "GUADALAJARA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b196a"
+  },
+  "lat": "40.552512233963505",
+  "lon": "-3.89684104191362",
+  "linea": "C-8A",
+  "parada": "LAS MATAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b196b"
+  },
+  "lat": "40.53461637075031",
+  "lon": "-3.29866449650398",
+  "linea": "C-8A",
+  "parada": "MECO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b196c"
+  },
+  "lat": "40.44661350044421",
+  "lon": "-3.6923477073536035",
+  "linea": "C-8A",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b196d"
+  },
+  "lat": "40.52229261381278",
+  "lon": "-3.88216547527542",
+  "linea": "C-8A",
+  "parada": "PINAR DE LAS ROZAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b196e"
+  },
+  "lat": "40.49510136352008",
+  "lon": "-3.7258523073891965",
+  "linea": "C-8A",
+  "parada": "PITIS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b196f"
+  },
+  "lat": "40.37589576956187",
+  "lon": "-3.6562366719483803",
+  "linea": "C-8A",
+  "parada": "EL POZO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1970"
+  },
+  "lat": "40.48823855927127",
+  "lon": "-3.694745799781866",
+  "linea": "C-8A",
+  "parada": "RAMON Y CAJAL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1971"
+  },
+  "lat": "40.42340615992542",
+  "lon": "-3.6908601632799383",
+  "linea": "C-8A",
+  "parada": "RECOLETOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1972"
+  },
+  "lat": "40.520771925624736",
+  "lon": "-4.2467185890231365",
+  "linea": "C-8A",
+  "parada": "ROBLEDO DE CHAVELA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1973"
+  },
+  "lat": "40.442661299211494",
+  "lon": "-3.5338527701769977",
+  "linea": "C-8A",
+  "parada": "SAN FERNANDO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1974"
+  },
+  "lat": "40.61785773279367",
+  "lon": "-4.031115097086756",
+  "linea": "C-8A",
+  "parada": "SAN YAGO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1975"
+  },
+  "lat": "40.386982804664136",
+  "lon": "-3.6090639338426196",
+  "linea": "C-8A",
+  "parada": "SANTA EUGENIA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1976"
+  },
+  "lat": "40.56891087182879",
+  "lon": "-4.269336298057667",
+  "linea": "C-8A",
+  "parada": "SANTA MARIA DE LA ALAMEDA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1977"
+  },
+  "lat": "40.454600927102526",
+  "lon": "-3.479826252209788",
+  "linea": "C-8A",
+  "parada": "TORREJON DE ARDOZ"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1978"
+  },
+  "lat": "40.57450104755433",
+  "lon": "-3.956549700643582",
+  "linea": "C-8A",
+  "parada": "TORRELODONES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1979"
+  },
+  "lat": "40.38220639867893",
+  "lon": "-3.6245600075556976",
+  "linea": "C-8A",
+  "parada": "VALLECAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b197a"
+  },
+  "lat": "40.40131262489014",
+  "lon": "-3.595935723437658",
+  "linea": "C-8A",
+  "parada": "VICALVARO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b197b"
+  },
+  "lat": "40.62635780522544",
+  "lon": "-4.00810707481334",
+  "linea": "C-8A",
+  "parada": "VILLALBA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b197c"
+  },
+  "lat": "40.53871085739203",
+  "lon": "-4.158172013443555",
+  "linea": "C-8A",
+  "parada": "ZARZALEJO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b197d"
+  },
+  "lat": "40.6094083043936",
+  "lon": "-4.0460682663228775",
+  "linea": "C-8A",
+  "parada": "LAS ZORRERAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b197e"
+  },
+  "lat": "40.489025382703794",
+  "lon": "-3.366345988497244",
+  "linea": "C-8B",
+  "parada": "ALCALÁ DE HENARES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b197f"
+  },
+  "lat": "40.505335483779135",
+  "lon": "-3.335417591794884",
+  "linea": "C-8B",
+  "parada": "ALCALÁ DE HENARES UNIVERSIDAD"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1980"
+  },
+  "lat": "40.65815375587412",
+  "lon": "-4.035071166744098",
+  "linea": "C-8B",
+  "parada": "ALPEDRETE"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1981"
+  },
+  "lat": "40.381666238433745",
+  "lon": "-3.668014615023188",
+  "linea": "C-8B",
+  "parada": "ASAMBLEA DE MADRID-ENTREVIAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1982"
+  },
+  "lat": "40.40658651228024",
+  "lon": "-3.6893092868843853",
+  "linea": "C-8B",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1983"
+  },
+  "lat": "40.561030509406315",
+  "lon": "-3.265471041498204",
+  "linea": "C-8B",
+  "parada": "AZUQUECA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1984"
+  },
+  "lat": "40.561030509406315",
+  "lon": "-3.265471041498204",
+  "linea": "C-8B",
+  "parada": "AZUQUECA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1985"
+  },
+  "lat": "40.73756216129166",
+  "lon": "-4.065909176311622",
+  "linea": "C-8B",
+  "parada": "CERCEDILLA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1986"
+  },
+  "lat": "40.73756216129166",
+  "lon": "-4.065909176311622",
+  "linea": "C-8B",
+  "parada": "CERCEDILLA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1987"
+  },
+  "lat": "40.47209555413991",
+  "lon": "-3.6824760485471546",
+  "linea": "C-8B",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1988"
+  },
+  "lat": "40.69274825161098",
+  "lon": "-4.0358785893943585",
+  "linea": "C-8B",
+  "parada": "COLLADO MEDIANO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1989"
+  },
+  "lat": "40.42373013416115",
+  "lon": "-3.561146077392619",
+  "linea": "C-8B",
+  "parada": "COSLADA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b198a"
+  },
+  "lat": "40.60010752011099",
+  "lon": "-3.9818645048730548",
+  "linea": "C-8B",
+  "parada": "GALAPAGAR-LA NAVATA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b198b"
+  },
+  "lat": "40.48043271733471",
+  "lon": "-3.3931755498978244",
+  "linea": "C-8B",
+  "parada": "LA GARENA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b198c"
+  },
+  "lat": "40.64408200371336",
+  "lon": "-3.1823959246544775",
+  "linea": "C-8B",
+  "parada": "GUADALAJARA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b198d"
+  },
+  "lat": "40.552512233963505",
+  "lon": "-3.89684104191362",
+  "linea": "C-8B",
+  "parada": "LAS MATAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b198e"
+  },
+  "lat": "40.53461637075031",
+  "lon": "-3.29866449650398",
+  "linea": "C-8B",
+  "parada": "MECO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b198f"
+  },
+  "lat": "40.70733940661548",
+  "lon": "-4.06682396746246",
+  "linea": "C-8B",
+  "parada": "LOS MOLINOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1990"
+  },
+  "lat": "40.63856931899298",
+  "lon": "-4.02190219239213",
+  "linea": "C-8B",
+  "parada": "LOS NEGRALES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1991"
+  },
+  "lat": "40.44661350044421",
+  "lon": "-3.6923477073536035",
+  "linea": "C-8B",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1992"
+  },
+  "lat": "40.52229261381278",
+  "lon": "-3.88216547527542",
+  "linea": "C-8B",
+  "parada": "PINAR DE LAS ROZAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1993"
+  },
+  "lat": "40.49510136352008",
+  "lon": "-3.7258523073891965",
+  "linea": "C-8B",
+  "parada": "PITIS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1994"
+  },
+  "lat": "40.37589576956187",
+  "lon": "-3.6562366719483803",
+  "linea": "C-8B",
+  "parada": "EL POZO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1995"
+  },
+  "lat": "40.48823855927127",
+  "lon": "-3.694745799781866",
+  "linea": "C-8B",
+  "parada": "RAMON Y CAJAL"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1996"
+  },
+  "lat": "40.42340615992542",
+  "lon": "-3.6908601632799383",
+  "linea": "C-8B",
+  "parada": "RECOLETOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1997"
+  },
+  "lat": "40.442661299211494",
+  "lon": "-3.5338527701769977",
+  "linea": "C-8B",
+  "parada": "SAN FERNANDO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1998"
+  },
+  "lat": "40.386982804664136",
+  "lon": "-3.6090639338426196",
+  "linea": "C-8B",
+  "parada": "SANTA EUGENIA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b1999"
+  },
+  "lat": "40.454600927102526",
+  "lon": "-3.479826252209788",
+  "linea": "C-8B",
+  "parada": "TORREJON DE ARDOZ"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b199a"
+  },
+  "lat": "40.57450104755433",
+  "lon": "-3.956549700643582",
+  "linea": "C-8B",
+  "parada": "TORRELODONES"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b199b"
+  },
+  "lat": "40.38220639867893",
+  "lon": "-3.6245600075556976",
+  "linea": "C-8B",
+  "parada": "VALLECAS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b199c"
+  },
+  "lat": "40.40131262489014",
+  "lon": "-3.595935723437658",
+  "linea": "C-8B",
+  "parada": "VICALVARO"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b199d"
+  },
+  "lat": "40.62635780522544",
+  "lon": "-4.00810707481334",
+  "linea": "C-8B",
+  "parada": "VILLALBA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b199e"
+  },
+  "lat": "40.73756216129166",
+  "lon": "-4.065909176311622",
+  "linea": "C-9",
+  "parada": "CERCEDILLA"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b199f"
+  },
+  "lat": "40.82225006453072",
+  "lon": "-3.9645235015302367",
+  "linea": "C-9",
+  "parada": "COTOS"
+},
+{
+  "_id": {
+    "$oid": "658efeeba2df72721c9b19a0"
+  },
+  "lat": "40.78440504245794",
+  "lon": "-4.0047452241391746",
+  "linea": "C-9",
+  "parada": "PUERTO NAVACERRADA"
+}]

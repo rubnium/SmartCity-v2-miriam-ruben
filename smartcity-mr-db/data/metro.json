@@ -1,0 +1,2628 @@
+[{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b45f9"
+  },
+  "lat": "40.389768700352434",
+  "lon": "-3.6452252835565764",
+  "linea": "1",
+  "parada": "ALTO DEL ARENAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b45fa"
+  },
+  "lat": "40.45033105413335",
+  "lon": "-3.7033178070796913",
+  "linea": "1",
+  "parada": "ALVARADO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b45fb"
+  },
+  "lat": "40.41246302818812",
+  "lon": "-3.6993757416732405",
+  "linea": "1",
+  "parada": "ANTON MARTIN"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b45fc"
+  },
+  "lat": "40.408846792956474",
+  "lon": "-3.692490883566612",
+  "linea": "1",
+  "parada": "ATOCHA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b45fd"
+  },
+  "lat": "40.406586090726144",
+  "lon": "-3.689379993715528",
+  "linea": "1",
+  "parada": "ATOCHA RENFE"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b45fe"
+  },
+  "lat": "40.47680705593772",
+  "lon": "-3.6763772762447107",
+  "linea": "1",
+  "parada": "BAMBU"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b45ff"
+  },
+  "lat": "40.42904963582931",
+  "lon": "-3.702188295886296",
+  "linea": "1",
+  "parada": "BILBAO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4600"
+  },
+  "lat": "40.39155774604133",
+  "lon": "-3.6539143400014304",
+  "linea": "1",
+  "parada": "BUENOS AIRES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4601"
+  },
+  "lat": "40.4720227901636",
+  "lon": "-3.682593278115451",
+  "linea": "1",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4602"
+  },
+  "lat": "40.37238110745017",
+  "lon": "-3.618850584099445",
+  "linea": "1",
+  "parada": "CONGOSTO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4603"
+  },
+  "lat": "40.446966678007556",
+  "lon": "-3.7039784766540205",
+  "linea": "1",
+  "parada": "CUATRO CAMINOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4604"
+  },
+  "lat": "40.454278749227846",
+  "lon": "-3.703028749396468",
+  "linea": "1",
+  "parada": "ESTRECHO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4605"
+  },
+  "lat": "40.420006857388664",
+  "lon": "-3.7018113638489942",
+  "linea": "1",
+  "parada": "GRAN VIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4606"
+  },
+  "lat": "40.43491591143403",
+  "lon": "-3.698983453377392",
+  "linea": "1",
+  "parada": "IGLESIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4607"
+  },
+  "lat": "40.37018451188382",
+  "lon": "-3.6134711039363103",
+  "linea": "1",
+  "parada": "LA GAVIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4608"
+  },
+  "lat": "40.36322145811309",
+  "lon": "-3.5995338882203147",
+  "linea": "1",
+  "parada": "LAS SUERTES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4609"
+  },
+  "lat": "40.404446601213934",
+  "lon": "-3.6809909455285403",
+  "linea": "1",
+  "parada": "MENENDEZ PELAYO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b460a"
+  },
+  "lat": "40.38731392982777",
+  "lon": "-3.6395112253862365",
+  "linea": "1",
+  "parada": "MIGUEL HERNANDEZ"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b460b"
+  },
+  "lat": "40.395535508762855",
+  "lon": "-3.6641453517860403",
+  "linea": "1",
+  "parada": "NUEVA NUMANCIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b460c"
+  },
+  "lat": "40.40125568071223",
+  "lon": "-3.675137363680283",
+  "linea": "1",
+  "parada": "PACIFICO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b460d"
+  },
+  "lat": "40.48013291749131",
+  "lon": "-3.6668070437216325",
+  "linea": "1",
+  "parada": "PINAR DE CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b460e"
+  },
+  "lat": "40.466893623466774",
+  "lon": "-3.689182340661554",
+  "linea": "1",
+  "parada": "PLAZA DE CASTILLA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b460f"
+  },
+  "lat": "40.392656804760804",
+  "lon": "-3.658685211486692",
+  "linea": "1",
+  "parada": "PORTAZGO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4610"
+  },
+  "lat": "40.3981918732199",
+  "lon": "-3.6690617034429036",
+  "linea": "1",
+  "parada": "PUENTE DE VALLECAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4611"
+  },
+  "lat": "40.4419737585179",
+  "lon": "-3.7013322873211663",
+  "linea": "1",
+  "parada": "RIOS ROSAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4612"
+  },
+  "lat": "40.38216046446645",
+  "lon": "-3.624724516699161",
+  "linea": "1",
+  "parada": "SIERRA DE GUADALUPE"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4613"
+  },
+  "lat": "40.416871893770455",
+  "lon": "-3.7032639472488222",
+  "linea": "1",
+  "parada": "SOL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4614"
+  },
+  "lat": "40.46055088842156",
+  "lon": "-3.69825834158428",
+  "linea": "1",
+  "parada": "TETUAN"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4615"
+  },
+  "lat": "40.41234081319718",
+  "lon": "-3.704666474578768",
+  "linea": "1",
+  "parada": "TIRSO DE MOLINA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4616"
+  },
+  "lat": "40.426182305029535",
+  "lon": "-3.701109289546837",
+  "linea": "1",
+  "parada": "TRIBUNAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4617"
+  },
+  "lat": "40.46441695832889",
+  "lon": "-3.6950664665123973",
+  "linea": "1",
+  "parada": "VALDEACEDERAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4618"
+  },
+  "lat": "40.36006503137792",
+  "lon": "-3.593169836651139",
+  "linea": "1",
+  "parada": "VALDECARROS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4619"
+  },
+  "lat": "40.37959325302986",
+  "lon": "-3.621308015889596",
+  "linea": "1",
+  "parada": "VILLA DE VALLECAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b461a"
+  },
+  "lat": "40.42852583791778",
+  "lon": "-3.696441598173451",
+  "linea": "10A",
+  "parada": "ALONSO MARTINEZ"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b461b"
+  },
+  "lat": "40.38363227128295",
+  "lon": "-3.7839254186800275",
+  "linea": "10A",
+  "parada": "AVIACION ESPAÑOLA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b461c"
+  },
+  "lat": "40.4078551777336",
+  "lon": "-3.75311658343704",
+  "linea": "10A",
+  "parada": "BATAN"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b461d"
+  },
+  "lat": "40.480408856012424",
+  "lon": "-3.6858519004423416",
+  "linea": "10A",
+  "parada": "BEGOÑA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b461e"
+  },
+  "lat": "40.40319981212787",
+  "lon": "-3.7610192808902423",
+  "linea": "10A",
+  "parada": "CASA DE CAMPO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b461f"
+  },
+  "lat": "40.47209485756391",
+  "lon": "-3.682594007873076",
+  "linea": "10A",
+  "parada": "CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4620"
+  },
+  "lat": "40.39697434800015",
+  "lon": "-3.774618016060599",
+  "linea": "10A",
+  "parada": "COLONIA JARDIN"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4621"
+  },
+  "lat": "40.377697576926536",
+  "lon": "-3.791525479765706",
+  "linea": "10A",
+  "parada": "CUATRO VIENTOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4622"
+  },
+  "lat": "40.458421129185616",
+  "lon": "-3.689862379719021",
+  "linea": "10A",
+  "parada": "CUZCO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4623"
+  },
+  "lat": "40.49507880631472",
+  "lon": "-3.6928338396454277",
+  "linea": "10A",
+  "parada": "FUENCARRAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4624"
+  },
+  "lat": "40.437529826448035",
+  "lon": "-3.691275897641476",
+  "linea": "10A",
+  "parada": "GREGORIO MARAÑON"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4625"
+  },
+  "lat": "40.34984121597005",
+  "lon": "-3.80720227856311",
+  "linea": "10A",
+  "parada": "JOAQUIN VILUMBRALES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4626"
+  },
+  "lat": "40.41640917765352",
+  "lon": "-3.7356377170839976",
+  "linea": "10A",
+  "parada": "LAGO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4627"
+  },
+  "lat": "40.446577042902604",
+  "lon": "-3.6924180862691784",
+  "linea": "10A",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4628"
+  },
+  "lat": "40.46689418605669",
+  "lon": "-3.689087980611291",
+  "linea": "10A",
+  "parada": "PLAZA DE CASTILLA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4629"
+  },
+  "lat": "40.42408480996496",
+  "lon": "-3.709704711212932",
+  "linea": "10A",
+  "parada": "PLAZA DE ESPAÑA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b462a"
+  },
+  "lat": "40.42102810708947",
+  "lon": "-3.7203286660042627",
+  "linea": "10A",
+  "parada": "PRINCIPE PIO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b462b"
+  },
+  "lat": "40.34523919601582",
+  "lon": "-3.812116233154177",
+  "linea": "10A",
+  "parada": "PUERTA DEL SUR"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b462c"
+  },
+  "lat": "40.4515802047538",
+  "lon": "-3.6903820686972306",
+  "linea": "10A",
+  "parada": "SANTIAGO BERNABEU"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b462d"
+  },
+  "lat": "40.50119961127806",
+  "lon": "-3.6952099494181434",
+  "linea": "10A",
+  "parada": "TRES OLIVOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b462e"
+  },
+  "lat": "40.42598718985573",
+  "lon": "-3.702085714804753",
+  "linea": "10A",
+  "parada": "TRIBUNAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b462f"
+  },
+  "lat": "40.55441858507977",
+  "lon": "-3.635133826137124",
+  "linea": "10B",
+  "parada": "BAUNATAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4630"
+  },
+  "lat": "40.55976240170775",
+  "lon": "-3.611465758862776",
+  "linea": "10B",
+  "parada": "HOSPITAL INFANTA SOFIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4631"
+  },
+  "lat": "40.527593933186594",
+  "lon": "-3.658599532025724",
+  "linea": "10B",
+  "parada": "LA GRANJA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4632"
+  },
+  "lat": "40.53194806540319",
+  "lon": "-3.635571004361775",
+  "linea": "10B",
+  "parada": "LA MORALEJA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4633"
+  },
+  "lat": "40.50832462832863",
+  "lon": "-3.669446787174648",
+  "linea": "10B",
+  "parada": "LAS TABLAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4634"
+  },
+  "lat": "40.55047958861559",
+  "lon": "-3.646883386851369",
+  "linea": "10B",
+  "parada": "MANUEL DE FALLA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4635"
+  },
+  "lat": "40.54101897935838",
+  "lon": "-3.637392614740866",
+  "linea": "10B",
+  "parada": "MARQUES DE LA VALDAVIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4636"
+  },
+  "lat": "40.50525031559373",
+  "lon": "-3.6957592776154744",
+  "linea": "10B",
+  "parada": "MONTECARMELO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4637"
+  },
+  "lat": "40.550374439557125",
+  "lon": "-3.6234033337323037",
+  "linea": "10B",
+  "parada": "REYES CATOLICOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4638"
+  },
+  "lat": "40.51553415823411",
+  "lon": "-3.6627782604253585",
+  "linea": "10B",
+  "parada": "RONDA DE LA COMUNICACION"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4639"
+  },
+  "lat": "40.50119961127806",
+  "lon": "-3.6952099494181434",
+  "linea": "10B",
+  "parada": "TRES OLIVOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b463a"
+  },
+  "lat": "40.38082723882115",
+  "lon": "-3.72791115890327",
+  "linea": "11",
+  "parada": "ABRANTES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b463b"
+  },
+  "lat": "40.37199788960605",
+  "lon": "-3.751916263742287",
+  "linea": "11",
+  "parada": "CARABANCHEL ALTO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b463c"
+  },
+  "lat": "40.357952459398284",
+  "lon": "-3.777833779671177",
+  "linea": "11",
+  "parada": "LA FORTUNA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b463d"
+  },
+  "lat": "40.364217512605684",
+  "lon": "-3.756906023990758",
+  "linea": "11",
+  "parada": "LA PESETA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b463e"
+  },
+  "lat": "40.37585968805198",
+  "lon": "-3.7341716784290124",
+  "linea": "11",
+  "parada": "PAN BENDITO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b463f"
+  },
+  "lat": "40.384599358863206",
+  "lon": "-3.7182557200044104",
+  "linea": "11",
+  "parada": "PLAZA ELIPTICA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4640"
+  },
+  "lat": "40.37359399926437",
+  "lon": "-3.73910622280992",
+  "linea": "11",
+  "parada": "SAN FRANCISCO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4641"
+  },
+  "lat": "40.35008148769783",
+  "lon": "-3.8317801693487046",
+  "linea": "12",
+  "parada": "ALCORCON CENTRAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4642"
+  },
+  "lat": "40.30080675005403",
+  "lon": "-3.736641503588036",
+  "linea": "12",
+  "parada": "ALONSO DE MENDOZA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4643"
+  },
+  "lat": "40.28873924742738",
+  "lon": "-3.7568280496874342",
+  "linea": "12",
+  "parada": "ARROYO CULEBRO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4644"
+  },
+  "lat": "40.32659685107382",
+  "lon": "-3.759428416851752",
+  "linea": "12",
+  "parada": "CASA DEL RELOJ"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4645"
+  },
+  "lat": "40.29324358021325",
+  "lon": "-3.745771718182202",
+  "linea": "12",
+  "parada": "CONSERVATORIO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4646"
+  },
+  "lat": "40.32906791420299",
+  "lon": "-3.729638476861858",
+  "linea": "12",
+  "parada": "EL BERCIAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4647"
+  },
+  "lat": "40.33663165911443",
+  "lon": "-3.7401861342319944",
+  "linea": "12",
+  "parada": "EL CARRASCAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4648"
+  },
+  "lat": "40.318623218355846",
+  "lon": "-3.7098585802082673",
+  "linea": "12",
+  "parada": "EL CASAR"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4649"
+  },
+  "lat": "40.282672409397556",
+  "lon": "-3.7989093691460076",
+  "linea": "12",
+  "parada": "FUENLABRADA CENTRAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b464a"
+  },
+  "lat": "40.309922620744835",
+  "lon": "-3.7340338202855166",
+  "linea": "12",
+  "parada": "GETAFE CENTRAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b464b"
+  },
+  "lat": "40.28574839354916",
+  "lon": "-3.8164270663524102",
+  "linea": "12",
+  "parada": "HOSPITAL DE FUENLABRADA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b464c"
+  },
+  "lat": "40.316521121799106",
+  "lon": "-3.874715028557068",
+  "linea": "12",
+  "parada": "HOSPITAL DE MOSTOLES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b464d"
+  },
+  "lat": "40.321765545104476",
+  "lon": "-3.767978430492755",
+  "linea": "12",
+  "parada": "HOSPITAL SEVERO OCHOA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b464e"
+  },
+  "lat": "40.31179862923095",
+  "lon": "-3.7222501498250757",
+  "linea": "12",
+  "parada": "JUAN DE LA CIERVA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b464f"
+  },
+  "lat": "40.33474027119545",
+  "lon": "-3.7526680248676763",
+  "linea": "12",
+  "parada": "JULIAN BESTEIRO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4650"
+  },
+  "lat": "40.32897617044243",
+  "lon": "-3.7715445639008855",
+  "linea": "12",
+  "parada": "LEGANES CENTRAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4651"
+  },
+  "lat": "40.29680381534007",
+  "lon": "-3.8376919076087863",
+  "linea": "12",
+  "parada": "LORANCA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4652"
+  },
+  "lat": "40.324220465768875",
+  "lon": "-3.718203881803276",
+  "linea": "12",
+  "parada": "LOS ESPARTALES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4653"
+  },
+  "lat": "40.30902475575621",
+  "lon": "-3.8640269901997684",
+  "linea": "12",
+  "parada": "MANUELA MALASAÑA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4654"
+  },
+  "lat": "40.32849709580309",
+  "lon": "-3.8635454330290497",
+  "linea": "12",
+  "parada": "MOSTOLES CENTRAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4655"
+  },
+  "lat": "40.28683532541408",
+  "lon": "-3.7869823082521563",
+  "linea": "12",
+  "parada": "PARQUE DE LOS ESTADOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4656"
+  },
+  "lat": "40.28517056325265",
+  "lon": "-3.8063265863569726",
+  "linea": "12",
+  "parada": "PARQUE EUROPA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4657"
+  },
+  "lat": "40.34967960379551",
+  "lon": "-3.821201088983314",
+  "linea": "12",
+  "parada": "PARQUE LISBOA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4658"
+  },
+  "lat": "40.345890739787706",
+  "lon": "-3.8493434114365463",
+  "linea": "12",
+  "parada": "PARQUE OESTE"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4659"
+  },
+  "lat": "40.32167611681609",
+  "lon": "-3.8648944898656326",
+  "linea": "12",
+  "parada": "PRADILLO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b465a"
+  },
+  "lat": "40.345425725501414",
+  "lon": "-3.8124952537408796",
+  "linea": "12",
+  "parada": "PUERTA DEL SUR"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b465b"
+  },
+  "lat": "40.33615451429297",
+  "lon": "-3.7758763365834476",
+  "linea": "12",
+  "parada": "SAN NICASIO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b465c"
+  },
+  "lat": "40.33511700914022",
+  "lon": "-3.872188547431641",
+  "linea": "12",
+  "parada": "UNIVERSIDAD REY JUAN CARLOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b465d"
+  },
+  "lat": "40.418284443909386",
+  "lon": "-3.6235144027647195",
+  "linea": "2",
+  "parada": "ALSACIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b465e"
+  },
+  "lat": "40.422390661721714",
+  "lon": "-3.612070828457266",
+  "linea": "2",
+  "parada": "AVENIDA DE GUADALAJARA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b465f"
+  },
+  "lat": "40.41921937328667",
+  "lon": "-3.694966494593289",
+  "linea": "2",
+  "parada": "BANCO DE ESPAÑA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4660"
+  },
+  "lat": "40.43840594045452",
+  "lon": "-3.704337220993404",
+  "linea": "2",
+  "parada": "CANAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4661"
+  },
+  "lat": "40.44696696523524",
+  "lon": "-3.7039313107143053",
+  "linea": "2",
+  "parada": "CUATRO CAMINOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4662"
+  },
+  "lat": "40.42453956509611",
+  "lon": "-3.6759123759569388",
+  "linea": "2",
+  "parada": "GOYA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4663"
+  },
+  "lat": "40.42361352022292",
+  "lon": "-3.6391475841604057",
+  "linea": "2",
+  "parada": "LA ALMUDENA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4664"
+  },
+  "lat": "40.4266131180015",
+  "lon": "-3.650528497343345",
+  "linea": "2",
+  "parada": "LA ELIPA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4665"
+  },
+  "lat": "40.42374301041612",
+  "lon": "-3.603312655422655",
+  "linea": "2",
+  "parada": "LAS ROSAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4666"
+  },
+  "lat": "40.42790259126464",
+  "lon": "-3.6692617275650825",
+  "linea": "2",
+  "parada": "MANUEL BECERRA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4667"
+  },
+  "lat": "40.42483751820921",
+  "lon": "-3.7074256795634843",
+  "linea": "2",
+  "parada": "NOVICIADO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4668"
+  },
+  "lat": "40.41808648235822",
+  "lon": "-3.7094295067152068",
+  "linea": "2",
+  "parada": "OPERA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4669"
+  },
+  "lat": "40.42293825869698",
+  "lon": "-3.6801282562882505",
+  "linea": "2",
+  "parada": "PRINCIPE DE VERGARA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b466a"
+  },
+  "lat": "40.43321671973448",
+  "lon": "-3.7043420216216063",
+  "linea": "2",
+  "parada": "QUEVEDO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b466b"
+  },
+  "lat": "40.420298442434046",
+  "lon": "-3.6862547889045016",
+  "linea": "2",
+  "parada": "RETIRO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b466c"
+  },
+  "lat": "40.43001095773282",
+  "lon": "-3.7055818156463136",
+  "linea": "2",
+  "parada": "SAN BERNARDO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b466d"
+  },
+  "lat": "40.421311677323516",
+  "lon": "-3.70796634277563",
+  "linea": "2",
+  "parada": "SANTO DOMINGO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b466e"
+  },
+  "lat": "40.41804935637811",
+  "lon": "-3.699256777934109",
+  "linea": "2",
+  "parada": "SEVILLA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b466f"
+  },
+  "lat": "40.41684486835466",
+  "lon": "-3.703263665852006",
+  "linea": "2",
+  "parada": "SOL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4670"
+  },
+  "lat": "40.43088079412545",
+  "lon": "-3.663667689792175",
+  "linea": "2",
+  "parada": "VENTAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4671"
+  },
+  "lat": "40.38409341257691",
+  "lon": "-3.697892329475578",
+  "linea": "3",
+  "parada": "ALMENDRALES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4672"
+  },
+  "lat": "40.430658770692084",
+  "lon": "-3.715975031788373",
+  "linea": "3",
+  "parada": "ARGÜELLES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4673"
+  },
+  "lat": "40.420127531994346",
+  "lon": "-3.7056671453961694",
+  "linea": "3",
+  "parada": "CALLAO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4674"
+  },
+  "lat": "40.35957819752743",
+  "lon": "-3.693635291131088",
+  "linea": "3",
+  "parada": "CIUDAD DE LOS ANGELES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4675"
+  },
+  "lat": "40.39989953900073",
+  "lon": "-3.6942021511558596",
+  "linea": "3",
+  "parada": "DELICIAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4676"
+  },
+  "lat": "40.40511861972591",
+  "lon": "-3.702681992509139",
+  "linea": "3",
+  "parada": "EMBAJADORES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4677"
+  },
+  "lat": "40.37502451461551",
+  "lon": "-3.695855104968134",
+  "linea": "3",
+  "parada": "HOSPITAL 12 DE OCTUBRE"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4678"
+  },
+  "lat": "40.4085077475188",
+  "lon": "-3.700914055876501",
+  "linea": "3",
+  "parada": "LAVAPIES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4679"
+  },
+  "lat": "40.391146176794116",
+  "lon": "-3.695125551387507",
+  "linea": "3",
+  "parada": "LEGAZPI"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b467a"
+  },
+  "lat": "40.43501556410216",
+  "lon": "-3.7194521744896463",
+  "linea": "3",
+  "parada": "MONCLOA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b467b"
+  },
+  "lat": "40.40307053569799",
+  "lon": "-3.6942347260526547",
+  "linea": "3",
+  "parada": "PALOS DE LA FRONTERA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b467c"
+  },
+  "lat": "40.423408913087485",
+  "lon": "-3.7112064862535563",
+  "linea": "3",
+  "parada": "PLAZA DE ESPAÑA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b467d"
+  },
+  "lat": "40.34153553587059",
+  "lon": "-3.693191432961103",
+  "linea": "3",
+  "parada": "SAN CRISTOBAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b467e"
+  },
+  "lat": "40.369989491378796",
+  "lon": "-3.6941778390976685",
+  "linea": "3",
+  "parada": "SAN FERMIN-ORCASUR"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b467f"
+  },
+  "lat": "40.41680883446673",
+  "lon": "-3.7032632906568437",
+  "linea": "3",
+  "parada": "SOL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4680"
+  },
+  "lat": "40.427080002151314",
+  "lon": "-3.7134142861939377",
+  "linea": "3",
+  "parada": "VENTURA RODRIGUEZ"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4681"
+  },
+  "lat": "40.341223138866916",
+  "lon": "-3.711990993449082",
+  "linea": "3",
+  "parada": "VILLAVERDE ALTO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4682"
+  },
+  "lat": "40.350890273928535",
+  "lon": "-3.692651332213546",
+  "linea": "3",
+  "parada": "VILLAVERDE BAJO CRUCE"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4683"
+  },
+  "lat": "40.44824371776939",
+  "lon": "-3.6679186527610956",
+  "linea": "4",
+  "parada": "ALFONSO XIII"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4684"
+  },
+  "lat": "40.427717986325014",
+  "lon": "-3.6959499210637783",
+  "linea": "4",
+  "parada": "ALONSO MARTINEZ"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4685"
+  },
+  "lat": "40.43059578472089",
+  "lon": "-3.715962574409677",
+  "linea": "4",
+  "parada": "ARGÜELLES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4686"
+  },
+  "lat": "40.45582440947207",
+  "lon": "-3.6561881225682944",
+  "linea": "4",
+  "parada": "ARTURO SORIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4687"
+  },
+  "lat": "40.438030781889246",
+  "lon": "-3.6766487941815313",
+  "linea": "4",
+  "parada": "AVENIDA DE AMERICA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4688"
+  },
+  "lat": "40.4535346495725",
+  "lon": "-3.6611898359519834",
+  "linea": "4",
+  "parada": "AVENIDA DE LA PAZ"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4689"
+  },
+  "lat": "40.42884873752132",
+  "lon": "-3.7011487682664037",
+  "linea": "4",
+  "parada": "BILBAO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b468a"
+  },
+  "lat": "40.46380429988092",
+  "lon": "-3.635600579737649",
+  "linea": "4",
+  "parada": "CANILLAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b468b"
+  },
+  "lat": "40.42541427689269",
+  "lon": "-3.6910103826094267",
+  "linea": "4",
+  "parada": "COLON"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b468c"
+  },
+  "lat": "40.43467125423682",
+  "lon": "-3.6749645017347072",
+  "linea": "4",
+  "parada": "DIEGO DE LEON"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b468d"
+  },
+  "lat": "40.45944135187602",
+  "lon": "-3.645820621327798",
+  "linea": "4",
+  "parada": "ESPERANZA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b468e"
+  },
+  "lat": "40.4248043033313",
+  "lon": "-3.676858095876717",
+  "linea": "4",
+  "parada": "GOYA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b468f"
+  },
+  "lat": "40.47536730266078",
+  "lon": "-3.6525796374794783",
+  "linea": "4",
+  "parada": "HORTALEZA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4690"
+  },
+  "lat": "40.429164099118886",
+  "lon": "-3.6754163728813944",
+  "linea": "4",
+  "parada": "LISTA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4691"
+  },
+  "lat": "40.476867092844046",
+  "lon": "-3.662905158694452",
+  "linea": "4",
+  "parada": "MANOTERAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4692"
+  },
+  "lat": "40.46941986762225",
+  "lon": "-3.6383312545367454",
+  "linea": "4",
+  "parada": "MAR DE CRISTAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4693"
+  },
+  "lat": "40.47711116792567",
+  "lon": "-3.6452466617480788",
+  "linea": "4",
+  "parada": "PARQUE DE SANTA MARIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4694"
+  },
+  "lat": "40.48013312167673",
+  "lon": "-3.6667716515888267",
+  "linea": "4",
+  "parada": "PINAR DE CHAMARTIN"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4695"
+  },
+  "lat": "40.444185596768286",
+  "lon": "-3.6748238288203408",
+  "linea": "4",
+  "parada": "PROSPERIDAD"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4696"
+  },
+  "lat": "40.42965898071998",
+  "lon": "-3.705684239874848",
+  "linea": "4",
+  "parada": "SAN BERNARDO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4697"
+  },
+  "lat": "40.47446698722932",
+  "lon": "-3.6395823502616023",
+  "linea": "4",
+  "parada": "SAN LORENZO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4698"
+  },
+  "lat": "40.42543132477729",
+  "lon": "-3.686637031792093",
+  "linea": "4",
+  "parada": "SERRANO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4699"
+  },
+  "lat": "40.42502991887892",
+  "lon": "-3.6829196009024106",
+  "linea": "4",
+  "parada": "VELAZQUEZ"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b469a"
+  },
+  "lat": "40.40386919094474",
+  "lon": "-3.7066522311398944",
+  "linea": "5",
+  "parada": "ACACIAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b469b"
+  },
+  "lat": "40.457788368783184",
+  "lon": "-3.587529851420831",
+  "linea": "5",
+  "parada": "ALAMEDA DE OSUNA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b469c"
+  },
+  "lat": "40.428282113788335",
+  "lon": "-3.695024407291076",
+  "linea": "5",
+  "parada": "ALONSO MARTINEZ"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b469d"
+  },
+  "lat": "40.38562451896221",
+  "lon": "-3.760809652950178",
+  "linea": "5",
+  "parada": "ALUCHE"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b469e"
+  },
+  "lat": "40.42008248968333",
+  "lon": "-3.705666674745031",
+  "linea": "5",
+  "parada": "CALLAO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b469f"
+  },
+  "lat": "40.39480136388358",
+  "lon": "-3.7681359752950083",
+  "linea": "5",
+  "parada": "CAMPAMENTO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46a0"
+  },
+  "lat": "40.44942037767125",
+  "lon": "-3.608164956973511",
+  "linea": "5",
+  "parada": "CANILLEJAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46a1"
+  },
+  "lat": "40.387818323852514",
+  "lon": "-3.7448816604389195",
+  "linea": "5",
+  "parada": "CARABANCHEL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46a2"
+  },
+  "lat": "40.40323584563566",
+  "lon": "-3.761019686701832",
+  "linea": "5",
+  "parada": "CASA DE CAMPO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46a3"
+  },
+  "lat": "40.422924115641855",
+  "lon": "-3.69762156530907",
+  "linea": "5",
+  "parada": "CHUECA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46a4"
+  },
+  "lat": "40.43804242659882",
+  "lon": "-3.638164089763644",
+  "linea": "5",
+  "parada": "CIUDAD LINEAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46a5"
+  },
+  "lat": "40.43235098253979",
+  "lon": "-3.674269288886236",
+  "linea": "5",
+  "parada": "DIEGO DE LEON"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46a6"
+  },
+  "lat": "40.45346693887937",
+  "lon": "-3.5940139675362324",
+  "linea": "5",
+  "parada": "EL CAPRICHO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46a7"
+  },
+  "lat": "40.431888543471025",
+  "lon": "-3.657582365367643",
+  "linea": "5",
+  "parada": "EL CARMEN"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46a8"
+  },
+  "lat": "40.39056753293377",
+  "lon": "-3.7653543590645233",
+  "linea": "5",
+  "parada": "EMPALME"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46a9"
+  },
+  "lat": "40.384380915779076",
+  "lon": "-3.7512174724118132",
+  "linea": "5",
+  "parada": "EUGENIA DE MONTIJO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46aa"
+  },
+  "lat": "40.41997983197915",
+  "lon": "-3.7018110830022932",
+  "linea": "5",
+  "parada": "GRAN VIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ab"
+  },
+  "lat": "40.4112743722751",
+  "lon": "-3.7081675783047383",
+  "linea": "5",
+  "parada": "LA LATINA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ac"
+  },
+  "lat": "40.39735240863037",
+  "lon": "-3.715963813197224",
+  "linea": "5",
+  "parada": "MARQUES DE VADILLO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ad"
+  },
+  "lat": "40.43277965882792",
+  "lon": "-3.682585355283697",
+  "linea": "5",
+  "parada": "NUÑEZ DE BALBOA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ae"
+  },
+  "lat": "40.41808691627398",
+  "lon": "-3.7093587881489922",
+  "linea": "5",
+  "parada": "OPERA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46af"
+  },
+  "lat": "40.38846340308106",
+  "lon": "-3.731327675889255",
+  "linea": "5",
+  "parada": "OPORTO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46b0"
+  },
+  "lat": "40.40259689990526",
+  "lon": "-3.7113880737636493",
+  "linea": "5",
+  "parada": "PIRAMIDES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46b1"
+  },
+  "lat": "40.43569222122078",
+  "lon": "-3.642834403605827",
+  "linea": "5",
+  "parada": "PUEBLO NUEVO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46b2"
+  },
+  "lat": "40.40703138929742",
+  "lon": "-3.711057633812725",
+  "linea": "5",
+  "parada": "PUERTA DE TOLEDO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46b3"
+  },
+  "lat": "40.43357684329915",
+  "lon": "-3.647365166136872",
+  "linea": "5",
+  "parada": "QUINTANA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46b4"
+  },
+  "lat": "40.433152771142865",
+  "lon": "-3.6895451263646835",
+  "linea": "5",
+  "parada": "RUBEN DARIO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46b5"
+  },
+  "lat": "40.44084308870699",
+  "lon": "-3.6268474470761722",
+  "linea": "5",
+  "parada": "SUANZES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46b6"
+  },
+  "lat": "40.44374289429119",
+  "lon": "-3.6170047299183143",
+  "linea": "5",
+  "parada": "TORRE ARIAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46b7"
+  },
+  "lat": "40.39334979453965",
+  "lon": "-3.723615630429613",
+  "linea": "5",
+  "parada": "URGEL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46b8"
+  },
+  "lat": "40.430881132487954",
+  "lon": "-3.6636087459214366",
+  "linea": "5",
+  "parada": "VENTAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46b9"
+  },
+  "lat": "40.388841774504186",
+  "lon": "-3.7398266451178808",
+  "linea": "5",
+  "parada": "VISTA ALEGRE"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ba"
+  },
+  "lat": "40.40991964465942",
+  "lon": "-3.7389377724748316",
+  "linea": "6",
+  "parada": "ALTO DE EXTREMADURA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46bb"
+  },
+  "lat": "40.39309490002911",
+  "lon": "-3.6886414650639274",
+  "linea": "6",
+  "parada": "ARGANZUELA-PLANETARIO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46bc"
+  },
+  "lat": "40.430523717315026",
+  "lon": "-3.7159618100999556",
+  "linea": "6",
+  "parada": "ARGÜELLES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46bd"
+  },
+  "lat": "40.43803112692008",
+  "lon": "-3.67658984422362",
+  "linea": "6",
+  "parada": "AVENIDA DE AMERICA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46be"
+  },
+  "lat": "40.392699152623656",
+  "lon": "-3.74100000338481",
+  "linea": "6",
+  "parada": "CARPETANA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46bf"
+  },
+  "lat": "40.44355521068528",
+  "lon": "-3.7267950694327174",
+  "linea": "6",
+  "parada": "CIUDAD UNIVERSITARIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46c0"
+  },
+  "lat": "40.40696791355658",
+  "lon": "-3.670409622513099",
+  "linea": "6",
+  "parada": "CONDE DE CASAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46c1"
+  },
+  "lat": "40.44696732424279",
+  "lon": "-3.703872353288706",
+  "linea": "6",
+  "parada": "CUATRO CAMINOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46c2"
+  },
+  "lat": "40.43294429738587",
+  "lon": "-3.672942968338926",
+  "linea": "6",
+  "parada": "DIEGO DE LEON"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46c3"
+  },
+  "lat": "40.44635715962408",
+  "lon": "-3.7122973578860115",
+  "linea": "6",
+  "parada": "GUZMAN EL BUENO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46c4"
+  },
+  "lat": "40.39922754347372",
+  "lon": "-3.744300361169432",
+  "linea": "6",
+  "parada": "LAGUNA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46c5"
+  },
+  "lat": "40.39115561025609",
+  "lon": "-3.6950549534127397",
+  "linea": "6",
+  "parada": "LEGAZPI"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46c6"
+  },
+  "lat": "40.40509472797641",
+  "lon": "-3.7453431334630922",
+  "linea": "6",
+  "parada": "LUCERO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46c7"
+  },
+  "lat": "40.427902864222176",
+  "lon": "-3.669214574602292",
+  "linea": "6",
+  "parada": "MANUEL BECERRA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46c8"
+  },
+  "lat": "40.39537318605325",
+  "lon": "-3.6781422464152858",
+  "linea": "6",
+  "parada": "MENDEZ ALVARO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46c9"
+  },
+  "lat": "40.446430091202984",
+  "lon": "-3.7194323697774476",
+  "linea": "6",
+  "parada": "METROPOLITANO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ca"
+  },
+  "lat": "40.434961513630626",
+  "lon": "-3.7194515983734378",
+  "linea": "6",
+  "parada": "MONCLOA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46cb"
+  },
+  "lat": "40.446613076687676",
+  "lon": "-3.692418456066998",
+  "linea": "6",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46cc"
+  },
+  "lat": "40.422888390377096",
+  "lon": "-3.6685990513216953",
+  "linea": "6",
+  "parada": "O'DONNELL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46cd"
+  },
+  "lat": "40.386902306564245",
+  "lon": "-3.723134262030649",
+  "linea": "6",
+  "parada": "OPAÑEL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ce"
+  },
+  "lat": "40.38846377561755",
+  "lon": "-3.731268769862201",
+  "linea": "6",
+  "parada": "OPORTO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46cf"
+  },
+  "lat": "40.402064934244095",
+  "lon": "-3.673860948285712",
+  "linea": "6",
+  "parada": "PACIFICO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46d0"
+  },
+  "lat": "40.38459862707521",
+  "lon": "-3.7183735256638144",
+  "linea": "6",
+  "parada": "PLAZA ELIPTICA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46d1"
+  },
+  "lat": "40.421064140817386",
+  "lon": "-3.720329050360675",
+  "linea": "6",
+  "parada": "PRINCIPE PIO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46d2"
+  },
+  "lat": "40.413894717383116",
+  "lon": "-3.7272419555741436",
+  "linea": "6",
+  "parada": "PUERTA DEL ANGEL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46d3"
+  },
+  "lat": "40.44378894146043",
+  "lon": "-3.684064545714559",
+  "linea": "6",
+  "parada": "REPUBLICA ARGENTINA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46d4"
+  },
+  "lat": "40.41506318581949",
+  "lon": "-3.669523455578141",
+  "linea": "6",
+  "parada": "SAINZ DE BARANDA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46d5"
+  },
+  "lat": "40.38709277398245",
+  "lon": "-3.7069010072851825",
+  "linea": "6",
+  "parada": "USERA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46d6"
+  },
+  "lat": "40.43837372987501",
+  "lon": "-3.699255078803118",
+  "linea": "7A",
+  "parada": "ALONSO CANO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46d7"
+  },
+  "lat": "40.47021551543151",
+  "lon": "-3.7177043655225064",
+  "linea": "7A",
+  "parada": "ANTONIO MACHADO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46d8"
+  },
+  "lat": "40.4301975485955",
+  "lon": "-3.6410608382789014",
+  "linea": "7A",
+  "parada": "ASCAO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46d9"
+  },
+  "lat": "40.48009393979854",
+  "lon": "-3.7184112591111615",
+  "linea": "7A",
+  "parada": "AVDA. DE LA ILUSTRACION"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46da"
+  },
+  "lat": "40.43803147192086",
+  "lon": "-3.676530894264689",
+  "linea": "7A",
+  "parada": "AVENIDA DE AMERICA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46db"
+  },
+  "lat": "40.4390913221314",
+  "lon": "-3.652004710876878",
+  "linea": "7A",
+  "parada": "BARRIO DE LA CONCEPCION"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46dc"
+  },
+  "lat": "40.43869984130606",
+  "lon": "-3.7048944553030796",
+  "linea": "7A",
+  "parada": "CANAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46dd"
+  },
+  "lat": "40.43933626219724",
+  "lon": "-3.6721577545084036",
+  "linea": "7A",
+  "parada": "CARTAGENA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46de"
+  },
+  "lat": "40.433390115428594",
+  "lon": "-3.6001566460057197",
+  "linea": "7A",
+  "parada": "ESTADIO OLIMPICO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46df"
+  },
+  "lat": "40.45647366576084",
+  "lon": "-3.712392392186851",
+  "linea": "7A",
+  "parada": "FRANCOS RODRIGUEZ"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46e0"
+  },
+  "lat": "40.4284204389523",
+  "lon": "-3.6333103671517417",
+  "linea": "7A",
+  "parada": "GARCIA NOBLEJAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46e1"
+  },
+  "lat": "40.438249234181846",
+  "lon": "-3.6914954990497377",
+  "linea": "7A",
+  "parada": "GREGORIO MARAÑON"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46e2"
+  },
+  "lat": "40.44632112599101",
+  "lon": "-3.712296977475499",
+  "linea": "7A",
+  "parada": "GUZMAN EL BUENO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46e3"
+  },
+  "lat": "40.43905997233827",
+  "lon": "-3.7137413543146804",
+  "linea": "7A",
+  "parada": "ISLAS FILIPINAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46e4"
+  },
+  "lat": "40.48501089648855",
+  "lon": "-3.7230534484922786",
+  "linea": "7A",
+  "parada": "LACOMA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46e5"
+  },
+  "lat": "40.43298035455762",
+  "lon": "-3.6078871300557416",
+  "linea": "7A",
+  "parada": "LAS MUSAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46e6"
+  },
+  "lat": "40.4394433512344",
+  "lon": "-3.6629736837416154",
+  "linea": "7A",
+  "parada": "PARQUE DE LAS AVENIDAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46e7"
+  },
+  "lat": "40.475920794508795",
+  "lon": "-3.715830357925139",
+  "linea": "7A",
+  "parada": "PEÑAGRANDE"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46e8"
+  },
+  "lat": "40.49510106705936",
+  "lon": "-3.7258995067914737",
+  "linea": "7A",
+  "parada": "PITIS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46e9"
+  },
+  "lat": "40.43565618700322",
+  "lon": "-3.6428340604203733",
+  "linea": "7A",
+  "parada": "PUEBLO NUEVO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ea"
+  },
+  "lat": "40.427985259797985",
+  "lon": "-3.6154696062824123",
+  "linea": "7A",
+  "parada": "SAN BLAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46eb"
+  },
+  "lat": "40.42798425779678",
+  "lon": "-3.625725983210804",
+  "linea": "7A",
+  "parada": "SIMANCAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ec"
+  },
+  "lat": "40.46482081014714",
+  "lon": "-3.7159837953806902",
+  "linea": "7A",
+  "parada": "VALDEZARZA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ed"
+  },
+  "lat": "40.42249256252064",
+  "lon": "-3.569198792073217",
+  "linea": "7B",
+  "parada": "BARRIO DEL PUERTO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ee"
+  },
+  "lat": "40.423729905298636",
+  "lon": "-3.561193228398721",
+  "linea": "7B",
+  "parada": "COSLADA CENTRAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ef"
+  },
+  "lat": "40.433390115428594",
+  "lon": "-3.6001566460057197",
+  "linea": "7B",
+  "parada": "ESTADIO OLIMPICO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46f0"
+  },
+  "lat": "40.41776380376927",
+  "lon": "-3.5271847560338285",
+  "linea": "7B",
+  "parada": "HENARES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46f1"
+  },
+  "lat": "40.41760391086565",
+  "lon": "-3.5345387003640565",
+  "linea": "7B",
+  "parada": "HOSPITAL DEL HENARES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46f2"
+  },
+  "lat": "40.422951678568836",
+  "lon": "-3.525504191899041",
+  "linea": "7B",
+  "parada": "JARAMA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46f3"
+  },
+  "lat": "40.42514488006425",
+  "lon": "-3.5479311641242512",
+  "linea": "7B",
+  "parada": "LA RAMBLA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46f4"
+  },
+  "lat": "40.42441070943472",
+  "lon": "-3.535417765096221",
+  "linea": "7B",
+  "parada": "SAN FERNANDO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46f5"
+  },
+  "lat": "40.468644167154046",
+  "lon": "-3.5695410675308468",
+  "linea": "8",
+  "parada": "AEROPUERTO T1 T2 T3"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46f6"
+  },
+  "lat": "40.49175903963612",
+  "lon": "-3.593254085368614",
+  "linea": "8",
+  "parada": "AEROPUERTO T4"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46f7"
+  },
+  "lat": "40.475768604419436",
+  "lon": "-3.582531126058038",
+  "linea": "8",
+  "parada": "BARAJAS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46f8"
+  },
+  "lat": "40.46389128127541",
+  "lon": "-3.6162100520239466",
+  "linea": "8",
+  "parada": "CAMPO DE LAS NACIONES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46f9"
+  },
+  "lat": "40.456336002823406",
+  "lon": "-3.676832402038624",
+  "linea": "8",
+  "parada": "COLOMBIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46fa"
+  },
+  "lat": "40.46938383358384",
+  "lon": "-3.638330913349365",
+  "linea": "8",
+  "parada": "MAR DE CRISTAL"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46fb"
+  },
+  "lat": "40.44655001756364",
+  "lon": "-3.692417808921252",
+  "linea": "8",
+  "parada": "NUEVOS MINISTERIOS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46fc"
+  },
+  "lat": "40.467992917343715",
+  "lon": "-3.6486745747509053",
+  "linea": "8",
+  "parada": "PINAR DEL REY"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46fd"
+  },
+  "lat": "40.40522025828109",
+  "lon": "-3.6418137462853575",
+  "linea": "9A",
+  "parada": "ARTILLEROS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46fe"
+  },
+  "lat": "40.43803181689158",
+  "lon": "-3.676471944304738",
+  "linea": "9A",
+  "parada": "AVENIDA DE AMERICA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b46ff"
+  },
+  "lat": "40.47688138899434",
+  "lon": "-3.7031700829535565",
+  "linea": "9A",
+  "parada": "BARRIO DEL PILAR"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4700"
+  },
+  "lat": "40.45748846408076",
+  "lon": "-3.6769501140516168",
+  "linea": "9A",
+  "parada": "COLOMBIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4701"
+  },
+  "lat": "40.451440884039954",
+  "lon": "-3.6773847300795506",
+  "linea": "9A",
+  "parada": "CONCHA ESPINA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4702"
+  },
+  "lat": "40.44426481662303",
+  "lon": "-3.678220651650197",
+  "linea": "9A",
+  "parada": "CRUZ DEL RAYO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4703"
+  },
+  "lat": "40.46761952315198",
+  "lon": "-3.6791750808454435",
+  "linea": "9A",
+  "parada": "DUQUE DE PASTRANA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4704"
+  },
+  "lat": "40.41146804102253",
+  "lon": "-3.6617915330011224",
+  "linea": "9A",
+  "parada": "ESTRELLA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4705"
+  },
+  "lat": "40.484656572327964",
+  "lon": "-3.7075223938390494",
+  "linea": "9A",
+  "parada": "HERRERA ORIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4706"
+  },
+  "lat": "40.41838874804179",
+  "lon": "-3.6785854582722304",
+  "linea": "9A",
+  "parada": "IBIZA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4707"
+  },
+  "lat": "40.491088577548204",
+  "lon": "-3.71635730886455",
+  "linea": "9A",
+  "parada": "MIRASIERRA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4708"
+  },
+  "lat": "40.43012288608087",
+  "lon": "-3.6793753811897774",
+  "linea": "9A",
+  "parada": "NUÑEZ DE BALBOA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4709"
+  },
+  "lat": "40.499646860142015",
+  "lon": "-3.709084232835683",
+  "linea": "9A",
+  "parada": "PACO DE LUCIA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b470a"
+  },
+  "lat": "40.40050941790844",
+  "lon": "-3.6351227460093765",
+  "linea": "9A",
+  "parada": "PAVONES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b470b"
+  },
+  "lat": "40.46299966943852",
+  "lon": "-3.6758023434199925",
+  "linea": "9A",
+  "parada": "PIO XII"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b470c"
+  },
+  "lat": "40.46689390477136",
+  "lon": "-3.689135160636755",
+  "linea": "9A",
+  "parada": "PLAZA DE CASTILLA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b470d"
+  },
+  "lat": "40.42417179978585",
+  "lon": "-3.6802467751336",
+  "linea": "9A",
+  "parada": "PRINCIPE DE VERGARA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b470e"
+  },
+  "lat": "40.40131238195054",
+  "lon": "-3.595982858510145",
+  "linea": "9A",
+  "parada": "PUERTA DE ARGANDA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b470f"
+  },
+  "lat": "40.41502715166562",
+  "lon": "-3.6695230984052025",
+  "linea": "9A",
+  "parada": "SAINZ DE BARANDA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4710"
+  },
+  "lat": "40.40381066236725",
+  "lon": "-3.6024040049730175",
+  "linea": "9A",
+  "parada": "SAN CIPRIANO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4711"
+  },
+  "lat": "40.40004253874335",
+  "lon": "-3.6215666770605437",
+  "linea": "9A",
+  "parada": "VALDEBERNARDO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4712"
+  },
+  "lat": "40.46943002884863",
+  "lon": "-3.6958849000624356",
+  "linea": "9A",
+  "parada": "VENTILLA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4713"
+  },
+  "lat": "40.4042092535065",
+  "lon": "-3.6088656317893952",
+  "linea": "9A",
+  "parada": "VICALVARO"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4714"
+  },
+  "lat": "40.41024020995498",
+  "lon": "-3.6527397668456545",
+  "linea": "9A",
+  "parada": "VINATEROS"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4715"
+  },
+  "lat": "40.30366479038508",
+  "lon": "-3.447526065715983",
+  "linea": "9B",
+  "parada": "ARGANDA DEL REY"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4716"
+  },
+  "lat": "40.31901406572024",
+  "lon": "-3.4774526353611823",
+  "linea": "9B",
+  "parada": "LA POVEDA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4717"
+  },
+  "lat": "40.40131238195054",
+  "lon": "-3.595982858510145",
+  "linea": "9B",
+  "parada": "PUERTA DE ARGANDA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4718"
+  },
+  "lat": "40.341341035027426",
+  "lon": "-3.524799759036857",
+  "linea": "9B",
+  "parada": "RIVAS FUTURA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b4719"
+  },
+  "lat": "40.36676887211379",
+  "lon": "-3.547281479092949",
+  "linea": "9B",
+  "parada": "RIVAS URBANIZACIONES"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b471a"
+  },
+  "lat": "40.32836870738169",
+  "lon": "-3.5206027411300975",
+  "linea": "9B",
+  "parada": "RIVAS VACIAMADRID"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b471b"
+  },
+  "lat": "40.41808735014648",
+  "lon": "-3.7092880695812407",
+  "linea": "R",
+  "parada": "OPERA"
+},
+{
+  "_id": {
+    "$oid": "658effd0a2df72721c9b471c"
+  },
+  "lat": "40.42099207336132",
+  "lon": "-3.720328281648544",
+  "linea": "R",
+  "parada": "PRINCIPE PIO"
+}]
