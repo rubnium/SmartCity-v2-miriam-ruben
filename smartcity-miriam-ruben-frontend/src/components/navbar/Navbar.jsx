@@ -1,6 +1,7 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from "@mui/icons-material/Menu";
+import PedalBikeIcon from '@mui/icons-material/PedalBike';
 import { AppBar, Button, Drawer, IconButton, Toolbar, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
@@ -9,6 +10,7 @@ import NavListDrawer from "./NavListDrawer";
 const navLinks = [
     { title: "Inicio", path: "/", icon: <HomeIcon /> },
     { title: "Paradas", path: "#", icon:"" },
+    { title: "Bicicletas", path: "/bicicletas", icon: <PedalBikeIcon /> },
     { title: "GitHub", path: "https://github.com/rubnium/SmartCity-miriam-ruben", icon: <GitHubIcon />}
 ]
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent, Grid, Typography } from '@mui/material';
+import ExampleMap from "./ExampleMap";
 
 const cardStyle = {
     margin: '10px',
@@ -11,7 +12,7 @@ export default function Main() {
         <Grid container rowSpacing={4.5} columnSpacing={2.75}>
             {/* row 1 */}
             <Grid item xs={12} sx={{ mb: -2.25, ml: '10px', mt: '10px' }}>
-                <Typography variant="h7">Dataset</Typography>
+                <Typography variant="h7" className="page-title">Paradas</Typography>
             </Grid>
             <Grid item xs={12}>
                 <Card sx={{ minWidth: 275 }} style={cardStyle}>
@@ -22,6 +23,7 @@ export default function Main() {
                             </Grid>
                             <Grid item xs={6} sm={4} md={3} lg={2}>
                                 <p>Holas</p>
+                                <ExampleMap />
                             </Grid>
                         </Grid>
                     </CardContent>
