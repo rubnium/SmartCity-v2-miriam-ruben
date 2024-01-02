@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
 import L from 'leaflet';
 
@@ -10,20 +10,19 @@ const limitesMapa = L.latLngBounds(
   [41.802697, -7.384931], 
   [38.916897, -0.345458]
 );
-const marcadores = [];
 
 
-const obtenerMarcadores = async (fecha, hora, setError) => {
+const obtenerMarcadores = async (fecha, hora, setData, setError) => {
   try {
     const response = await api.get('/bicicletasAforo/'+ fecha +'/'+hora);
-    marcadores = response.data;
+    setData(response.data);
   } catch (error) {
     console.error('Error al obtener datos:', error);
     setError(error.message || 'Error en la solicitud');
   }
 };
 
-function UseMap() {
+function UseMap({ marcadores }) {
   const map = useMap();
   map.setView(madridCenter, 11);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
@@ -37,10 +36,11 @@ function UseMap() {
   useEffect(() => {    
     marcadores.forEach(marcador => {
       const {lat, lon, bicicletas} = marcador;
-
-      L.circleMarker([lat, lon], {
-        renderer: canvas
-      }).addTo(map).bindPopup(bicicletas);   
+      if (bicicletas !== 0){
+        L.circleMarker([lat, lon], {
+          renderer: canvas
+        }).addTo(map).bindPopup('Bicis: '+bicicletas);   
+      }
     });
   }, [marcadores]);
 
@@ -53,21 +53,22 @@ function UseMap() {
 const MapaBicicletas = (props) => {
   const { fecha, hora, contador } = props;
   const [fechaLocal, setFecha] = useState('');
-
+  const [marcadores, setMarcadores] = useState([]);
   const [error, setError] = useState(null);
 
 
   useEffect(() => {
     setFecha(fecha);
     if (contador === 1) {
-      obtenerMarcadores(fecha, hora, setError);
+      obtenerMarcadores(fecha, hora, setMarcadores, setError);
     }
   }, [contador]);
 
   useEffect(() => {
-    obtenerMarcadores(fecha, hora, setError);
+    obtenerMarcadores(fecha, hora, setMarcadores, setError);
   }, [hora]);
 
+  const UseMapMemoized = memo(UseMap);
 
   return (
     <div>
@@ -79,7 +80,7 @@ const MapaBicicletas = (props) => {
       ))}
       </ul>
       <MapContainer>
-        <UseMap />
+        <UseMapMemoized marcadores={marcadores} />
       </MapContainer>
     </div>
   );
