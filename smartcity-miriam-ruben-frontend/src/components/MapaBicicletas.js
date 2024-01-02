@@ -20,30 +20,33 @@ const obtenerMarcadores = async (fecha, hora, setData, setError) => {
   }
 };
 
-//TODO: cuando se toque el boton, la fecha se almacena, y se pone a true lo de fecha cambiada.
-//- Tras ello se muestran las estadístias resumen de las bicicletas de ese día (solo se actualizan cada vez que se toca al botón)
-//- cuando cambia la hora, se actualiza el mapa
-
 const MapaBicicletas = (props) => {
-  const { fecha, hora } = props;
+  const { fecha, hora, contador } = props;
+  const [fechaLocal, setFecha] = useState('');
   const madridCenter = [40.41692952216298, -3.700834722849244];
   const [marcadores, setMarcadores] = useState([]);
 
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (fecha && hora) {
+    setFecha(fecha);
+    if (contador == 1) {
       obtenerMarcadores(fecha, hora, setMarcadores, setError);
     }
-  }, [fecha, hora]);
+  }, [contador]);
+
+  useEffect(() => {
+    obtenerMarcadores(fecha, hora, setMarcadores, setError);
+  
+  }, [hora]);
 
   return (
     <div>
-      <p>Fecha: {fecha}</p>
+      <p>Fecha: {fechaLocal}</p>
       <p>Hora: {hora}</p>
       <ul>
       {marcadores.map((marcador, index) => (
-          <li>{marcador.id}, {marcador.lat}, {marcador.lon}</li>
+          <li>{marcador.id}, {marcador.lat}, {marcador.lon}, {marcador.bicicletas}</li>
       ))}
       </ul>
       {/*

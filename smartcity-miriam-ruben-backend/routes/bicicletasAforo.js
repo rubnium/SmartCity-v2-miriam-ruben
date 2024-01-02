@@ -13,7 +13,7 @@ var BicicletaAforoSchema = require('../models/BicicletaAforo').set('collection',
 router.get('/id=:id', function (req, res){
   const id = req.params.id;
   var Aforo = mongoose.model(collection, BicicletaAforoSchema);
-  Aforo.find().exec({ id: id })
+  Aforo.find({ id: id }).exec()
     .then(document => {
       res.status(200).json(document);
     })
@@ -23,11 +23,11 @@ router.get('/id=:id', function (req, res){
 });
 
 router.get('/:dia/:mes/:ano/:hora', function (req, res){
-  const fecha = '{req.params.dia}/{req.params.mes}/{req.params.ano}';
+  const fecha = `${req.params.dia}/${req.params.mes}/${req.params.ano}`;
   const hora = req.params.hora;
 
   var Aforo = mongoose.model(collection, BicicletaAforoSchema);
-  Aforo.find().exec({ fecha: fecha, hora: hora })
+  Aforo.find({ fecha: fecha, hora: hora }).exec()
     .then(document => {
       res.status(200).json(document);
     })

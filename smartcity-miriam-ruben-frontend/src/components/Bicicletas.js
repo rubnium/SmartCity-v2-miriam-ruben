@@ -20,6 +20,8 @@ export default function Bicicletas() {
     const [fechaBoton, setFechaBoton] = React.useState('');
     const [hora, setHora] = React.useState('00:00');
     const [botonClick, setBotonClick] = React.useState(false);
+    const [contadorClick, setContadorClick] = React.useState(0);
+    const [error, setError] = React.useState(null);
 
     const handleHoraChange = (event) => {
         setHora(event.target.value);
@@ -33,6 +35,7 @@ export default function Bicicletas() {
     const handleBotonClick = () => {
         setBotonClick(true);
         setFechaBoton(fecha);
+        setContadorClick(contadorClick + 1);
     };
 
     return (
@@ -63,12 +66,12 @@ export default function Bicicletas() {
                             <Grid item xs={12} />
                             {botonClick &&
                             <Grid item xs={12}>
-                                <EstadisticasBicicletas fecha={fechaBoton}/>
+                                <EstadisticasBicicletas fecha={fechaBoton} contador={contadorClick}/>
                             </Grid>}
                             <Grid item xs={12} />
                             {botonClick &&
                             <Grid item xs={12}>
-                                <Typography variant="h6">Mapa</Typography>
+                                <Typography variant="h6">Mapa de disponibilidad</Typography>
                             </Grid>}
                             {botonClick && 
                             <Grid item xs={6} sm={4} md={3} lg={2}>
@@ -105,7 +108,7 @@ export default function Bicicletas() {
 
                             {botonClick && 
                             <Grid item xs={12}>
-                                <MapaBicicletas fecha={fechaBoton} hora={hora} />
+                                <MapaBicicletas fecha={fechaBoton} hora={hora} contador={contadorClick} />
                             </Grid>}
                         </Grid>
                     </CardContent>

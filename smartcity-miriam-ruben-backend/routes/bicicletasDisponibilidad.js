@@ -10,10 +10,10 @@ const collection = 'bicicletasDisponibilidad'
 var BicicletaDisponibilidadSchema = require('../models/BicicletaDisponibilidad').set('collection', collection);
 
 router.get('/:dia/:mes/:ano', function (req, res){
-    const fecha = '{req.params.dia}/{req.params.mes}/{req.params.ano}';
+    const fecha = `${req.params.dia}/${req.params.mes}/${req.params.ano}`;
   
     var Disponibilidad = mongoose.model(collection, BicicletaDisponibilidadSchema);
-    Disponibilidad.find().exec({ fecha: fecha })
+    Disponibilidad.find({ fecha: fecha }).exec()
       .then(document => {
         res.status(200).json(document);
       })

@@ -13,22 +13,18 @@ const obtenerEstadisticas = async (fecha, setData, setError) => {
 };
 
 const EstadisticasBicicletas = (props) => {
-    const { fecha } = props;
+    const { fecha, contador } = props;
     const [estadisticas, setEstadisticas] = useState(['']);
 
     const [error, setError] = useState(null);
 
     useEffect(() => {
-      if (fecha) {
         obtenerEstadisticas(fecha, setEstadisticas, setError);
-      }
-    }, [fecha]);
+    }, [contador]);
 
     return (
         <div>
             <Typography variant="h6">Estadísticas generales</Typography>
-            <p>{estadisticas[0].fecha}</p>
-            <p>{fecha}</p>
             <ul>
                 <li>Horas totales de uso: {estadisticas[0].horas_totales_uso}</li>
                 <li>Horas de disponibilidad: {estadisticas[0].horas_totales_disponibilidad}</li>
@@ -38,7 +34,6 @@ const EstadisticasBicicletas = (props) => {
                 <li>Viajes efectuados por usuarios con abono anual: {estadisticas[0].usos_abonado_anual}</li>
                 <li>Viajes efectuados por usuarios con abono ocasional: {estadisticas[0].usos_abonado_ocasional}</li>
                 <li>Total de viajes: {estadisticas[0].total_usos}</li>
-
             </ul>
         </div>
     );
