@@ -10,6 +10,7 @@ var usersRouter = require('./routes/users');
 var paradasRouter = require('./routes/paradas');
 var bicicletasAforoRouter = require('./routes/bicicletasAforo');
 var bicicletasDispRouter = require('./routes/bicicletasDisponibilidad');
+var acusticaRouter = require('./routes/acustica');
 
 var app = express();
 
@@ -43,6 +44,7 @@ app.use('/users', usersRouter);
 app.use('/paradas', paradasRouter);
 app.use('/bicicletasAforo', bicicletasAforoRouter);
 app.use('/bicicletasDisponibilidad', bicicletasDispRouter);
+app.use('/acustica', acusticaRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,32 @@
+id;nombre;codigo_via;direccion;fecha_alta;altura;lat;lon
+1;Pº Recoletos;633005;Frente calle Almirante;07/03/2011;648;40.42262;-3.6919264
+2;Carlos V;264800;Pza del Emperador Carlos V/ Infanta Isabel;01/12/1998;629;40.4091095;-3.6914896
+3;Plaza del Carmen;145800;Plaza del Carmen;01/11/1999;657;40.4192091;-3.7031662
+4;Plaza de España;273600;Frente Edificio España;01/12/1998;637;40.4238823;-3.7122567
+5;Bº del Pilar;514425;Monforte Lemos-Av.Betanzos-La Vaguada;07/06/1999;673;40.4782322;-3.7115364
+6;Gregorio Marañón;153600;Lateral Pº Castellana-C/Miguel Angel;01/06/1999;669;40.4375685;-3.6907851
+8;Escuelas Aguirre;18900;Alcala-Odonnell;01/12/1998;672;40.4215533;-3.6823158
+10;Cuatro Caminos;554550;Av.Pablo Iglesias-PºS.Fco de Sales;25/03/1999;699;40.4455439;-3.7071303
+11;Ramón y Cajal;610450;Ppe.Vergara-Parque Berlín;01/12/1998;708;40.4514734;-3.6773491
+12;Manuel Becerra;242000;Dr.Gómez Ulla-Jardines Eva Duarte;01/12/1998;678;40.4288108;-3.6685709
+13;Vallecas;75500;C/Arroyo del Olivar-Rio San Lorenzo;11/11/1999;677;40.3881478;-3.6515286
+14;Fernández Ladreda;293200;Plaza Fernández Ladreda, 4;22/12/2009;605;40.3850336;-3.7187679
+16;Arturo Soria;798700;C/Vizconde de los Asilos;01/12/1998;698;40.4400457;-3.6392422
+17;Villaverde;417200;C/ Juan Peñalver;01/12/1998;601;40.347147;-3.7133167
+18;Farolillo;1903;C/ Farolillo;01/12/1998;625;40.3947825;-3.7318356
+19;Alto Extremadura;367300;C/Huerta Castañeda;01/12/1998;632;40.4078624;-3.7418959
+20;Avda Moratalaz;522000;Av.Moratalaz-Camino Vinateros;01/12/1998;671;40.4079517;-3.6453104
+24;Casa de Campo;905219;Junto a Teleférico-Cerro de las Animas;01/12/1998;645;40.4193577;-3.7473445
+25;Santa Eugenia;604750;C/ Poza de la Sal;01/12/1998;653;40.3790498;-3.6025322
+26;Embajada;729200;Parque Soto Hidalgo, 2;03/03/2011;618;40.4593153;-3.5802389
+27;Barajas Pueblo;425700;Júpiter (frente al 21);24/05/2002;627;40.4769179;-3.5800258
+28;Cuatro Vientos;84000;Avd. de la Aviación;30/04/2003;678;40.3751984;-3.7778375
+29;El Pardo;348500;Avd. de la Guardia;01/10/2003;616;40.5180701;-3.7746101
+30;Campo de las Naciones;1111;Rivera del Sena S/N;10/11/2003;686;40.4607255;-3.6163407
+31;Sanchinarro;31000002;C/ Princesa de Évoli esq. C/ María Tudor;14/07/2009;700;40.4942012;-3.6605173
+47;Mendez Álvaro;414800;C/ Juan de Mariana-Pz Amanecer en Méndez Álvaro;18/01/2010;609;40.3980991;-3.6868138
+48;Castellana;401400;C/ José Gutierrez Abascal;04/05/2010;685;40.4398904;-3.6903729
+50;Pza de Castilla;154500;Plaza Castilla (Canal);28/02/2011;728;40.4655841;-3.6887449
+54;Ensanche de Vallecas;31000516;Avda. de Gavia / Avda. de las Suertes;15/12/2009;619;40.3730118;-3.6121394
+55;Urb Embajada 2;639250;C/ Riaño;17/03/2010;619;40.4623628;-3.5805649
+86;Tres Olivos;1427;Plaza de Tres Olivos;08/02/2010;715;40.5005477;-3.6897308
