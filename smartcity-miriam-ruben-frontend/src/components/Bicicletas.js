@@ -18,7 +18,7 @@ const cardStyle = {
 export default function Bicicletas() {
     const [fecha, setFecha] = React.useState('01/01/2051');
     const [fechaBoton, setFechaBoton] = React.useState('');
-    const [hora, setHora] = React.useState('00:00');
+    const [hora, setHora] = React.useState('0:00');
     const [botonClick, setBotonClick] = React.useState(false);
     const [contadorClick, setContadorClick] = React.useState(0);
     const [error, setError] = React.useState(null);
@@ -78,16 +78,16 @@ export default function Bicicletas() {
                                 <FormControl fullWidth>
                                     <InputLabel id="hora-elegir-label">Hora</InputLabel>
                                     <Select id="hora-elegir" value={hora} label="Hora" onChange={handleHoraChange} >
-                                        <MenuItem value={"00:00"}>00:00</MenuItem>
-                                        <MenuItem value={"01:00"}>01:00</MenuItem>
-                                        <MenuItem value={"02:00"}>02:00</MenuItem>
-                                        <MenuItem value={"03:00"}>03:00</MenuItem>
-                                        <MenuItem value={"04:00"}>04:00</MenuItem>
-                                        <MenuItem value={"05:00"}>05:00</MenuItem>
-                                        <MenuItem value={"06:00"}>06:00</MenuItem>
-                                        <MenuItem value={"07:00"}>07:00</MenuItem>
-                                        <MenuItem value={"08:00"}>08:00</MenuItem>
-                                        <MenuItem value={"09:00"}>09:00</MenuItem>
+                                        <MenuItem value={"0:00"}>0:00</MenuItem>
+                                        <MenuItem value={"1:00"}>1:00</MenuItem>
+                                        <MenuItem value={"2:00"}>2:00</MenuItem>
+                                        <MenuItem value={"3:00"}>3:00</MenuItem>
+                                        <MenuItem value={"4:00"}>4:00</MenuItem>
+                                        <MenuItem value={"5:00"}>5:00</MenuItem>
+                                        <MenuItem value={"6:00"}>6:00</MenuItem>
+                                        <MenuItem value={"7:00"}>7:00</MenuItem>
+                                        <MenuItem value={"8:00"}>8:00</MenuItem>
+                                        <MenuItem value={"9:00"}>9:00</MenuItem>
                                         <MenuItem value={"10:00"}>10:00</MenuItem>
                                         <MenuItem value={"11:00"}>11:00</MenuItem>
                                         <MenuItem value={"12:00"}>12:00</MenuItem>

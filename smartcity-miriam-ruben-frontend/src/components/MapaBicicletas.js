@@ -1,16 +1,11 @@
 import { memo, useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
+
 import L from 'leaflet';
 
 import api from '../utils/api';
+import gM from '../utils/generalMap';
 import './ExampleMap.css';
-
-const madridCenter = [40.41692952216298, -3.700834722849244];
-const limitesMapa = L.latLngBounds(
-  [41.802697, -7.384931], 
-  [38.916897, -0.345458]
-);
-
 
 const obtenerMarcadores = async (fecha, hora, setData, setError) => {
   try {
@@ -24,10 +19,10 @@ const obtenerMarcadores = async (fecha, hora, setData, setError) => {
 
 function UseMap({ marcadores }) {
   const map = useMap();
-  map.setView(madridCenter, 11);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
+  map.setView(gM.centro, gM.zoom);
+  L.tileLayer(gM.url).addTo(map);
 
-  map.setMaxBounds(limitesMapa);
+  map.setMaxBounds(gM.limites);
   map.options.bounceAtZoomLimits = false;
 
   const canvas = L.canvas();
@@ -44,9 +39,6 @@ function UseMap({ marcadores }) {
     });
   }, [marcadores]);
 
-  L.circleMarker([48.85, 2.35], {
-  	renderer: canvas
-  }).addTo(map).bindPopup('marker 2');
   return null;
 }
 
@@ -56,17 +48,16 @@ const MapaBicicletas = (props) => {
   const [marcadores, setMarcadores] = useState([]);
   const [error, setError] = useState(null);
 
-
   useEffect(() => {
     setFecha(fecha);
     if (contador === 1) {
-      obtenerMarcadores(fecha, hora, setMarcadores, setError);
+      obtenerMarcadores(fechaLocal, hora, setMarcadores, setError);
     }
   }, [contador]);
 
   useEffect(() => {
-    obtenerMarcadores(fecha, hora, setMarcadores, setError);
-  }, [hora]);
+    obtenerMarcadores(fechaLocal, hora, setMarcadores, setError);
+  }, [fechaLocal, hora]);
 
   const UseMapMemoized = memo(UseMap);
 
@@ -74,6 +65,7 @@ const MapaBicicletas = (props) => {
     <div>
       <p>Fecha: {fechaLocal}</p>
       <p>Hora: {hora} {marcadores.length}</p>
+
       <ul>
       {marcadores.map((marcador, index) => (
           <li>{marcador.id}, {marcador.lat}, {marcador.lon}, {marcador.bicicletas}</li>
