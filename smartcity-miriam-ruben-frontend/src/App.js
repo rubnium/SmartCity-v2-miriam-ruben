@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from './components/Main';
-import Bicicletas from './components/Bicicletas';
+import Bicicletas from './components/bicicletas/Bicicletas';
 import Contaminacion from './components/contaminacion/Contaminacion';
 import Navbar from "./components/navbar/Navbar";
 import logo from './logo.svg';

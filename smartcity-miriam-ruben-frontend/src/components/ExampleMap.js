@@ -7,7 +7,7 @@ import 'leaflet-polylinedecorator';
 import L from 'leaflet';
 
 import api from '../utils/api';
-import './ExampleMap.css';
+import '../utils/Map.css';
 
 const groupMarkersByLine = (markers) => {
   const markersByLine = {};

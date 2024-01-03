@@ -1,11 +1,10 @@
 import { memo, useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
-
 import L from 'leaflet';
 
-import api from '../utils/api';
-import gM from '../utils/generalMap';
-import './ExampleMap.css';
+import api from '../../utils/api';
+import gM from '../../utils/generalMap';
+import '../../utils/Map.css';
 
 const obtenerMarcadores = async (fecha, hora, setData, setError) => {
   try {

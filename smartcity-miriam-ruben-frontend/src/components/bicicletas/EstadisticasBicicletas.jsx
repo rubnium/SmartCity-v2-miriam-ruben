@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
-import api from '../utils/api';
+import api from '../../utils/api';
 
 const obtenerEstadisticas = async (fecha, setData, setError) => {
     try {

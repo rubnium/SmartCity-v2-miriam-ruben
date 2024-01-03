@@ -1,13 +1,12 @@
-import { memo, useEffect, useState } from 'react';
-import { MapContainer, useMap } from 'react-leaflet';
-import {Grid} from '@mui/material';
 import CircleIcon from '@mui/icons-material/Circle';
-
+import { Grid } from '@mui/material';
 import L from 'leaflet';
+import { useEffect, useState } from 'react';
+import { MapContainer, useMap } from 'react-leaflet';
 
 import api from '../../utils/api';
 import gM from '../../utils/generalMap';
-import '../ExampleMap.css';
+import '../../utils/Map.css';
 
 const colores = ['green', 'yellow', 'red', 'brown', 'black'];
 
