@@ -2,10 +2,11 @@ import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import api from '../../utils/api';
 
-const obtenerEstadisticas = async (fecha, setData, setError) => {
+const obtenerEstadisticas = (fecha, setData, setError) => {
     try {
-      const response = await api.get('/bicicletasDisponibilidad/'+ fecha);
-      setData(response.data);
+      api.get('/bicicletasDisponibilidad/'+ fecha).then((res) => {
+        setData(res.data);
+      });
     } catch (error) {
       console.error('Error al obtener datos:', error);
       setError(error.message || 'Error en la solicitud');
