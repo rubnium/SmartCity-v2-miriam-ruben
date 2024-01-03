@@ -1,4 +1,4 @@
-import React from "react";
+import { memo, useEffect, useState } from 'react';
 import { Button, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Typography, Select } from '@mui/material';
 import dayjs from 'dayjs';
 import localizedFormat from 'dayjs/locale/es';
@@ -15,13 +15,13 @@ const cardStyle = {
   };
 
 export default function Contaminacion() {
-    const [mes, setMes] = React.useState('01/2051');
-    const [mesBoton, setMesBoton] = React.useState('');
-    const [periodo, setPeriodo] = React.useState('nocturno');
-    const [periodoBoton, setPeriodoBoton] = React.useState('');
-    const [botonClick, setBotonClick] = React.useState(false);
-    const [contadorClick, setContadorClick] = React.useState(0);
-    const [error, setError] = React.useState(null);
+    const [mes, setMes] = useState('01/2051');
+    const [mesBoton, setMesBoton] = useState('');
+    const [periodo, setPeriodo] = useState('nocturno');
+    const [periodoBoton, setPeriodoBoton] = useState('');
+    const [botonClick, setBotonClick] = useState(false);
+    const [contadorClick, setContadorClick] = useState(0);
+    const [error, setError] = useState(null);
 
     const handlePeriodoChange = (event) => {
         setPeriodo(event.target.value);
@@ -38,7 +38,7 @@ export default function Contaminacion() {
         setContadorClick(contadorClick + 1);
     };
 
-    const MemoizedMapaContaminacion = React.memo(MapaContaminacion);
+    const MemoizedMapaContaminacion = memo(MapaContaminacion);
 
     return (
         <Grid container rowSpacing={4.5} columnSpacing={2.75}>

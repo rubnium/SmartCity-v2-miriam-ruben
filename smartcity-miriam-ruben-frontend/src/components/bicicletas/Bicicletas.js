@@ -1,4 +1,4 @@
-import React from "react";
+import { memo, useEffect, useState } from 'react';
 import { Button, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Typography, Select } from '@mui/material';
 import dayjs from 'dayjs';
 import localizedFormat from 'dayjs/locale/es';
@@ -16,12 +16,12 @@ const cardStyle = {
   };
 
 export default function Bicicletas() {
-    const [fecha, setFecha] = React.useState('01/01/2051');
-    const [fechaBoton, setFechaBoton] = React.useState('');
-    const [hora, setHora] = React.useState('0:00');
-    const [botonClick, setBotonClick] = React.useState(false);
-    const [contadorClick, setContadorClick] = React.useState(0);
-    const [error, setError] = React.useState(null);
+    const [fecha, setFecha] = useState('01/01/2051');
+    const [fechaBoton, setFechaBoton] = useState('');
+    const [hora, setHora] = useState('0:00');
+    const [botonClick, setBotonClick] = useState(false);
+    const [contadorClick, setContadorClick] = useState(0);
+    const [error, setError] = useState(null);
 
     const handleHoraChange = (event) => {
         setHora(event.target.value);
@@ -37,6 +37,8 @@ export default function Bicicletas() {
         setFechaBoton(fecha);
         setContadorClick(contadorClick + 1);
     };
+
+    const MemoizedMapaBicicletas = memo(MapaBicicletas);
 
     return (
         <Grid container rowSpacing={4.5} columnSpacing={2.75}>
@@ -108,12 +110,11 @@ export default function Bicicletas() {
 
                             {botonClick && 
                             <Grid item xs={12}>
-                                <MapaBicicletas fecha={fechaBoton} hora={hora} contador={contadorClick} />
+                                <MemoizedMapaBicicletas fecha={fechaBoton} hora={hora} contador={contadorClick} />
                             </Grid>}
                         </Grid>
                     </CardContent>
                 </Card>
-                
             </Grid>
         </Grid>
     )

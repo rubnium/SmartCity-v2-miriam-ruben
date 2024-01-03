@@ -1,15 +1,16 @@
-import { memo, useEffect, useState } from 'react';
-import { MapContainer, useMap } from 'react-leaflet';
 import L from 'leaflet';
+import { useEffect, useState } from 'react';
+import { MapContainer, useMap } from 'react-leaflet';
 
 import api from '../../utils/api';
 import gM from '../../utils/generalMap';
 import '../../utils/Map.css';
 
-const obtenerMarcadores = async (fecha, hora, setData, setError) => {
+const obtenerMarcadores = (fecha, hora, setData, setError) => {
   try {
-    const response = await api.get('/bicicletasAforo/'+ fecha +'/'+hora);
-    setData(response.data);
+    api.get('/bicicletasAforo/'+ fecha +'/'+hora).then((res) => {
+      setData(res.data);
+    });
   } catch (error) {
     console.error('Error al obtener datos:', error);
     setError(error.message || 'Error en la solicitud');
@@ -28,6 +29,12 @@ function UseMap({ marcadores }) {
   map.addLayer(canvas);
 
   useEffect(() => {    
+    map.eachLayer(layer => {
+      if (layer instanceof L.Marker || layer instanceof L.Path) {
+          map.removeLayer(layer);
+      }
+    });
+
     marcadores.forEach(marcador => {
       const {lat, lon, bicicletas} = marcador;
       if (bicicletas !== 0){
@@ -58,8 +65,6 @@ const MapaBicicletas = (props) => {
     obtenerMarcadores(fechaLocal, hora, setMarcadores, setError);
   }, [fechaLocal, hora]);
 
-  const UseMapMemoized = memo(UseMap);
-
   return (
     <div>
       <p>Fecha: {fechaLocal}</p>
@@ -71,7 +76,7 @@ const MapaBicicletas = (props) => {
       ))}
       </ul>
       <MapContainer>
-        <UseMapMemoized marcadores={marcadores} />
+        <UseMap marcadores={marcadores} />
       </MapContainer>
     </div>
   );
