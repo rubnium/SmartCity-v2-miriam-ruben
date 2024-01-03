@@ -38,10 +38,12 @@ export default function Contaminacion() {
         setContadorClick(contadorClick + 1);
     };
 
+    const MemoizedMapaContaminacion = React.memo(MapaContaminacion);
+
     return (
         <Grid container rowSpacing={4.5} columnSpacing={2.75}>
             {/* row 1 */}
-            <Grid item xs={12} sx={{ mb: -2.25, ml: '10px', mt: '10px' }}>
+            <Grid item xs={12} sx={{ mb: -4.25, ml: '10px', mt: '10px' }}>
                 <Typography variant="h5" className="page-title">Contaminación acústica</Typography>
             </Grid>
             <Grid item xs={12}>
@@ -49,51 +51,48 @@ export default function Contaminacion() {
                     <CardContent>
                         <Grid container spacing={3}>
                             <Grid item xs={12}>
-                                <p>Hola mundo</p>
+                                <p>La contaminación acústica es un problema que afecta la calidad de vida de los ciudadanos en entornos urbanos, y proviene de fuentes como el tráfico, actividad industrial y eventos urbanos.</p>
+                                <p>Con el siguiente mapa se puede mostrar la magnitud del problema, lo cual puede promover cambios por parte de la sociedad como por las autoridades para implementar medidas y mejorar la planificación urbana.</p>
                             </Grid>
                             <Grid item container spacing={3} alignItems="center" xs={12}>
                                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                                    <p>Holas</p>
                                     <FormControl fullWidth>
-                                    <InputLabel id="mes-elegir-label">Mes</InputLabel>
-                                    <Select id="mes-elegir" value={mes} label="Mes" onChange={handleMesChange} >
-                                        <MenuItem value={"01/2051"}>Enero de 2051</MenuItem>
-                                        <MenuItem value={"02/2051"}>Febrero de 2051</MenuItem>
-                                        <MenuItem value={"03/2051"}>Marzo de 2051</MenuItem>
-                                        <MenuItem value={"04/2051"}>Abril de 2051</MenuItem>
-                                        <MenuItem value={"05/2051"}>Mayo de 2051</MenuItem>
-                                        <MenuItem value={"06/2051"}>Junio de 2051</MenuItem>
-                                        <MenuItem value={"07/2051"}>Julio de 2051</MenuItem>
-                                        <MenuItem value={"08/2051"}>Agosto de 2051</MenuItem>
-                                        <MenuItem value={"09/2051"}>Septiembre de 2051</MenuItem>
-                                        <MenuItem value={"10/2051"}>Octubre de 2051</MenuItem>
-                                        <MenuItem value={"11/2051"}>Noviembre de 2051</MenuItem>
-                                        <MenuItem value={"12/2051"}>Diciembre de 2051</MenuItem>
-                                    </Select>
-                                </FormControl>
+                                        <InputLabel id="mes-elegir-label">Mes</InputLabel>
+                                        <Select id="mes-elegir" value={mes} label="Mes" onChange={handleMesChange} >
+                                            <MenuItem value={"01/2051"}>Enero de 2051</MenuItem>
+                                            <MenuItem value={"02/2051"}>Febrero de 2051</MenuItem>
+                                            <MenuItem value={"03/2051"}>Marzo de 2051</MenuItem>
+                                            <MenuItem value={"04/2051"}>Abril de 2051</MenuItem>
+                                            <MenuItem value={"05/2051"}>Mayo de 2051</MenuItem>
+                                            <MenuItem value={"06/2051"}>Junio de 2051</MenuItem>
+                                            <MenuItem value={"07/2051"}>Julio de 2051</MenuItem>
+                                            <MenuItem value={"08/2051"}>Agosto de 2051</MenuItem>
+                                            <MenuItem value={"09/2051"}>Septiembre de 2051</MenuItem>
+                                            <MenuItem value={"10/2051"}>Octubre de 2051</MenuItem>
+                                            <MenuItem value={"11/2051"}>Noviembre de 2051</MenuItem>
+                                            <MenuItem value={"12/2051"}>Diciembre de 2051</MenuItem>
+                                        </Select>
+                                    </FormControl>
                                 </Grid>
                                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                                <FormControl fullWidth>
-                                    <InputLabel id="periodo-elegir-label">Periodo</InputLabel>
-                                    <Select id="periodo-elegir" value={periodo} label="Periodo" onChange={handlePeriodoChange} >
-                                        <MenuItem value={"nocturno"}>Madrugada (23-07)</MenuItem>
-                                        <MenuItem value={"diurno"}>Mañana-Tarde (07-19)</MenuItem>
-                                        <MenuItem value={"vespertino"}>Tarde-Noche (19-23)</MenuItem>
-                                        <MenuItem value={"24h"}>24 horas</MenuItem>
-                                    </Select>
-                                </FormControl>
+                                    <FormControl fullWidth>
+                                        <InputLabel id="periodo-elegir-label">Periodo</InputLabel>
+                                        <Select id="periodo-elegir" value={periodo} label="Periodo" onChange={handlePeriodoChange} >
+                                            <MenuItem value={"nocturno"}>Madrugada (23-07)</MenuItem>
+                                            <MenuItem value={"diurno"}>Mañana-Tarde (07-19)</MenuItem>
+                                            <MenuItem value={"vespertino"}>Tarde-Noche (19-23)</MenuItem>
+                                            <MenuItem value={"24h"}>24 horas</MenuItem>
+                                        </Select>
+                                    </FormControl>
                                 </Grid>
                                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                                    <p><br /> </p>
                                     <Button variant="outlined" onClick={handleBotonClick}>Cargar fecha</Button>
                                 </Grid>
                             </Grid>
-                            
-
-                            {botonClick && 
-                            <Grid item xs={12}>
-                                <MapaContaminacion fecha={mesBoton} periodo={periodoBoton} contador={contadorClick} />
-                            </Grid>}
+                                                        
+                            {botonClick &&
+                                <MemoizedMapaContaminacion fecha={mesBoton} periodo={periodoBoton} contador={contadorClick} />
+                            }
                         </Grid>
                     </CardContent>
                 </Card>
