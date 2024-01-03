@@ -3,6 +3,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from "@mui/icons-material/Menu";
 import PlaceIcon from '@mui/icons-material/Place';
 import PedalBikeIcon from '@mui/icons-material/PedalBike';
+import NoiseAwareIcon from '@mui/icons-material/NoiseAware';
 import { AppBar, Button, Drawer, IconButton, Toolbar, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
@@ -12,6 +13,7 @@ const navLinks = [
     { title: "Inicio", path: "/", icon: <HomeIcon /> },
     { title: "Paradas", path: "#", icon:<PlaceIcon /> },
     { title: "Bicicletas", path: "/bicicletas", icon: <PedalBikeIcon /> },
+    { title: "Contaminación", path: "/contaminacion", icon: <NoiseAwareIcon /> },
     { title: "GitHub", path: "https://github.com/rubnium/SmartCity-miriam-ruben", icon: <GitHubIcon />}
 ]
 
