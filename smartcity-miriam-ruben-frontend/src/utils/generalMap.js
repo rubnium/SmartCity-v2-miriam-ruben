@@ -8,7 +8,12 @@ const gM = {
       ),
     zoom: 11,
     minZoom: 8,
-    url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    //url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
+    //url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+    //url: "https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}"
+    url: "https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoicnViZW5nb21lejEwIiwiYSI6ImNscXplbXlodTA0NGEycXBpcXF6cnVsNGsifQ.xmQA7ZiG3bx7DJb_KxTJtg"
+    //sk.eyJ1IjoicnViZW5nb21lejEwIiwiYSI6ImNscXplbXlodTA0NGEycXBpcXF6cnVsNGsifQ.xmQA7ZiG3bx7DJb_KxTJtg
 };
 
 export default gM;

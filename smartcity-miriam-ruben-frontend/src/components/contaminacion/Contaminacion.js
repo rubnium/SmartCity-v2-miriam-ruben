@@ -1,17 +1,12 @@
 import { memo, useEffect, useState } from 'react';
 import { Button, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Typography, Select } from '@mui/material';
-import dayjs from 'dayjs';
-import localizedFormat from 'dayjs/locale/es';
-import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import NoiseAwareIcon from '@mui/icons-material/NoiseAware';
 
 import MapaContaminacion from "./MapaContaminacion";
 
-dayjs.locale('es');
-
 const cardStyle = {
     margin: '10px',
-    width: 'calc(100% - 20px)', // Garantiza que ocupe el 100% menos el doble del margen
+    width: 'calc(100% - 20px)',
   };
 
 export default function Contaminacion() {
@@ -43,7 +38,7 @@ export default function Contaminacion() {
     return (
         <Grid container rowSpacing={4.5} columnSpacing={2.75}>
             <Grid item xs={12} sx={{ mb: -4.25, ml: '10px', mt: '10px' }}>
-                <Typography variant="h5" className="page-title">Contaminación acústica</Typography>
+                <Typography variant="h5" className="page-title"><NoiseAwareIcon sx={{ fontSize: 28, verticalAlign: 'middle', marginRight: 1 }}/>Contaminación acústica</Typography>
             </Grid>
             <Grid item xs={12}>
                 <Card sx={{ minWidth: 275 }} style={cardStyle}>
