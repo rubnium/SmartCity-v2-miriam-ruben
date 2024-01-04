@@ -30,6 +30,8 @@ export default function Paradas(props) {
         setTabContent(pestanasContenido[newValue]);
     };
 
+    const MemoizedMapaParadas = memo(MapaParadas);
+
     return (
         <Grid container rowSpacing={4.5} columnSpacing={2.75}>
             <Grid item xs={12} sx={{ mb: -4.25, ml: '10px', mt: '10px' }}>
@@ -54,7 +56,7 @@ export default function Paradas(props) {
                             </Box>
                             </Grid>
                             <Grid item xs={6} sm={4} md={3} lg={2}>
-                                <MapaParadas tipo={tabContent} />
+                                <MemoizedMapaParadas tipo={tabContent} />
                             </Grid>
                         </Grid>
                     </CardContent>

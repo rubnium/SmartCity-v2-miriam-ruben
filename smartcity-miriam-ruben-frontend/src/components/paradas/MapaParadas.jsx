@@ -21,7 +21,7 @@ const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => 
   
   /*try {
     api.get('/bicicletasAforo/'+ fecha +'/'+hora).then((res) => {
-      setData(res.data);
+      setDeshabilitados(res.data);
     });
   } catch (error) {
     console.error('Error al obtener datos:', error);
@@ -29,9 +29,19 @@ const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => 
   }*/
 };
 
-function UseMap({ marcadores }) {
+function UseMap({ marcadores, tipo }) {
   const map = useMap();
-  map.setView(gM.centro, gM.zoom);
+	
+	var zoom = gM.zoom;
+	if (tipo === 'autobus') {
+		zoom = zoom+1;
+	} else if (tipo === 'cercanias') {
+		zoom = zoom-1;
+	} else if (tipo === 'interurbano') {
+		zoom = zoom-2;
+	}
+
+  map.setView(gM.centro, zoom);
   L.tileLayer(gM.url).addTo(map);
 
   map.setMaxBounds(gM.limites);
@@ -41,27 +51,26 @@ function UseMap({ marcadores }) {
   const canvas = L.canvas();
   map.addLayer(canvas);
 
-  /*
   useEffect(() => {    
     map.eachLayer(layer => {
       if (layer instanceof L.Marker || layer instanceof L.Path) {
           map.removeLayer(layer);
       }
     });
-
     
     marcadores.forEach(marcador => {
-//      const {lat, lon, bicicletas, nombre_vial, numero} = marcador;
+			const {lat, lon, linea, parada} = marcador;
 
       L.circleMarker([lat, lon], {
-          renderer: canvas
+          renderer: canvas,
+					radius: 5
       }).addTo(map).bindPopup(`<div style="text-align: center;">
-        Texto
+				${linea}<br />
+				${parada}
       </div>`);   
 
     });
-  }, [marcadores]);
-*/
+	}, [marcadores]);
 
   return null;
 }
@@ -80,15 +89,15 @@ const MapaParadas = (props) => {
     <Grid item container xs={12}>
       <Grid item xs={12} md={3} lg={2}>
         <p>
-            {tipo}
+        	{tipo}
         </p>
       </Grid>
-      {/*
+      
       <Grid item xs={12} md={9} lg={10}>
         <MapContainer>
-          <UseMap marcadores={marcadores} />
+          <UseMap marcadores={marcadores} tipo={tipo}/>
         </MapContainer>
-      </Grid>*/}
+      </Grid>
     </Grid>
   );
 }
