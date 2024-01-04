@@ -10,7 +10,7 @@ import '../../utils/Map.css';
 
 const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => {
   try {
-    api.get('/paradas/'+ tipo).then((res) => {
+    api.get('/paradas/'+ tipo + '/desh=0').then((res) => {
         setMarcadores(res.data);
     });
   } catch (error) {
@@ -18,21 +18,25 @@ const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => 
     setError(error.message || 'Error en la solicitud');
   }
 
-  /*try {
-    api.get('/paradas/'+ fecha +'/'+hora).then((res) => {
+  try {
+    api.get('/paradas/'+ tipo +'/desh=1').then((res) => {
       setDeshabilitados(res.data);
     });
   } catch (error) {
     console.error('Error al obtener datos:', error);
     setError(error.message || 'Error en la solicitud');
-  }*/
+  }
 };
 
-function deshabilitarParada() {
+function deshabilitarParada(linea, parada) {
 	console.log("deshabilitada")
 }
 
-function UseMap({ marcadores, tipo }) {
+function habilitarParada(linea, parada) {
+	console.log("habilitada")
+}
+
+function UseMap({ marcadores, marcadoresDesh, tipo }) {
   const map = useMap();
 
 	var zoom = gM.zoom;
@@ -74,15 +78,22 @@ function UseMap({ marcadores, tipo }) {
 				lineas[linea] = [coordenadas];
 			}
 
-      L.circleMarker([lat, lon], {
+      const marker = L.circleMarker([lat, lon], {
           renderer: canvas,
 					radius: 5
       }).addTo(map).bindPopup(`<div style="text-align: center;">
 				${linea}<br />
 				${parada}<br />
-				<Button onclick={deshabilitarParada}>Deshabilitar</button>
+        <a href="#" class="deshabilitar-link">Deshabilitar</a>
       </div>`);   
 
+      marker.on('popupopen', () => {
+        const deshabilitarLink = document.querySelector('.deshabilitar-link');
+        deshabilitarLink.addEventListener('click', (event) => {
+          event.preventDefault(); // Evitar que el enlace realice la acción por defecto (navegar a otra página)
+          deshabilitarParada(linea, parada); // Llamar a la función deshabilitarParada con los parámetros necesarios
+        });
+      });
     });
 
 		Object.keys(lineas).forEach(linea => {
@@ -96,7 +107,22 @@ function UseMap({ marcadores, tipo }) {
 					.openOn(map);
 			});
 		});
-	}, [marcadores]);
+
+    marcadoresDesh.forEach(marcadorDesh => {
+			const {lat, lon, linea, parada, motivo} = marcadorDesh;
+      L.circleMarker([lat, lon], {
+          renderer: canvas,
+					radius: 3,
+          color: 'orange'
+      }).addTo(map).bindPopup(`<div style="text-align: center;">
+				${linea}<br />
+				${parada}<br />
+        ${motivo}<br />
+				<a href="#" class="habilitar-link">Habilitar</a>
+      </div>`);   
+
+    });
+	}, [marcadores, marcadoresDesh]);
 
   return null;
 }
@@ -111,17 +137,20 @@ const MapaParadas = (props) => {
     obtenerMarcadores(tipo, setMarcadores, setParadasDeshabilitadas, setError);
   }, [tipo]);
 
+  var mapSizeValues = [9,10] //tamaño del mapa si hay paradas deshabilitadas
+  if (paradasDeshabilitadas.length === 0) {
+    mapSizeValues = [12,12] //tamaño del mapa si no hay paradas deshabilitadas
+  }
+
   return (
     <Grid item container xs={12}>
+      {paradasDeshabilitadas.length > 0 && 
       <Grid item xs={12} md={3} lg={2}>
-        <p>
-        	{tipo}
-        </p>
-      </Grid>
-      
-      <Grid item xs={12} md={9} lg={10}>
+        <p>Hay paradas</p>
+      </Grid>}
+      <Grid item xs={12} md={mapSizeValues[0]} lg={mapSizeValues[1]}>
         <MapContainer>
-          <UseMap marcadores={marcadores} tipo={tipo}/>
+          <UseMap marcadores={marcadores} marcadoresDesh={paradasDeshabilitadas} tipo={tipo}/>
         </MapContainer>
       </Grid>
     </Grid>
