@@ -2,13 +2,15 @@ import { memo, useEffect, useState } from 'react';
 import PlaceIcon from '@mui/icons-material/Place';
 import { Box, Card, CardContent, Grid, Tab, Tabs, Typography } from '@mui/material';
 
+import MapaParadas from "./MapaParadas";
+
 const cardStyle = {
     margin: '10px',
     width: 'calc(100% - 20px)',
 };
 
 const pestanas = [ "Autobús", "Cercanías", "Interurbano", "Metro", "Metro ligero"];
-const pestanasContenido = [];
+const pestanasContenido = ['autobus', 'cercanias', 'interurbano', 'metro', 'metroLigero'];
 
 function a11yProps(index) {
     return {
@@ -21,9 +23,11 @@ export default function Paradas(props) {
     const {tabTitle} = props;
     document.title = tabTitle;
     const [tabValor, setTab] = useState(0);
+    const [tabContent, setTabContent] = useState(pestanasContenido[0]);
 
     const handleTabChange = (event, newValue) => {
         setTab(newValue);
+        setTabContent(pestanasContenido[newValue]);
     };
 
     return (
@@ -50,7 +54,7 @@ export default function Paradas(props) {
                             </Box>
                             </Grid>
                             <Grid item xs={6} sm={4} md={3} lg={2}>
-                                {/*<ExampleMap />*/}
+                                <MapaParadas tipo={tabContent} />
                             </Grid>
                         </Grid>
                     </CardContent>

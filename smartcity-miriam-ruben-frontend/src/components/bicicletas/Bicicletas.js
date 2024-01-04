@@ -66,12 +66,12 @@ export default function Bicicletas(props) {
                                     <Button variant="outlined" onClick={handleBotonClick} >Cargar fecha</Button>
                                 </Grid>
                             </Grid>
-                            <Grid item xs={12} />
+                            {botonClick && <Grid item xs={12} />}
                             {botonClick &&
                             <Grid item xs={12}>
                                 <EstadisticasBicicletas fecha={fechaBoton} contador={contadorClick}/>
                             </Grid>}
-                            <Grid item xs={12} />
+                            {botonClick && <Grid item xs={12} />}
                             {botonClick &&
                             <Grid item xs={12}>
                                 <Typography variant="h6">Mapa de disponibilidad</Typography>
