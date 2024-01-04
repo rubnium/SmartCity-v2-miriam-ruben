@@ -16,7 +16,9 @@ const cardStyle = {
     width: 'calc(100% - 20px)',
   };
 
-export default function Bicicletas() {
+export default function Bicicletas(props) {
+    const {tabTitle} = props;
+    document.title = tabTitle;
     const [fecha, setFecha] = useState('01/01/2051');
     const [fechaBoton, setFechaBoton] = useState('');
     const [hora, setHora] = useState('0:00');

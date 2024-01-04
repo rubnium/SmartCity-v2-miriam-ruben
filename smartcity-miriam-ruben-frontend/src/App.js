@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from './components/Main';
+import Paradas from './components/paradas/Paradas';
 import Bicicletas from './components/bicicletas/Bicicletas';
 import Contaminacion from './components/contaminacion/Contaminacion';
 import Navbar from "./components/navbar/Navbar";
 import logo from './logo.svg';
 import './App.css';
+import config from './config';
 
 function App() {
   return (
@@ -14,8 +16,9 @@ function App() {
           <Navbar />
           <Routes>
               <Route path="/" element={<Main/>} />
-              <Route path="/bicicletas" element={<Bicicletas/>} />
-              <Route path="/contaminacion" element={<Contaminacion/>} />
+              <Route path="/paradas" element={<Paradas tabTitle={"Paradas | "+config.tabTitle}/>} />
+              <Route path="/bicicletas" element={<Bicicletas tabTitle={"Bicicletas | "+config.tabTitle}/>} />
+              <Route path="/contaminacion" element={<Contaminacion tabTitle={"Contaminación | "+config.tabTitle} />} />
           </Routes>
           <footer className="footer-container"><p>
             Desarrollado por Miriam Fernández Osuna y Rubén Gómez Villegas<br/>

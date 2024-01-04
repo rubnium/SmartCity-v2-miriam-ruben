@@ -11,7 +11,7 @@ import NavListDrawer from "./NavListDrawer";
 
 const navLinks = [
     { title: "Inicio", path: "/", icon: <HomeIcon /> },
-    { title: "Paradas", path: "#", icon:<PlaceIcon /> },
+    { title: "Paradas", path: "/paradas", icon:<PlaceIcon /> },
     { title: "Bicicletas", path: "/bicicletas", icon: <PedalBikeIcon /> },
     { title: "Contaminación", path: "/contaminacion", icon: <NoiseAwareIcon /> },
     { title: "GitHub", path: "https://github.com/rubnium/SmartCity-miriam-ruben", icon: <GitHubIcon />}

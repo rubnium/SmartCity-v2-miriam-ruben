@@ -4,7 +4,7 @@ import ExampleMap from "./ExampleMap";
 
 const cardStyle = {
     margin: '10px',
-    width: 'calc(100% - 20px)', // Garantiza que ocupe el 100% menos el doble del margen
+    width: 'calc(100% - 20px)',
   };
 
 export default function Main() {

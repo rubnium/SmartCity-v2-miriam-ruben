@@ -9,7 +9,9 @@ const cardStyle = {
     width: 'calc(100% - 20px)',
   };
 
-export default function Contaminacion() {
+export default function Contaminacion(props) {
+    const {tabTitle} = props;
+    document.title = tabTitle;
     const [mes, setMes] = useState('01/2051');
     const [mesBoton, setMesBoton] = useState('');
     const [periodo, setPeriodo] = useState('nocturno');
