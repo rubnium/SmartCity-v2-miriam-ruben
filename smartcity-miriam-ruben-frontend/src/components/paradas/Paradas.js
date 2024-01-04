@@ -45,15 +45,13 @@ export default function Paradas(props) {
                                 <p>Hola mundo</p>
                             </Grid>
                             <Grid item xs={12}>
-                            <Box sx={{ width: '100%' }}>
-                                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                                    <Tabs value={tabValor} onChange={handleTabChange}>
+                                <Box sx={{ maxWidth: { xs: 320, sm: 480 }, /*width: '100%',*/ borderBottom: 1, borderColor: 'divider' }}>
+                                    <Tabs variant="scrollable" scrollButtons="auto" value={tabValor} onChange={handleTabChange}>
                                         {pestanas.map((pestana, index) => (
                                             <Tab key={index} label={pestana} {...a11yProps(index)} />
                                         ))}
                                     </Tabs>
                                 </Box>
-                            </Box>
                             </Grid>
                             <Grid item xs={6} sm={4} md={3} lg={2}>
                                 <MemoizedMapaParadas tipo={tabContent} />

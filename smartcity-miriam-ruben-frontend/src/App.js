@@ -8,6 +8,7 @@ import Navbar from "./components/navbar/Navbar";
 import logo from './logo.svg';
 import './App.css';
 import config from './config';
+import ExampleMap from "./utils/ExampleMap"; //evita que el mapa se rompa
 
 function App() {
   return (

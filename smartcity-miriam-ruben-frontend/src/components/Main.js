@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardContent, Grid, Typography } from '@mui/material';
-import ExampleMap from "./ExampleMap";
 
 const cardStyle = {
     margin: '10px',
@@ -23,7 +22,6 @@ export default function Main() {
                             </Grid>
                             <Grid item xs={6} sm={4} md={3} lg={2}>
                                 <p>Holas</p>
-                                <ExampleMap />
                             </Grid>
                         </Grid>
                     </CardContent>

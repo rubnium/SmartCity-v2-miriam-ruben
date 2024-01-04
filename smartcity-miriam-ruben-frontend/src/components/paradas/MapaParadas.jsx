@@ -1,6 +1,6 @@
 import L from 'leaflet';
 import CircleIcon from '@mui/icons-material/Circle';
-import { Grid } from '@mui/material';
+import { Button, Grid } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
 
@@ -18,9 +18,8 @@ const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => 
     setError(error.message || 'Error en la solicitud');
   }
 
-  
   /*try {
-    api.get('/bicicletasAforo/'+ fecha +'/'+hora).then((res) => {
+    api.get('/paradas/'+ fecha +'/'+hora).then((res) => {
       setDeshabilitados(res.data);
     });
   } catch (error) {
@@ -29,9 +28,13 @@ const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => 
   }*/
 };
 
+function deshabilitarParada() {
+	console.log("deshabilitada")
+}
+
 function UseMap({ marcadores, tipo }) {
   const map = useMap();
-	
+
 	var zoom = gM.zoom;
 	if (tipo === 'autobus') {
 		zoom = zoom+1;
@@ -57,19 +60,42 @@ function UseMap({ marcadores, tipo }) {
           map.removeLayer(layer);
       }
     });
+
+		const lineas = {}; // Almacena las coordenadas de los puntos para cada línea
     
     marcadores.forEach(marcador => {
 			const {lat, lon, linea, parada} = marcador;
+
+			const coordenadas = [lat, lon];
+
+			if (lineas[linea]) {
+				lineas[linea].push(coordenadas);
+			} else {
+				lineas[linea] = [coordenadas];
+			}
 
       L.circleMarker([lat, lon], {
           renderer: canvas,
 					radius: 5
       }).addTo(map).bindPopup(`<div style="text-align: center;">
 				${linea}<br />
-				${parada}
+				${parada}<br />
+				<Button onclick={deshabilitarParada}>Deshabilitar</button>
       </div>`);   
 
     });
+
+		Object.keys(lineas).forEach(linea => {
+			const polyline = L.polyline(lineas[linea], { color: 'blue' }).addTo(map);
+
+			polyline.on('click', (event) => {
+				const latlng = event.latlng;
+				L.popup()
+					.setLatLng(latlng)
+					.setContent(`<div style="text-align: center;">Línea ${linea}</div>`)
+					.openOn(map);
+			});
+		});
 	}, [marcadores]);
 
   return null;
