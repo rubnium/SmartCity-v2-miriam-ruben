@@ -23,6 +23,7 @@ function UseMap({ marcadores }) {
   L.tileLayer(gM.url).addTo(map);
 
   map.setMaxBounds(gM.limites);
+  map.setMinZoom(gM.minZoom);
   map.options.bounceAtZoomLimits = false;
 
   const canvas = L.canvas();
@@ -40,7 +41,10 @@ function UseMap({ marcadores }) {
       if (bicicletas !== 0){
         L.circleMarker([lat, lon], {
           renderer: canvas
-        }).addTo(map).bindPopup('Bicis: '+bicicletas);   
+        }).addTo(map).bindPopup(`<div style="text-align: center;">
+        <b>Bicicletas: ${bicicletas}</b><br />
+        <a target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}&travelmode=walking">Abrir en Maps</a>
+      </div>`);   
       }
     });
   }, [marcadores]);
@@ -50,24 +54,16 @@ function UseMap({ marcadores }) {
 
 const MapaBicicletas = (props) => {
   const { fecha, hora, contador } = props;
-  const [fechaLocal, setFecha] = useState('');
   const [marcadores, setMarcadores] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setFecha(fecha);
-    if (contador === 1) {
-      obtenerMarcadores(fechaLocal, hora, setMarcadores, setError);
-    }
-  }, [contador]);
-
-  useEffect(() => {
-    obtenerMarcadores(fechaLocal, hora, setMarcadores, setError);
-  }, [fechaLocal, hora]);
+    obtenerMarcadores(fecha, hora, setMarcadores, setError);
+  }, [fecha, hora]);
 
   return (
     <div>
-      <p>Fecha: {fechaLocal}</p>
+      <p>Fecha: {fecha}</p>
       <p>Hora: {hora} {marcadores.length}</p>
 
       <ul>

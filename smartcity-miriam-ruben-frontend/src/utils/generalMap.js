@@ -7,6 +7,7 @@ const gM = {
         [38.916897, -0.345458]
       ),
     zoom: 11,
+    minZoom: 8,
     url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 };
 

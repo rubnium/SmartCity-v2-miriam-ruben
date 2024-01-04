@@ -42,26 +42,24 @@ export default function Bicicletas() {
 
     return (
         <Grid container rowSpacing={4.5} columnSpacing={2.75}>
-            {/* row 1 */}
-            <Grid item xs={12} sx={{ mb: -2.25, ml: '10px', mt: '10px' }}>
-                <Typography variant="h5" className="page-title">Bicicletas</Typography>
+            <Grid item xs={12} sx={{ mb: -4.25, ml: '10px', mt: '10px' }}>
+                <Typography variant="h5" className="page-title">Bicicletas públicas</Typography>
             </Grid>
             <Grid item xs={12}>
                 <Card sx={{ minWidth: 275 }} style={cardStyle}>
                     <CardContent>
                         <Grid container spacing={3}>
                             <Grid item xs={12}>
-                                <p>Hola mundo</p>
+                                <p>El uso de bicicletas es una buena alternativa al transporte a motor, ya que mejora la calidad de vida de la ciudad al reducir el ruido del tráfico, disminuye la contaminación, motiva la actividad física y resulta una opción económica. La ciudad ofrece bicicletas públicas eléctricas mediante abono, eliminando así la necesidad de que los clientes adquieran y mantengan su propia bicicleta, y permitiéndoles un desplazamiento rápido cuando lo necesiten.</p>
+                                <p>Con la siguiente información, se puede analizar el uso de las bicicletas a lo largo del día, además de comprobar en un mapa dónde el usuario pueda localizar una bicicleta libre disponible.</p>
                             </Grid>
                             <Grid item container spacing={3} alignItems="center" xs={12}>
                                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                                    <p>Holas</p>
                                     <LocalizationProvider locale="es" dateAdapter={AdapterDayjs}>
                                         <DatePicker label="Fecha" value={dayjs(fecha, 'DD/MM/YYYY')} format="DD/MM/YYYY" minDate={dayjs('2051-01-01')} maxDate={dayjs('2051-12-31')} onChange={handleFechaChange} />
                                     </LocalizationProvider>
                                 </Grid>
                                 <Grid item xs={6} sm={4} md={3} lg={2}>
-                                    <p><br /> </p>
                                     <Button variant="outlined" onClick={handleBotonClick} >Cargar fecha</Button>
                                 </Grid>
                             </Grid>

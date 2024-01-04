@@ -38,6 +38,7 @@ function UseMap({ marcadores, periodo, riesgos }) {
   L.tileLayer(gM.url).addTo(map);
 
   map.setMaxBounds(gM.limites);
+  map.setMinZoom(gM.minZoom);
   map.options.bounceAtZoomLimits = false;
 
   const canvas = L.canvas();
