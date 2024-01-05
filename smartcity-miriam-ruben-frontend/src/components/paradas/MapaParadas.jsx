@@ -8,9 +8,6 @@ import api from '../../utils/api';
 import gM from '../../utils/generalMap';
 import '../../utils/Map.css';
 
-var mostrarPopup = false;
-var tipoGlobal = "";
-
 const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => {
   try {
     api.get('/paradas/'+ tipo + '/desh=0').then((res) => {
@@ -33,7 +30,6 @@ const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => 
 
 function deshabilitarParada(linea, parada) {
 	console.log("deshabilitada");
-  mostrarPopup = true;
 }
 
 function habilitarParada(linea, parada) {
@@ -139,15 +135,12 @@ const MapaParadas = (props) => {
 
   useEffect(() => {
     obtenerMarcadores(tipo, setMarcadores, setParadasDeshabilitadas, setError);
-    tipoGlobal = tipo;
-    console.log(tipoGlobal);
-    PopupDesHabilitar.prueba();
   }, [tipo]);
 
   var mapSizeValues = [9,10] //tamaño del mapa si hay paradas deshabilitadas
   if (paradasDeshabilitadas.length === 0) {
     mapSizeValues = [12,12] //tamaño del mapa si no hay paradas deshabilitadas
-  }
+  };
 
   return (
     <Grid item container xs={12}>
@@ -160,7 +153,7 @@ const MapaParadas = (props) => {
           <UseMap marcadores={marcadores} marcadoresDesh={paradasDeshabilitadas} tipo={tipo}/>
         </MapContainer>
       </Grid>
-      {mostrarPopup && <PopupDesHabilitar tipo={tipo}/>}
+      <PopupDesHabilitar tipo={tipo}/>
     </Grid>
   );
 }
