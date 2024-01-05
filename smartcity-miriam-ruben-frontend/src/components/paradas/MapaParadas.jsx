@@ -4,8 +4,7 @@ import { useContext, useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
 
 import PopupDesHabilitar from './PopupDesHabilitar';
-import { CtxPopupProvider } from './ContextoPopup';
-import { ContextoPopup } from './ContextoPopup';
+import { CtxPopupProvider, ContextoPopup } from './ContextoPopup';
 import api from '../../utils/api';
 import gM from '../../utils/generalMap';
 import '../../utils/Map.css';
@@ -30,19 +29,25 @@ const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => 
   }
 };
 
+function useDeshabilitarParada() {
+  const { setMostrarPopup, setParada, setLinea, setModo } = useContext(ContextoPopup);
 
+  function deshabilitar(linea, parada) {
+    console.log("deshabilitada");
+    setMostrarPopup(true);
+    setParada(parada);
+    setLinea(linea);
+    setModo("deshabilitar");
+  }
 
-function habilitarParada(linea, parada) {
-	console.log("habilitada");
+  return {
+    deshabilitar
+  }
 }
 
 function UseMap({ marcadores, marcadoresDesh, tipo }) {
   const map = useMap();
-  function deshabilitarParada(linea, parada) {
-    console.log("deshabilitada");
-    const { setMostrarPopup } = useContext(ContextoPopup);
-    setMostrarPopup(true);
-  }
+  const { deshabilitar } = useDeshabilitarParada();
 
 	var zoom = gM.zoom;
 	if (tipo === 'autobus') {
@@ -96,7 +101,7 @@ function UseMap({ marcadores, marcadoresDesh, tipo }) {
         const deshabilitarLink = document.querySelector('.deshabilitar-link');
         deshabilitarLink.addEventListener('click', (event) => {
           event.preventDefault(); // Evitar que el enlace realice la acción por defecto (navegar a otra página)
-          deshabilitarParada(linea, parada);
+          deshabilitar(linea, parada);
         });
       });
     });
@@ -117,7 +122,7 @@ function UseMap({ marcadores, marcadoresDesh, tipo }) {
 			const {lat, lon, linea, parada, motivo} = marcadorDesh;
       L.circleMarker([lat, lon], {
           renderer: canvas,
-					radius: 3,
+					radius: 4,
           color: 'orange'
       }).addTo(map).bindPopup(`<div style="text-align: center;">
 				${linea}<br />

@@ -3,16 +3,18 @@ import { useContext, useEffect, useState } from 'react';
 import { ContextoPopup } from './ContextoPopup';
 
 const PopupDesHabilitar = (props) => {
-    const { modo, tipo, parada, linea } = props;
-    const { mostrarPopup } = useContext(ContextoPopup);
-    const handleDialogClose = () => {};
+    const { tipo } = props;
+    const { mostrarPopup, setMostrarPopup, parada, linea, modo } = useContext(ContextoPopup);
+    const handleDialogClose = () => {
+        setMostrarPopup(false);
+    };
 
     var tituloPopup = "";
     var boton = "";
     if (modo === "habilitar") {
         tituloPopup = "Habilitar parada";
         boton = "Habilitar";
-    } else if (modo === "deshabiilitar") {
+    } else if (modo === "deshabilitar") {
         tituloPopup = "Deshabilitar parada";
         boton = "Deshabilitar";
     }
@@ -21,7 +23,7 @@ const PopupDesHabilitar = (props) => {
         <Dialog open={mostrarPopup} onClose={handleDialogClose} fullWidth maxWidth="sm">
             <DialogTitle>{tituloPopup}</DialogTitle>
             <DialogContent>
-            <p>Parada: X, linea X</p>
+            <p>Parada: {parada}, linea {linea}</p>
             { modo === "habilitar" && <p>Motivo de deshabilitación:<br/><i>Insertar motivo</i></p>}
             { modo === "deshabilitar" && <TextField label="Motivo de deshabilitación" fullWidth />}
             </DialogContent>
