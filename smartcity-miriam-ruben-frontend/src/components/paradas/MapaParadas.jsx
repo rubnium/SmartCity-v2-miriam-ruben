@@ -157,22 +157,22 @@ const MapaParadas = (props) => {
   };
 
   return (
-    <Grid item container xs={12}>
+    <Grid item container xs={12} spacing={2}>
       {paradasDeshabilitadas.length > 0 && 
-      <Grid item xs={12} md={3} lg={2}>
+      <Grid item xs={12} md={3} lg={8}>
         <Typography variant="h6"><CircleIcon sx={{ fontSize: 20, verticalAlign: 'middle', marginRight: 1, color: 'orange' }}/>Paradas deshabilitadas</Typography>
-        <ul>
+        <ul style={{ paddingLeft: 11 }}>
         {paradasDeshabilitadas.map((parada, index) => (
-          <li key={index}>
-            {parada.parada}, linea {parada.linea}<br/>
-            <i>{parada.motivo}</i>
-            <Button variant="outlined" style={{ margin: '4px 8px', padding: '4px 8px', fontSize: '12px' }}>Habilitar</Button>
+          <li key={index} style={{ marginBottom: '8px' }}>
+            <div>{parada.parada}, linea {parada.linea}<br/>
+            <i>{parada.motivo}</i></div>
+            <div><Button variant="outlined" style={{ margin: '4px 8px', padding: '4px 8px', fontSize: '12px' }}>Habilitar</Button></div>
           </li>
         ))}
         </ul>
       </Grid>}
       <CtxPopupProvider>
-      <Grid item xs={12} md={mapSizeValues[0]} lg={mapSizeValues[1]}>
+      <Grid item xs={12} md={mapSizeValues[0]} lg={2}>
         <MapContainer>
           <UseMap marcadores={marcadores} marcadoresDesh={paradasDeshabilitadas} tipo={tipo}/>
         </MapContainer>
