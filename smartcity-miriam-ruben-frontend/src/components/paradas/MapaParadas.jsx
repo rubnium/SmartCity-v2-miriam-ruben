@@ -36,7 +36,6 @@ function useDeshabilitarParada() {
   const { setMostrarPopup, setParada, setLinea, setModo } = useContext(ContextoPopup);
 
   function deshabilitar(linea, parada) {
-    console.log("deshabilitada");
     setMostrarPopup(true);
     setParada(parada);
     setLinea(linea);
@@ -48,9 +47,26 @@ function useDeshabilitarParada() {
   }
 }
 
+function useHabilitarParada() {
+  const { setMostrarPopup, setParada, setLinea, setMotivoLeido, setModo } = useContext(ContextoPopup);
+
+  function habilitar(linea, parada, motivo) {
+    setMostrarPopup(true);
+    setParada(parada);
+    setLinea(linea);
+    setMotivoLeido(motivo);
+    setModo("habilitar");
+  }
+
+  return {
+    habilitar
+  }
+}
+
 function UseMap({ marcadores, marcadoresDesh, tipo }) {
   const map = useMap();
   const { deshabilitar } = useDeshabilitarParada();
+  const { habilitar } = useHabilitarParada();
 
 	var zoom = gM.zoom;
 	if (tipo === 'autobus') {
@@ -124,7 +140,7 @@ function UseMap({ marcadores, marcadoresDesh, tipo }) {
 
     marcadoresDesh.forEach(marcadorDesh => {
 			const {lat, lon, linea, parada, motivo} = marcadorDesh;
-      L.circleMarker([lat, lon], {
+      const marker = L.circleMarker([lat, lon], {
           renderer: canvas,
 					radius: 4,
           color: 'orange'
@@ -135,6 +151,13 @@ function UseMap({ marcadores, marcadoresDesh, tipo }) {
 				<a href="#" class="habilitar-link">Habilitar</a>
       </div>`);   
 
+      marker.on('popupopen', () => {
+        const habilitarLink = document.querySelector('.habilitar-link');
+        habilitarLink.addEventListener('click', (event) => {
+          event.preventDefault(); //Evitar que el enlace realice la acción por defecto (navegar a otra página)
+          habilitar(linea, parada, motivo);
+        });
+      });
     });
 	}, [marcadores, marcadoresDesh]);
 
@@ -147,6 +170,7 @@ const MapaParadas = (props) => {
   const [paradasDeshabilitadas, setParadasDeshabilitadas] = useState([]);
   const [error, setError] = useState(null);
   const { contador } = useContext(ContextoPopup);
+  const { habilitar } = useHabilitarParada();
 
   useEffect(() => {
     obtenerMarcadores(tipo, setMarcadores, setParadasDeshabilitadas, setError);
@@ -167,7 +191,7 @@ const MapaParadas = (props) => {
           <li key={index} style={{ marginBottom: '8px' }}>
             <div>{parada.parada}, línea {parada.linea}<br/>
             <i>{parada.motivo}</i></div>
-            <div><Button variant="outlined" style={{ margin: '4px 8px', padding: '4px 8px', fontSize: '12px' }}>Habilitar</Button></div>
+            <div><Button variant="outlined" style={{ margin: '4px 8px', padding: '4px 8px', fontSize: '12px' }} onClick={() => habilitar(parada.linea, parada.parada, parada.motivo)}>Habilitar</Button></div>
           </li>
         ))}
         </ul>

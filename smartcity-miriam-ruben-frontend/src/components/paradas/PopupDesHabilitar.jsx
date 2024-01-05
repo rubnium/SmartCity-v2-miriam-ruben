@@ -5,7 +5,7 @@ import api from '../../utils/api';
 
 const PopupDesHabilitar = (props) => {
     const { tipo } = props;
-    const { mostrarPopup, setMostrarPopup, parada, linea, modo, contador, setContador } = useContext(ContextoPopup);
+    const { mostrarPopup, setMostrarPopup, parada, linea, motivoLeido, modo, contador, setContador } = useContext(ContextoPopup);
     const [ motivo, setMotivo ] = useState("");
     const [ error, setError ] = useState(null);
     const handleDialogClose = () => {
@@ -48,10 +48,10 @@ const PopupDesHabilitar = (props) => {
 
     return (
         <Dialog open={mostrarPopup} onClose={handleDialogClose} fullWidth maxWidth="sm">
-            <DialogTitle>{tituloPopup}</DialogTitle>
+            <DialogTitle>¿{tituloPopup}?</DialogTitle>
             <DialogContent>
             <p>Parada: {parada}, linea {linea}</p>
-            { modo === "habilitar" && <p>Motivo de deshabilitación:<br/><i>Insertar motivo</i></p>}
+            { modo === "habilitar" && <p>Motivo de deshabilitación:<br/><i>{motivoLeido}</i></p>}
             { modo === "deshabilitar" && <TextField value={motivo} onChange={handleMotivoChange} label="Motivo de deshabilitación" fullWidth />}
             </DialogContent>
             <DialogActions>
