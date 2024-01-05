@@ -9,9 +9,10 @@ export function CtxPopupProvider({ children }) {
   const [parada, setParada] = useState("");
   const [linea, setLinea] = useState("");
   const [modo, setModo] = useState("");
+  const [contador, setContador] = useState(0);
 
   return (
-    <ContextoPopup.Provider value={{ mostrarPopup, setMostrarPopup, parada, setParada, linea, setLinea, modo, setModo }}>
+    <ContextoPopup.Provider value={{ mostrarPopup, setMostrarPopup, parada, setParada, linea, setLinea, modo, setModo, contador, setContador }}>
       {children}
     </ContextoPopup.Provider>
   );

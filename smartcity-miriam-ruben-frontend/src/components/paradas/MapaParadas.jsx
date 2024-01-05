@@ -1,7 +1,8 @@
 import L from 'leaflet';
-import { Button, Grid } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import { useContext, useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
+import CircleIcon from '@mui/icons-material/Circle';
 
 import PopupDesHabilitar from './PopupDesHabilitar';
 import { CtxPopupProvider, ContextoPopup } from './ContextoPopup';
@@ -77,7 +78,7 @@ function UseMap({ marcadores, marcadoresDesh, tipo }) {
       }
     });
 
-		const lineas = {}; // Almacena las coordenadas de los puntos para cada línea
+		const lineas = {}; //Almacena las coordenadas de los puntos para cada línea
     
     marcadores.forEach(marcador => {
 			const {lat, lon, linea, parada} = marcador;
@@ -102,7 +103,7 @@ function UseMap({ marcadores, marcadoresDesh, tipo }) {
       marker.on('popupopen', () => {
         const deshabilitarLink = document.querySelector('.deshabilitar-link');
         deshabilitarLink.addEventListener('click', (event) => {
-          event.preventDefault(); // Evitar que el enlace realice la acción por defecto (navegar a otra página)
+          event.preventDefault(); //Evitar que el enlace realice la acción por defecto (navegar a otra página)
           deshabilitar(linea, parada);
         });
       });
@@ -130,7 +131,7 @@ function UseMap({ marcadores, marcadoresDesh, tipo }) {
       }).addTo(map).bindPopup(`<div style="text-align: center;">
 				${linea}<br />
 				${parada}<br />
-        ${motivo}<br />
+        <i>${motivo}</i><br />
 				<a href="#" class="habilitar-link">Habilitar</a>
       </div>`);   
 
@@ -159,7 +160,16 @@ const MapaParadas = (props) => {
     <Grid item container xs={12}>
       {paradasDeshabilitadas.length > 0 && 
       <Grid item xs={12} md={3} lg={2}>
-        <p>Hay paradas</p>
+        <Typography variant="h6"><CircleIcon sx={{ fontSize: 20, verticalAlign: 'middle', marginRight: 1, color: 'orange' }}/>Paradas deshabilitadas</Typography>
+        <ul>
+        {paradasDeshabilitadas.map((parada, index) => (
+          <li key={index}>
+            {parada.parada}, linea {parada.linea}<br/>
+            <i>{parada.motivo}</i>
+            <Button variant="outlined" style={{ margin: '4px 8px', padding: '4px 8px', fontSize: '12px' }}>Habilitar</Button>
+          </li>
+        ))}
+        </ul>
       </Grid>}
       <CtxPopupProvider>
       <Grid item xs={12} md={mapSizeValues[0]} lg={mapSizeValues[1]}>

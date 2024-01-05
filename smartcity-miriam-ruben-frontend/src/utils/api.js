@@ -3,5 +3,4 @@ import config from '../config';
 
 export default axios.create({
   baseURL: config.baseURL_API
-  //baseURL: 'http://localhost:5000'
 });
