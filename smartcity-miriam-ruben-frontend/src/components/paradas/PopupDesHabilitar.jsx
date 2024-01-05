@@ -1,9 +1,10 @@
 import { Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField } from '@mui/material';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { ContextoPopup } from './ContextoPopup';
 
 const PopupDesHabilitar = (props) => {
     const { modo, tipo, parada, linea } = props;
-    const dialogOpen = true;
+    const { mostrarPopup } = useContext(ContextoPopup);
     const handleDialogClose = () => {};
 
     var tituloPopup = "";
@@ -16,12 +17,8 @@ const PopupDesHabilitar = (props) => {
         boton = "Deshabilitar";
     }
 
-    const prueba = () => {
-        console.log("prueba");
-    }
-
     return (
-        <Dialog open={dialogOpen} onClose={handleDialogClose} fullWidth maxWidth="sm">
+        <Dialog open={mostrarPopup} onClose={handleDialogClose} fullWidth maxWidth="sm">
             <DialogTitle>{tituloPopup}</DialogTitle>
             <DialogContent>
             <p>Parada: X, linea X</p>

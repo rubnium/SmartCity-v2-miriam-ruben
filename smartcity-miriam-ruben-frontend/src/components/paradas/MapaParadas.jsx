@@ -1,9 +1,11 @@
 import L from 'leaflet';
 import { Button, Grid } from '@mui/material';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
 
 import PopupDesHabilitar from './PopupDesHabilitar';
+import { CtxPopupProvider } from './ContextoPopup';
+import { ContextoPopup } from './ContextoPopup';
 import api from '../../utils/api';
 import gM from '../../utils/generalMap';
 import '../../utils/Map.css';
@@ -28,9 +30,7 @@ const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => 
   }
 };
 
-function deshabilitarParada(linea, parada) {
-	console.log("deshabilitada");
-}
+
 
 function habilitarParada(linea, parada) {
 	console.log("habilitada");
@@ -38,6 +38,11 @@ function habilitarParada(linea, parada) {
 
 function UseMap({ marcadores, marcadoresDesh, tipo }) {
   const map = useMap();
+  function deshabilitarParada(linea, parada) {
+    console.log("deshabilitada");
+    const { setMostrarPopup } = useContext(ContextoPopup);
+    setMostrarPopup(true);
+  }
 
 	var zoom = gM.zoom;
 	if (tipo === 'autobus') {
@@ -148,12 +153,14 @@ const MapaParadas = (props) => {
       <Grid item xs={12} md={3} lg={2}>
         <p>Hay paradas</p>
       </Grid>}
+      <CtxPopupProvider>
       <Grid item xs={12} md={mapSizeValues[0]} lg={mapSizeValues[1]}>
         <MapContainer>
           <UseMap marcadores={marcadores} marcadoresDesh={paradasDeshabilitadas} tipo={tipo}/>
         </MapContainer>
       </Grid>
       <PopupDesHabilitar tipo={tipo}/>
+      </CtxPopupProvider>
     </Grid>
   );
 }
