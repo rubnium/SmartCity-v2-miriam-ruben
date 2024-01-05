@@ -62,4 +62,36 @@ router.get('/:tipo/:linea', function (req, res){
   }
 });
 
+//PUT actualiza una parada a habilitada/deshabilitada
+router.put('/:tipo/:linea/:parada', function (req, res) {
+  const { tipo, linea, parada } = req.params;
+  const { deshabilitado, motivo } = req.body;
+  if (tipos.includes(tipo)) {
+    var Parada = mongoose.model(tipo, ParadaSchema.set('collection', tipo));
+    Parada.findOneAndUpdate(
+      { linea: linea, parada: parada },
+      { $set: { deshabilitado: deshabilitado, motivo: motivo } },
+      { new: true } //Devolver el documento actualizado
+    ).exec()
+    .then(updatedDocument => {
+      if (!updatedDocument) {
+        return res.status(404).send('Parada no encontrada');
+      }
+      res.status(200).json(updatedDocument);
+    })
+    .catch(err => {
+      res.status(500).send(err);
+    });
+  } else {
+    res.status(400).send('Error: Tipo no válido.');
+  }
+});
+/*el cuerpo tiene que tener el siguiente formato:
+{
+  "deshabilitado": false,
+  "motivo": ""
+}*/
+
+
+
 module.exports = router;
