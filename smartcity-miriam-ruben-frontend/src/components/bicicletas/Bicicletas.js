@@ -107,10 +107,7 @@ export default function Bicicletas(props) {
                                     </Select>
                                 </FormControl>
                             </Grid>}
-
-                            {botonClick && 
-                                <MemoizedMapaBicicletas fecha={fechaBoton} hora={hora} contador={contadorClick} />
-                            }
+                            {botonClick && <MemoizedMapaBicicletas fecha={fechaBoton} hora={hora} contador={contadorClick} />}
                         </Grid>
                     </CardContent>
                 </Card>

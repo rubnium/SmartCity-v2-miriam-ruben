@@ -84,15 +84,11 @@ export default function Contaminacion(props) {
                                 <Grid item xs={6} sm={4} md={3} lg={2}>
                                     <Button variant="outlined" onClick={handleBotonClick}>Cargar fecha</Button>
                                 </Grid>
-                            </Grid>
-                                                        
-                            {botonClick &&
-                                <MemoizedMapaContaminacion fecha={mesBoton} periodo={periodoBoton} contador={contadorClick} />
-                            }
+                            </Grid>                       
+                            {botonClick && <MemoizedMapaContaminacion fecha={mesBoton} periodo={periodoBoton} contador={contadorClick} />}
                         </Grid>
                     </CardContent>
                 </Card>
-                
             </Grid>
         </Grid>
     );

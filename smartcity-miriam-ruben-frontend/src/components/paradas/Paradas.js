@@ -43,11 +43,12 @@ export default function Paradas(props) {
                     <CardContent>
                         <Grid container spacing={3}>
                             <Grid item xs={12}>
-                                <p>Hola mundo</p>
+                                <p>El transporte público es esencial en el funcionamiento de las ciudades, ya que no solo proporciona opciones rápidas de movilidad, sino también respalda la sostenibilidad, descongestiona el tráfico y ofrece una alternativa económica al transporte privado.</p>
+                                <p>Con el siguiente mapa, se busca que los usuarios tengan información rápida y accesible sobre las posibles rutas y líneas que pueden utilizar en sus desplazamientos. Además, de manera interactiva, un gestor puede habilitar y deshabilitar paradas según el motivo que sea necesario (por obras, festividades u otras circunstancias), manteniendo así informados a los usuarios con una gestión eficiente del sistema de transporte público.</p>
                             </Grid>
                             <Grid item xs={12}>
-                                <Box sx={{ maxWidth: { xs: 320, sm: 480 }, /*width: '100%',*/ borderBottom: 1, borderColor: 'divider' }}>
-                                    <Tabs variant="scrollable" scrollButtons="auto" value={tabValor} onChange={handleTabChange}>
+                                <Box sx={{ width: '100%', borderBottom: 1, borderColor: 'divider' }}>
+                                    <Tabs variant="scrollable" scrollButtons="auto" allowScrollButtonsMobile value={tabValor} onChange={handleTabChange}>
                                         {pestanas.map((pestana, index) => (
                                             <Tab key={index} label={pestana} {...a11yProps(index)} />
                                         ))}
@@ -60,7 +61,6 @@ export default function Paradas(props) {
                         </Grid>
                     </CardContent>
                 </Card>
-                
             </Grid>
         </Grid>
     )

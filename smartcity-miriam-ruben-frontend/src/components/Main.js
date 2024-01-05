@@ -9,9 +9,8 @@ const cardStyle = {
 export default function Main() {
     return (
         <Grid container rowSpacing={4.5} columnSpacing={2.75}>
-            {/* row 1 */}
             <Grid item xs={12} sx={{ mb: -2.25, ml: '10px', mt: '10px' }}>
-                <Typography variant="h7" className="page-title">Paradas</Typography>
+                <Typography variant="h5" className="page-title">Inicio</Typography>
             </Grid>
             <Grid item xs={12}>
                 <Card sx={{ minWidth: 275 }} style={cardStyle}>
