@@ -1,12 +1,15 @@
 import L from 'leaflet';
-import CircleIcon from '@mui/icons-material/Circle';
 import { Button, Grid } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
 
+import PopupDesHabilitar from './PopupDesHabilitar';
 import api from '../../utils/api';
 import gM from '../../utils/generalMap';
 import '../../utils/Map.css';
+
+var mostrarPopup = false;
+var tipoGlobal = "";
 
 const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => {
   try {
@@ -29,11 +32,12 @@ const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => 
 };
 
 function deshabilitarParada(linea, parada) {
-	console.log("deshabilitada")
+	console.log("deshabilitada");
+  mostrarPopup = true;
 }
 
 function habilitarParada(linea, parada) {
-	console.log("habilitada")
+	console.log("habilitada");
 }
 
 function UseMap({ marcadores, marcadoresDesh, tipo }) {
@@ -91,7 +95,7 @@ function UseMap({ marcadores, marcadoresDesh, tipo }) {
         const deshabilitarLink = document.querySelector('.deshabilitar-link');
         deshabilitarLink.addEventListener('click', (event) => {
           event.preventDefault(); // Evitar que el enlace realice la acción por defecto (navegar a otra página)
-          deshabilitarParada(linea, parada); // Llamar a la función deshabilitarParada con los parámetros necesarios
+          deshabilitarParada(linea, parada);
         });
       });
     });
@@ -135,6 +139,9 @@ const MapaParadas = (props) => {
 
   useEffect(() => {
     obtenerMarcadores(tipo, setMarcadores, setParadasDeshabilitadas, setError);
+    tipoGlobal = tipo;
+    console.log(tipoGlobal);
+    PopupDesHabilitar.prueba();
   }, [tipo]);
 
   var mapSizeValues = [9,10] //tamaño del mapa si hay paradas deshabilitadas
@@ -153,6 +160,7 @@ const MapaParadas = (props) => {
           <UseMap marcadores={marcadores} marcadoresDesh={paradasDeshabilitadas} tipo={tipo}/>
         </MapContainer>
       </Grid>
+      {mostrarPopup && <PopupDesHabilitar tipo={tipo}/>}
     </Grid>
   );
 }
