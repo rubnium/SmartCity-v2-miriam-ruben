@@ -1,6 +1,6 @@
-import { memo, useEffect, useState } from 'react';
-import { Button, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Typography, Select } from '@mui/material';
 import NoiseAwareIcon from '@mui/icons-material/NoiseAware';
+import { Button, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Select, Typography } from '@mui/material';
+import { memo, useState } from 'react';
 
 import MapaContaminacion from "./MapaContaminacion";
 
@@ -95,5 +95,5 @@ export default function Contaminacion(props) {
                 
             </Grid>
         </Grid>
-    )
-}
+    );
+};

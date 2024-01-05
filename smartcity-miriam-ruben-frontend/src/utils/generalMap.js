@@ -13,7 +13,7 @@ const gM = {
     //url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
     //url: "https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}"
     url: "https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoicnViZW5nb21lejEwIiwiYSI6ImNscXplbXlodTA0NGEycXBpcXF6cnVsNGsifQ.xmQA7ZiG3bx7DJb_KxTJtg"
-    //sk.eyJ1IjoicnViZW5nb21lejEwIiwiYSI6ImNscXplbXlodTA0NGEycXBpcXF6cnVsNGsifQ.xmQA7ZiG3bx7DJb_KxTJtg
+    //Token: sk.eyJ1IjoicnViZW5nb21lejEwIiwiYSI6ImNscXplbXlodTA0NGEycXBpcXF6cnVsNGsifQ.xmQA7ZiG3bx7DJb_KxTJtg
 };
 
 export default gM;

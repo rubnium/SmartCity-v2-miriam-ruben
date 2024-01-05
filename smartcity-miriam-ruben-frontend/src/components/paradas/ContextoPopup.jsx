@@ -17,4 +17,4 @@ export function CtxPopupProvider({ children }) {
       {children}
     </ContextoPopup.Provider>
   );
-}
+};

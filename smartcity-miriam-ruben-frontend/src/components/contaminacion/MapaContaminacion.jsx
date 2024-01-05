@@ -130,6 +130,6 @@ const MapaContaminacion = (props) => {
       </Grid>
     </Grid>
   );
-}
+};
 
 export default MapaContaminacion;

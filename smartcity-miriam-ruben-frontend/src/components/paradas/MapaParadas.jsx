@@ -1,14 +1,14 @@
-import L from 'leaflet';
+import CircleIcon from '@mui/icons-material/Circle';
 import { Button, Grid, Typography } from '@mui/material';
+import L from 'leaflet';
 import { useContext, useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
-import CircleIcon from '@mui/icons-material/Circle';
 
-import PopupDesHabilitar from './PopupDesHabilitar';
-import { CtxPopupProvider, ContextoPopup } from './ContextoPopup';
+import '../../utils/Map.css';
 import api from '../../utils/api';
 import gM from '../../utils/generalMap';
-import '../../utils/Map.css';
+import { ContextoPopup } from './ContextoPopup';
+import PopupDesHabilitar from './PopupDesHabilitar';
 
 const coloresLinea = ['black', 'brown', 'red', /*'orange',*/ 'yellow', 'green', 'cyan', 'blue', 'magenta', 'purple', 'gray', 'white', 'pink', 'turquoise', 'darkred', 'darkgreen', 'lightgray'];
 
@@ -45,7 +45,7 @@ function useDeshabilitarParada() {
   return {
     deshabilitar
   }
-}
+};
 
 function useHabilitarParada() {
   const { setMostrarPopup, setParada, setLinea, setMotivoLeido, setModo } = useContext(ContextoPopup);
@@ -61,7 +61,7 @@ function useHabilitarParada() {
   return {
     habilitar
   }
-}
+};
 
 function UseMap({ marcadores, marcadoresDesh, tipo }) {
   const map = useMap();
@@ -162,7 +162,7 @@ function UseMap({ marcadores, marcadoresDesh, tipo }) {
 	}, [marcadores, marcadoresDesh]);
 
   return null;
-}
+};
 
 const MapaParadas = (props) => {
   const { tipo } = props;
@@ -204,6 +204,6 @@ const MapaParadas = (props) => {
       <PopupDesHabilitar tipo={tipo}/>
     </Grid>
   );
-}
+};
 
 export default MapaParadas;

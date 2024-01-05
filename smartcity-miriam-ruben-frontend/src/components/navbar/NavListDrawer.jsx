@@ -18,4 +18,4 @@ export default function NavListDrawer({navLinks}) {
             </nav>
         </Box>
     );
-}
+};

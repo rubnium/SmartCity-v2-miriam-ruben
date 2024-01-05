@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
+
 import api from '../../utils/api';
 
 const obtenerEstadisticas = (fecha, setData, setError) => {
@@ -38,6 +39,6 @@ const EstadisticasBicicletas = (props) => {
             </ul>
         </div>
     );
-}
+};
 
 export default EstadisticasBicicletas;

@@ -1,6 +1,6 @@
-import L from 'leaflet';
 import CircleIcon from '@mui/icons-material/Circle';
 import { Grid } from '@mui/material';
+import L from 'leaflet';
 import { useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
 
@@ -71,9 +71,8 @@ function UseMap({ marcadores }) {
     });
   }, [marcadores]);
 
-
   return null;
-}
+};
 
 const MapaBicicletas = (props) => {
   const { fecha, hora, contador } = props;
@@ -116,6 +115,6 @@ const MapaBicicletas = (props) => {
       </Grid>
     </Grid>
   );
-}
+};
 
 export default MapaBicicletas;

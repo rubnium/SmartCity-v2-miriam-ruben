@@ -1,9 +1,8 @@
-import { memo, useEffect, useState } from 'react';
 import PlaceIcon from '@mui/icons-material/Place';
 import { Box, Card, CardContent, Grid, Tab, Tabs, Typography } from '@mui/material';
+import { memo, useState } from 'react';
+
 import { CtxPopupProvider } from './ContextoPopup';
-
-
 import MapaParadas from "./MapaParadas";
 
 const cardStyle = {
@@ -19,7 +18,7 @@ function a11yProps(index) {
       id: `tab-transporte-${index}`,
       'aria-controls': `tabpanel-${index}`,
     };
-  }
+};
 
 export default function Paradas(props) {
     const {tabTitle} = props;
@@ -65,4 +64,4 @@ export default function Paradas(props) {
             </Grid>
         </Grid>
     )
-}
+};

@@ -1,11 +1,10 @@
-import 'leaflet/dist/leaflet.css';
-import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css';
-import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet-defaulticon-compatibility';
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css';
 import 'leaflet-polylinedecorator';
-import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import { MapContainer, TileLayer } from 'react-leaflet';
 
-import gM from './generalMap'
+import gM from './generalMap';
 import './Map.css';
 
 
@@ -17,6 +16,6 @@ function ExampleMap() {
       </MapContainer>
     </div>
   );
-}
+};
 
 export default ExampleMap;

@@ -1,10 +1,9 @@
-import { memo, useEffect, useState } from 'react';
-import { Button, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Typography, Select } from '@mui/material';
 import PedalBikeIcon from '@mui/icons-material/PedalBike';
-import dayjs from 'dayjs';
-import localizedFormat from 'dayjs/locale/es';
-import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
+import { Button, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Select, Typography } from '@mui/material';
+import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import dayjs from 'dayjs';
+import { memo, useState } from 'react';
 
 import EstadisticasBicicletas from "./EstadisticasBicicletas";
 import MapaBicicletas from "./MapaBicicletas";
@@ -118,4 +117,4 @@ export default function Bicicletas(props) {
             </Grid>
         </Grid>
     )
-}
+};

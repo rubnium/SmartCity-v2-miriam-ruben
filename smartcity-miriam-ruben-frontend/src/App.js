@@ -1,13 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import './App.css';
+import config from './config';
 import Main from './components/Main';
 import Paradas from './components/paradas/Paradas';
 import Bicicletas from './components/bicicletas/Bicicletas';
 import Contaminacion from './components/contaminacion/Contaminacion';
 import Navbar from "./components/navbar/Navbar";
 import logo from './logo.svg';
-import './App.css';
-import config from './config';
 import ExampleMap from "./utils/ExampleMap"; //evita que el mapa se rompa
 
 function App() {
@@ -29,6 +30,6 @@ function App() {
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

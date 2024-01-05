@@ -1,7 +1,8 @@
-import { Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField } from '@mui/material';
-import { useContext, useEffect, useState } from 'react';
-import { ContextoPopup } from './ContextoPopup';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
+import { useContext, useState } from 'react';
+
 import api from '../../utils/api';
+import { ContextoPopup } from './ContextoPopup';
 
 const PopupDesHabilitar = (props) => {
     const { tipo } = props;
@@ -60,6 +61,6 @@ const PopupDesHabilitar = (props) => {
             </DialogActions>
       </Dialog>
     );
-}
+};
 
 export default PopupDesHabilitar;

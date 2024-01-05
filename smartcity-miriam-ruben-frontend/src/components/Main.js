@@ -1,5 +1,5 @@
-import React from "react";
 import { Card, CardContent, Grid, Typography } from '@mui/material';
+import React from "react";
 
 const cardStyle = {
     margin: '10px',
@@ -30,4 +30,4 @@ export default function Main() {
             </Grid>
         </Grid>
     )
-}
+};
