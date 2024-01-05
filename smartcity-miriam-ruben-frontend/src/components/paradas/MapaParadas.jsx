@@ -9,6 +9,8 @@ import api from '../../utils/api';
 import gM from '../../utils/generalMap';
 import '../../utils/Map.css';
 
+const coloresLinea = ['black', 'brown', 'red', /*'orange',*/ 'yellow', 'green', 'cyan', 'blue', 'magenta', 'purple', 'gray', 'white', 'pink', 'turquoise', 'darkred', 'darkgreen', 'darkpurple', 'lightgray', 'palerose'];
+
 const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => {
   try {
     api.get('/paradas/'+ tipo + '/desh=0').then((res) => {
@@ -106,8 +108,9 @@ function UseMap({ marcadores, marcadoresDesh, tipo }) {
       });
     });
 
-		Object.keys(lineas).forEach(linea => {
-			const polyline = L.polyline(lineas[linea], { color: 'blue' }).addTo(map);
+		Object.keys(lineas).forEach((linea, index) => {
+      const color = coloresLinea[index % coloresLinea.length];
+			const polyline = L.polyline(lineas[linea], {color}).addTo(map);
 
 			polyline.on('click', (event) => {
 				const latlng = event.latlng;

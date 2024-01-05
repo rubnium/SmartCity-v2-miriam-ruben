@@ -1,3 +1,5 @@
+//Usado para pasar valores entre MapaParadas y PopupDesHabilitar
+
 import { createContext, useState } from 'react';
 
 export const ContextoPopup = createContext();
