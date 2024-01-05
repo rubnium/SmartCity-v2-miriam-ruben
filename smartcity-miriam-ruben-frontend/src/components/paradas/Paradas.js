@@ -1,6 +1,8 @@
 import { memo, useEffect, useState } from 'react';
 import PlaceIcon from '@mui/icons-material/Place';
 import { Box, Card, CardContent, Grid, Tab, Tabs, Typography } from '@mui/material';
+import { CtxPopupProvider } from './ContextoPopup';
+
 
 import MapaParadas from "./MapaParadas";
 
@@ -54,7 +56,7 @@ export default function Paradas(props) {
                                 </Box>
                             </Grid>
                             <Grid item xs={6} sm={4} md={3} lg={2}>
-                                <MemoizedMapaParadas tipo={tabContent} />
+                                <CtxPopupProvider><MemoizedMapaParadas tipo={tabContent} /></CtxPopupProvider>
                             </Grid>
                         </Grid>
                     </CardContent>

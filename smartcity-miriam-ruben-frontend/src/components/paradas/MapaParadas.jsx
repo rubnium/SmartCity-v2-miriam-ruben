@@ -10,7 +10,7 @@ import api from '../../utils/api';
 import gM from '../../utils/generalMap';
 import '../../utils/Map.css';
 
-const coloresLinea = ['black', 'brown', 'red', /*'orange',*/ 'yellow', 'green', 'cyan', 'blue', 'magenta', 'purple', 'gray', 'white', 'pink', 'turquoise', 'darkred', 'darkgreen', 'darkpurple', 'lightgray', 'palerose'];
+const coloresLinea = ['black', 'brown', 'red', /*'orange',*/ 'yellow', 'green', 'cyan', 'blue', 'magenta', 'purple', 'gray', 'white', 'pink', 'turquoise', 'darkred', 'darkgreen', 'lightgray'];
 
 const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => {
   try {
@@ -146,12 +146,13 @@ const MapaParadas = (props) => {
   const [marcadores, setMarcadores] = useState([]);
   const [paradasDeshabilitadas, setParadasDeshabilitadas] = useState([]);
   const [error, setError] = useState(null);
+  const { contador } = useContext(ContextoPopup);
 
   useEffect(() => {
     obtenerMarcadores(tipo, setMarcadores, setParadasDeshabilitadas, setError);
-  }, [tipo]);
+  }, [tipo, contador]);
 
-  var mapSizeValues = [9,10] //tamaño del mapa si hay paradas deshabilitadas
+  var mapSizeValues = [4,4] //tamaño del mapa si hay paradas deshabilitadas
   if (paradasDeshabilitadas.length === 0) {
     mapSizeValues = [12,12] //tamaño del mapa si no hay paradas deshabilitadas
   };
@@ -159,26 +160,24 @@ const MapaParadas = (props) => {
   return (
     <Grid item container xs={12} spacing={2}>
       {paradasDeshabilitadas.length > 0 && 
-      <Grid item xs={12} md={3} lg={8}>
+      <Grid item xs={12} md={8} lg={8}>
         <Typography variant="h6"><CircleIcon sx={{ fontSize: 20, verticalAlign: 'middle', marginRight: 1, color: 'orange' }}/>Paradas deshabilitadas</Typography>
         <ul style={{ paddingLeft: 11 }}>
         {paradasDeshabilitadas.map((parada, index) => (
           <li key={index} style={{ marginBottom: '8px' }}>
-            <div>{parada.parada}, linea {parada.linea}<br/>
+            <div>{parada.parada}, línea {parada.linea}<br/>
             <i>{parada.motivo}</i></div>
             <div><Button variant="outlined" style={{ margin: '4px 8px', padding: '4px 8px', fontSize: '12px' }}>Habilitar</Button></div>
           </li>
         ))}
         </ul>
       </Grid>}
-      <CtxPopupProvider>
-      <Grid item xs={12} md={mapSizeValues[0]} lg={2}>
+      <Grid item xs={12} md={mapSizeValues[0]} lg={mapSizeValues[1]}>
         <MapContainer>
           <UseMap marcadores={marcadores} marcadoresDesh={paradasDeshabilitadas} tipo={tipo}/>
         </MapContainer>
       </Grid>
       <PopupDesHabilitar tipo={tipo}/>
-      </CtxPopupProvider>
     </Grid>
   );
 }
