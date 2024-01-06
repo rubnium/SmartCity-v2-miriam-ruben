@@ -9,5 +9,5 @@ services:
     volumes:
       - ./database:/data/db
     ports:
-      - 27018:27017
+      - 27018:27017 #<puerto local>:<puerto contenedor>
     restart: unless-stopped
