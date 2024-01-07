@@ -6,6 +6,7 @@
 2. Descargar el contenido de este repositorio.
 3. Ejecutar, dentro de las carpetas [smartcity-miriam-ruben-backend](smartcity-miriam-ruben-backend/) y [smartcity-miriam-ruben-frontend](smartcity-miriam-ruben-frontend/), el comando `npm install`.
 
+
 ## Instrucciones:
 #### 1. Preparar la base de datos.
 Hay 3 opciones posibles (escoger solo una):
@@ -35,6 +36,7 @@ Por defecto este paso desplegará el frontend en `http://localhost:3000`.
 
 #### 4. Disfrutar la aplicación.
 Introduciendo la dirección del frontend en un navegador web, se podrán experimentar todas las funciones que ofrece esta aplicación. Más detalles en el apartado [Funciones.Frontend](#frontend).
+
 
 ## Funciones:
 ### Backend:
@@ -76,11 +78,12 @@ Suponiendo que se ejecuta en local y en el puerto 5000 (http://localhost:5000):
 - Acústica
     - GET `/acustica/contaminacion/:mes/:año`: Obtener los valores de intensidad de sonido leídos por cada estación de medición en una fecha determinada.  
     Los valores `mes/año` deben estar entre el `01/2051` y el `12/2051`.
-      
+
     - GET `/acustica/riesgos`: Obtener la lista de riesgos posibles de un alto ruido en las calles.
 
-
-
 ### Frontend:
-Suponiendo que se ejecuta en local y en el puerto 3000 (http://localhost:5000):
-<!--TODO: hablar de los enlaces disponibles-->
+Suponiendo que se ejecuta en local y en el puerto 3000 (http://localhost:3000):
+- [`/`](http://localhost:3000): página de inicio
+- [`/paradas`](http://localhost:3000/paradas): muestra un mapa con todas las paradas y líneas del tipo de transporte seleccionado. Al hacer clic en las paradas o en las líneas, se muestra breve información de las mismas. Permite deshabilitar y volver a habilitar las paradas al seleccionarlas en el mapa.
+- [`/bicicletas`](http://localhost:3000/bicicletas): muestra información útil sobre las bicicletas de préstamo en la ciudad. Por una parte, permite al usuario elegir una fecha y muestra las estadísticas de disponibilidad y uso de las bicicletas. Por otra parte, el usuario además puede escoger una hora, y el mapa se mostrará con el aforo de bicicletas en dicha fecha y hora. Además, dicho mapa tiene sus puntos diferenciados según la disponibilidad de bicicletas, y al seleccionarlos muestra la cantidad de bicicletas, información del punto y un enlace para mostrar las direcciones de cómo llegar a través de Google Maps.
+- [`/contaminacion`](http://localhost:3000/contaminacion): muestra la intensidad de ruido en distintos puntos de la ciudad. Luego de que el usuario seleccione un mes y el periodo en el que se midieron los datos, un mapa se muestra con los distintos puntos diferenciados según el riesgo de la intensidad de ruido medida. El mapa permite mostrar más datos de la medición al hacer clic en sus puntos, como la altura de la estación de medida y el nombre de la calle.
