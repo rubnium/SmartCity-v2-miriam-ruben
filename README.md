@@ -1,5 +1,8 @@
 # Ceretopía - Proyecto Smart City de Miriam y Rubén
-<!--TODO: añadir descripcion-->
+Ceretopía es un sistema gestor de ciudad inteligente basada en la capital española de Madrid. Tiene como objetivo combatir con las cuestiones medioambientales y accesibilidad de la información sobre el transporte público tan denostado en nuestra sociedad.  
+El proyecto hace uso de MERN, donde MongoDB trata los datos proporcionados para llevar a cabo el gestor de ciudad inteligente, Express gestiona las solicitudes HTTP que envía el usuario y React lleva a cabo el frontend para ofrecer al usuario interfaces interactivas y reutilizables.  
+Siendo una ciudad inteligente, entre las funcionalidades del proyecto se encuentra la de mostrar las paradas y el recorrido que siguen los numerosos medios de transporte que dispone Madrid, clasificados por el tipo de transporte: autobús, cercanías, interurbano, metro, y metro ligero. Se ofrece también una visión general de los puntos de encuentro de bicicletas, mostrando la cantidad de bicis que quedan disponibles en cada punto, esto puede permitir a la civilización prever qué momento es más idóneo para tomar una bicicleta. Y como última funcionalidad, se muestran las áreas castigadas por la contaminación acústica, un factor importante en la salud de los ciudadanos.
+
 
 ## Preparativos:
 1. Tener Docker (además del comando `docker-compose`) y Node.js (además de `npm`) instalados y operativos.
