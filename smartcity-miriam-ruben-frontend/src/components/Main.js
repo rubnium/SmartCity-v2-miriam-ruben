@@ -10,7 +10,8 @@ export default function Main() {
     return (
         <Grid container rowSpacing={4.5} columnSpacing={2.75}>
             <Grid item xs={12} sx={{ mb: -2.25, ml: '10px', mt: '10px' }}>
-                <Typography variant="h5" className="page-title">Inicio</Typography>
+                <Typography variant="h3" className="page-title" style={{ textAlign: 'center' }}>¡Bienvenido a #Ceretopía!</Typography>
+                <Typography variant="h5" className="page-subtitle" style={{ textAlign: 'center' }}><i>Una ciudad que viaja más allá de las fronteras de la imaginación.</i></Typography>
             </Grid>
             <Grid item xs={12}>
                 <Card sx={{ minWidth: 275 }} style={cardStyle}>

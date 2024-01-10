@@ -1,4 +1,4 @@
-# SmartCity-miriam-ruben
+# Ceretopía - Proyecto Smart City de Miriam y Rubén
 <!--TODO: añadir descripcion-->
 
 ## Preparativos:
