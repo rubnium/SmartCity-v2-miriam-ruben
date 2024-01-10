@@ -4,3 +4,12 @@
   color: #797979; 
   font-size: 14px;
 }
+
+.page-main-title {
+  text-align: center;
+}
+
+.page-main-subtitle {
+  text-align: center;
+  color: #484848; 
+}

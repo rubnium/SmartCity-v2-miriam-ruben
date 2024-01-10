@@ -4,11 +4,12 @@ import PlaceIcon from '@mui/icons-material/Place';
 import PedalBikeIcon from '@mui/icons-material/PedalBike';
 import NoiseAwareIcon from '@mui/icons-material/NoiseAware';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { AppBar, Button, Drawer, IconButton, Toolbar, Typography } from "@mui/material";
-import { Box } from "@mui/system";
-import { useState } from "react";
+import { AppBar, Button, Drawer, IconButton, Toolbar, Typography } from '@mui/material';
+import { Box } from '@mui/system';
+import { useState } from 'react';
 
-import NavListDrawer from "./NavListDrawer";
+import logo from '../../logo.png';
+import NavListDrawer from './NavListDrawer';
 
 const navLinks = [
     { title: "Inicio", path: "/", icon: <HomeIcon /> },
@@ -28,7 +29,7 @@ export default function Navbar() {
                     <IconButton color="inherit" size="large" onClick={() => setOpen(true)} sx={{ display: { xs:"flex", sm:"none" }}} edge="start"> 
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" sx={{ flexGrow: 1}}>Título</Typography>
+                    <Typography variant="h6" sx={{ flexGrow: 1}}><a href="/"><img src={logo} className="app-logo" alt="logo" style={{ height: '3.5em' }} /></a></Typography>
                     <Box sx={{ display: { xs:"none", sm:"block" }}}>
                         {navLinks.map(item => (
                             <Button color="inherit" key={item.title} component="a" href={item.path}>{item.title}</Button>
