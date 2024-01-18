@@ -1,9 +1,9 @@
 import PersonIcon from '@mui/icons-material/Person';
-import { Box, Button, Card, CardContent, Checkbox, FormControlLabel, Grid, InputLabel, MenuItem, Select, TextField, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, Checkbox, FormControlLabel, Grid, TextField, Typography } from '@mui/material';
 import Cookies from 'js-cookie';
 import React, { useState, useEffect } from 'react';
 
-import api from '../../utils/api';
+import api from '../utils/api';
 
 const cardStyle = {
     margin: '10px',
@@ -15,14 +15,13 @@ const cookieOptions = {
     sameSite: 'Lax'
 };
 
-const obtenerToken = (email, setData, setError) => {
+const obtenerToken = async (email) => {
     try {
-        api.get('/bicicletasDisponibilidad').then((res) => { //TODO: cambiar URI
-            setData(res.data);
-        });
+        const res = await api.post('/secure/login', { "email": email });
+        return res.data.token;
     } catch (error) {
         console.error('Error al obtener datos:', error);
-        setError(error.message || 'Error en la solicitud');
+        throw error.message || 'Error en la solicitud';
     }
 };
 
@@ -31,7 +30,6 @@ export default function Login(props) {
     document.title = tabTitle;
 
     const [email, setEmail] = useState('');
-    const [token, setToken] = useState('');
     const [cookieAceptada, setCookieAceptada] = useState(false);
     const [cookieEmail, setCookieEmail] = useState('');
     const [checkDisabled, setCheckDisabled] = useState(false);
@@ -45,12 +43,18 @@ export default function Login(props) {
         setCookieAceptada(event.target.checked);
     };
     
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        obtenerToken(email, setToken, setError);
-        Cookies.set('email', email, cookieOptions);
-        Cookies.set('token', token, cookieOptions);
-        Cookies.set('cookieAceptada', true, cookieOptions);
+
+        try {
+            const token = await obtenerToken(email);
+            Cookies.set('email', email, cookieOptions);
+            Cookies.set('token', token, cookieOptions);
+            Cookies.set('cookieAceptada', true, cookieOptions);
+            window.location.href = '/';
+        } catch (error) {
+            setError(error);
+        }
     }
 
     useEffect(() => {
