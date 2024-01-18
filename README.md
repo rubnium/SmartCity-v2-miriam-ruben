@@ -1,4 +1,4 @@
-# Ceretopía - Proyecto Smart City de Miriam y Rubén
+# Ceretopía V2 - Proyecto Smart City de Miriam y Rubén
 Ceretopía es un sistema gestor de ciudad inteligente basada en la capital española de Madrid. Tiene como objetivo combatir con las cuestiones medioambientales y accesibilidad de la información sobre el transporte público tan denostado en nuestra sociedad.  
 El proyecto hace uso de MERN, donde MongoDB trata los datos proporcionados para llevar a cabo el gestor de ciudad inteligente, Express gestiona las solicitudes HTTP que envía el usuario y React lleva a cabo el frontend para ofrecer al usuario interfaces interactivas y reutilizables.  
 Siendo una ciudad inteligente, entre las funcionalidades del proyecto se encuentra la de mostrar las paradas y el recorrido que siguen los numerosos medios de transporte que dispone Madrid, clasificados por el tipo de transporte: autobús, cercanías, interurbano, metro, y metro ligero. Se ofrece también una visión general de los puntos de encuentro de bicicletas, mostrando la cantidad de bicis que quedan disponibles en cada punto, esto puede permitir a la civilización prever qué momento es más idóneo para tomar una bicicleta. Y como última funcionalidad, se muestran las áreas castigadas por la contaminación acústica, un factor importante en la salud de los ciudadanos.
@@ -43,7 +43,18 @@ Introduciendo la dirección del frontend en un navegador web, se podrán experim
 
 ## Funciones:
 ### Backend:
-Suponiendo que se ejecuta en local y en el puerto 5000 (http://localhost:5000):  
+Para utilizarlas, casi todas requieren introducir el token en la cabecera. Suponiendo que se ejecuta en local y en el puerto 5000 (http://localhost:5000):  
+- Seguridad:
+	- POST `/secure/login`: Enviar una dirección de correo electrónico para recibir un token de uso (no necesita token en la cabecera, ya que es para obtener uno).
+	  Ejemplo de cuerpo de la petición:
+      ```
+      {
+        "email": "example@example.com"
+      }
+      ```
+	  
+	- GET `/secure/test`: Comprobar si el token es válido.
+	
 - Paradas:
     - GET `/paradas/:tipo`: Obtener todas las paradas de un tipo de transporte público.  
     `tipo` debe ser `'autobus'`, `'cercanias'`, `'interurbano'`, `'metro'` o `'metroLigero'`.
@@ -87,6 +98,7 @@ Suponiendo que se ejecuta en local y en el puerto 5000 (http://localhost:5000):
 ### Frontend:
 Suponiendo que se ejecuta en local y en el puerto 3000 (http://localhost:3000):
 - [`/`](http://localhost:3000): página de inicio
+- [`/login`](http://localhost:3000/login): muestra si el usuario está autenticado, además de un formulario para realizar la autenticación, en el cual el usuario introduce sus datos y acepta las cookies. Esta parte del sistema permite acceder al resto de páginas.
 - [`/paradas`](http://localhost:3000/paradas): muestra un mapa con todas las paradas y líneas del tipo de transporte seleccionado. Al hacer clic en las paradas o en las líneas, se muestra breve información de las mismas. Permite deshabilitar y volver a habilitar las paradas al seleccionarlas en el mapa.
 - [`/bicicletas`](http://localhost:3000/bicicletas): muestra información útil sobre las bicicletas de préstamo en la ciudad. Por una parte, permite al usuario elegir una fecha y muestra las estadísticas de disponibilidad y uso de las bicicletas. Por otra parte, el usuario además puede escoger una hora, y el mapa se mostrará con el aforo de bicicletas en dicha fecha y hora. Además, dicho mapa tiene sus puntos diferenciados según la disponibilidad de bicicletas, y al seleccionarlos muestra la cantidad de bicicletas, información del punto y un enlace para mostrar las direcciones de cómo llegar a través de Google Maps.
 - [`/contaminacion`](http://localhost:3000/contaminacion): muestra la intensidad de ruido en distintos puntos de la ciudad. Luego de que el usuario seleccione un mes y el periodo en el que se midieron los datos, un mapa se muestra con los distintos puntos diferenciados según el riesgo de la intensidad de ruido medida. El mapa permite mostrar más datos de la medición al hacer clic en sus puntos, como la altura de la estación de medida y el nombre de la calle.
