@@ -15,7 +15,9 @@ var EstacionAcusticaSchema = require('../models/EstacionAcustica').set('collecti
 const collectionRiesgos = 'riesgosAcustica';
 var RiesgoAcusticaSchema = require('../models/RiesgoAcustica').set('collection', collectionRiesgos);
 
-
+//Implementación JWT
+const authenticateToken = require('./authenticateToken');
+router.use('/', authenticateToken);
 
 router.get('/contaminacion/:mes/:ano', function (req, res) {
   const mes = parseInt(req.params.mes, 10);
@@ -64,7 +66,7 @@ router.get('/contaminacion/:mes/:ano', function (req, res) {
     });
 });
 
-router.get('/riesgos/', function (req, res){  
+router.get('/riesgos', function (req, res){  
     var Riesgo = mongoose.model(collectionRiesgos, RiesgoAcusticaSchema);
     Riesgo.find().exec()
       .then(document => {

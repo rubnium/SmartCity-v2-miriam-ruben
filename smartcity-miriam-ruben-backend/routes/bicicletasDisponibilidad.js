@@ -9,6 +9,10 @@ const collection = 'bicicletasDisponibilidad'
 
 var BicicletaDisponibilidadSchema = require('../models/BicicletaDisponibilidad').set('collection', collection);
 
+//Implementación JWT
+const authenticateToken = require('./authenticateToken');
+router.use('/', authenticateToken);
+
 router.get('/:dia/:mes/:ano', function (req, res){
     const fecha = `${req.params.dia}/${req.params.mes}/${req.params.ano}`;
   

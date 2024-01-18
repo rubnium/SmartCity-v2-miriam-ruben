@@ -9,6 +9,10 @@ const collection = 'bicicletasAforo'
 
 var BicicletaAforoSchema = require('../models/BicicletaAforo').set('collection', collection);
 
+//Implementación JWT
+const authenticateToken = require('./authenticateToken');
+router.use('/', authenticateToken);
+
 //GET todos los datos de una estación de aforo
 router.get('/id=:id', function (req, res){
   const id = req.params.id;

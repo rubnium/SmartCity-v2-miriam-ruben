@@ -25,14 +25,11 @@ router.post('/login', function (req, res){
         expiresIn: 60 * 60 * expiration
     });
 
-    res.status(200).send(token);
+    res.status(200).send({"token": token});
 });
 /*el cuerpo tiene que tener el siguiente formato:
 {
     "email": "example@example.com"
 }*/
-
-
-
 
 module.exports = router;

@@ -9,6 +9,10 @@ var db = mongoose.connection;
 
 const tipos = ['autobus', 'cercanias', 'interurbano', 'metro', 'metroLigero'];
 
+//Implementación JWT
+const authenticateToken = require('./authenticateToken');
+router.use('/', authenticateToken);
+
 //GET todas las paradas de un tipo
 router.get('/:tipo', function (req, res){
   const tipo = req.params.tipo;
