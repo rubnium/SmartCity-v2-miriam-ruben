@@ -11,6 +11,7 @@ var paradasRouter = require('./routes/paradas');
 var bicicletasAforoRouter = require('./routes/bicicletasAforo');
 var bicicletasDispRouter = require('./routes/bicicletasDisponibilidad');
 var acusticaRouter = require('./routes/acustica');
+var secureRouter = require('./routes/secure');
 
 var app = express();
 
@@ -25,7 +26,7 @@ var mongoose = require('mongoose');
 require('dotenv').config();
 //lee la URI del .env
 mongoose.connect(process.env.MONGODB)
-  .then(() => console.log('Mongo connection succesful'))
+  .then(() => console.log('Mongo connection successful'))
   .catch((err) => console.error(err));
 
 // view engine setup
@@ -45,6 +46,7 @@ app.use('/paradas', paradasRouter);
 app.use('/bicicletasAforo', bicicletasAforoRouter);
 app.use('/bicicletasDisponibilidad', bicicletasDispRouter);
 app.use('/acustica', acusticaRouter);
+app.use('/secure', secureRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
