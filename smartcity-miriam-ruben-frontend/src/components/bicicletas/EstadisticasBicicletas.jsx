@@ -1,17 +1,10 @@
 import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 
-import api from '../../utils/api';
+import apiGet from '../../utils/apiGet';
 
 const obtenerEstadisticas = (fecha, setData, setError) => {
-    try {
-      api.get('/bicicletasDisponibilidad/'+ fecha).then((res) => {
-        setData(res.data);
-      });
-    } catch (error) {
-      console.error('Error al obtener datos:', error);
-      setError(error.message || 'Error en la solicitud');
-    }
+  apiGet('/bicicletasDisponibilidad/'+ fecha, setData, setError);
 };
 
 const EstadisticasBicicletas = (props) => {

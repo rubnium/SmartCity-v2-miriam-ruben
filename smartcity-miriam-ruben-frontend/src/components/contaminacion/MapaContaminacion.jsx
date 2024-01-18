@@ -5,32 +5,19 @@ import { useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
 
 import api from '../../utils/api';
+import apiGet from '../../utils/apiGet';
 import gM from '../../utils/generalMap';
 import '../../utils/Map.css';
 
 const colores = ['green', 'yellow', 'red', 'brown', 'black'];
 
 const obtenerMarcadores = (fecha, setData, setError) => {
-	try {
-  	api.get('/acustica/contaminacion/'+ fecha ).then((res) => {
-      setData(res.data);
-    });
-  } catch (error) {
-    console.error('Error al obtener datos:', error);
-    setError(error.message || 'Error en la solicitud');
-  }
+  apiGet('/acustica/contaminacion/'+ fecha, setData, setError);
 };
 
 const obtenerRiesgos = (setData, setError) => {
-	try {
-  	api.get('/acustica/riesgos').then((res) => {
-    	setData(res.data);
-    });
-  } catch (error) {
-  	console.error('Error al obtener datos:', error);
-    setError(error.message || 'Error en la solicitud');
-  }
-}
+  apiGet('/acustica/riesgos', setData, setError);
+};
 
 function UseMap({ marcadores, periodo, riesgos }) {
   const map = useMap();

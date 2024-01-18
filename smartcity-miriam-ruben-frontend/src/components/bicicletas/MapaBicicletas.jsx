@@ -5,20 +5,14 @@ import { useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
 
 import api from '../../utils/api';
+import apiGet from '../../utils/apiGet';
 import gM from '../../utils/generalMap';
 import '../../utils/Map.css';
 
 const colores = ['green', 'yellow', 'orange', 'red', 'purple'];
 
 const obtenerMarcadores = (fecha, hora, setData, setError) => {
-  try {
-    api.get('/bicicletasAforo/'+ fecha +'/'+hora).then((res) => {
-      setData(res.data);
-    });
-  } catch (error) {
-    console.error('Error al obtener datos:', error);
-    setError(error.message || 'Error en la solicitud');
-  }
+    apiGet('/bicicletasAforo/'+ fecha +'/'+hora, setData, setError);
 };
 
 function UseMap({ marcadores }) {

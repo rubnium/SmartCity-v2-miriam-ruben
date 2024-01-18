@@ -6,6 +6,7 @@ import { MapContainer, useMap } from 'react-leaflet';
 
 import '../../utils/Map.css';
 import api from '../../utils/api';
+import apiGet from '../../utils/apiGet';
 import gM from '../../utils/generalMap';
 import { ContextoPopup } from './ContextoPopup';
 import PopupDesHabilitar from './PopupDesHabilitar';
@@ -13,23 +14,8 @@ import PopupDesHabilitar from './PopupDesHabilitar';
 const coloresLinea = ['black', 'brown', 'red', /*'orange',*/ 'yellow', 'green', 'cyan', 'blue', 'magenta', 'purple', 'gray', 'white', 'pink', 'turquoise', 'darkred', 'darkgreen', 'lightgray'];
 
 const obtenerMarcadores = (tipo, setMarcadores, setDeshabilitados, setError) => {
-  try {
-    api.get('/paradas/'+ tipo + '/desh=0').then((res) => {
-        setMarcadores(res.data);
-    });
-  } catch (error) {
-    console.error('Error al obtener datos:', error);
-    setError(error.message || 'Error en la solicitud');
-  }
-
-  try {
-    api.get('/paradas/'+ tipo +'/desh=1').then((res) => {
-      setDeshabilitados(res.data);
-    });
-  } catch (error) {
-    console.error('Error al obtener datos:', error);
-    setError(error.message || 'Error en la solicitud');
-  }
+  apiGet('/paradas/'+ tipo + '/desh=0', setMarcadores, setError);
+  apiGet('/paradas/'+ tipo + '/desh=1', setDeshabilitados, setError);
 };
 
 function useDeshabilitarParada() {
