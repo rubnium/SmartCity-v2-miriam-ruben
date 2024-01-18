@@ -1,9 +1,11 @@
+import CheckIcon from '@mui/icons-material/Check';
 import PersonIcon from '@mui/icons-material/Person';
-import { Box, Button, Card, CardContent, Checkbox, FormControlLabel, Grid, TextField, Typography } from '@mui/material';
+import { Alert, Box, Button, Card, CardContent, Checkbox, FormControlLabel, Grid, TextField, Typography } from '@mui/material';
 import Cookies from 'js-cookie';
 import React, { useState, useEffect } from 'react';
 
 import api from '../utils/api';
+import { apiGet } from '../utils/apiRequests'
 
 const cardStyle = {
     margin: '10px',
@@ -25,6 +27,18 @@ const obtenerToken = async (email) => {
     }
 };
 
+const probarAutenticacion = (setAutenticado) => {
+    api.get('/secure/test')
+    .then((res) => {
+        if (res.status === 200) {
+            setAutenticado(true);
+        } else {
+            setAutenticado(false);
+        }
+    })
+    .catch((error) => { console.error('Error al obtener datos:', error); });
+};
+
 export default function Login(props) {
     const {tabTitle} = props;
     document.title = tabTitle;
@@ -34,6 +48,7 @@ export default function Login(props) {
     const [cookieEmail, setCookieEmail] = useState('');
     const [checkDisabled, setCheckDisabled] = useState(false);
     const [error, setError] = useState(null);
+    const [autenticado, setAutenticado] = useState(false);
 
     const handleEmailChange = (event) => {
         setEmail(event.target.value);
@@ -61,6 +76,7 @@ export default function Login(props) {
         setCookieAceptada(Cookies.get('cookieAceptada'));
         setCheckDisabled(Cookies.get('cookieAceptada'));
         setCookieEmail(Cookies.get('email'));
+        probarAutenticacion(setAutenticado); 
     }, []);
 
     return (
@@ -73,9 +89,12 @@ export default function Login(props) {
                     <CardContent>
                         <Grid container justifyContent="center" spacing={3}>
                             <Grid item xs={12}>
-                                <p>"info de como el usuario se puede logear"</p>
+                                <p>Para hacer uso del sistema, debe autenticarse introduciendo su correo electrónico. El correo solo es para identificar quién está usando el sistema, y no se utilizará con ningún otro fin distinto.</p>
                             </Grid>
                             <Grid item xs={12} sm={10} md={8} lg={5}>
+                                {autenticado && <Alert icon={<CheckIcon fontSize="inherit" />} severity="success">Estás actualmente autenticado.</Alert>}
+                                {!autenticado && <Alert severity="error">Estás actualmente sin autenticar.</Alert> }
+                                <p><br /></p>
                                 <Box component="form" onSubmit={handleSubmit}>
                                     {cookieEmail ? <p><i>Email usado anteriormente:</i> {cookieEmail}</p> : null}
                                     <TextField onChange={handleEmailChange}  variant="outlined" margin="normal" required fullWidth id="email" label="Email" name="email" autoFocus/>

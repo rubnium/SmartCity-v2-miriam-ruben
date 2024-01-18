@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 
-import apiGet from '../../utils/apiGet';
+import { apiGet } from '../../utils/apiRequests';
 
 const obtenerEstadisticas = (fecha, setData, setError) => {
   apiGet('/bicicletasDisponibilidad/'+ fecha, setData, setError);

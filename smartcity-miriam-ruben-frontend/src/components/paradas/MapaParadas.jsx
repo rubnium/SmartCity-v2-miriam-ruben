@@ -5,8 +5,7 @@ import { useContext, useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
 
 import '../../utils/Map.css';
-import api from '../../utils/api';
-import apiGet from '../../utils/apiGet';
+import { apiGet } from '../../utils/apiRequests';
 import gM from '../../utils/generalMap';
 import { ContextoPopup } from './ContextoPopup';
 import PopupDesHabilitar from './PopupDesHabilitar';

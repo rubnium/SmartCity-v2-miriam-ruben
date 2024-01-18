@@ -1,7 +1,7 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
 import { useContext, useState } from 'react';
 
-import api from '../../utils/api';
+import { apiPut } from '../../utils/apiRequests';
 import { ContextoPopup } from './ContextoPopup';
 
 const PopupDesHabilitar = (props) => {
@@ -22,14 +22,7 @@ const PopupDesHabilitar = (props) => {
             cuerpo = {"deshabilitado": true, "motivo": motivo};
         }
     
-        try {
-            api.put('/paradas/'+tipo+'/'+linea+'/'+parada, cuerpo).then(response => {
-                console.log('Respuesta exitosa:', response.data);
-            });
-        } catch (error) {
-            console.error('Error al obtener datos:', error);
-            setError(error.message || 'Error en la solicitud');
-        }
+        apiPut('/paradas/'+tipo+'/'+linea+'/'+parada, cuerpo, setError);
         setContador(contador+1);
     };
 

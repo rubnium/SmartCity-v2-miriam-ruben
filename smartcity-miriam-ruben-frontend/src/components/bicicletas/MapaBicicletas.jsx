@@ -4,8 +4,7 @@ import L from 'leaflet';
 import { useEffect, useState } from 'react';
 import { MapContainer, useMap } from 'react-leaflet';
 
-import api from '../../utils/api';
-import apiGet from '../../utils/apiGet';
+import { apiGet } from '../../utils/apiRequests';
 import gM from '../../utils/generalMap';
 import '../../utils/Map.css';
 

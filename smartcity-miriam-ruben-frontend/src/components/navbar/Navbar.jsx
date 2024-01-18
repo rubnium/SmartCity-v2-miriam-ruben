@@ -18,7 +18,7 @@ const navLinks = [
     { title: "Paradas", path: "/paradas", icon:<PlaceIcon /> },
     { title: "Bicicletas", path: "/bicicletas", icon: <PedalBikeIcon /> },
     { title: "Contaminación", path: "/contaminacion", icon: <NoiseAwareIcon /> },
-    { title: "GitHub", path: "https://github.com/rubnium/SmartCity-miriam-ruben", icon: <GitHubIcon />},
+    { title: "GitHub", path: "https://github.com/rubnium/SmartCity-v2-miriam-ruben", icon: <GitHubIcon />},
     { title: "Autenticarse", path: "/login", icon: <PersonIcon />}
 ];
 

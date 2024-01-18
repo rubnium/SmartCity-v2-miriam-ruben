@@ -7,7 +7,7 @@ var router = express.Router();
 const secretKey = process.env.JWT_SECRET_KEY;
 const expiration = process.env.TOKEN_EXPIRATION;
 
-//GET token de autenticación
+//POST para obtener un token de autenticación
 router.post('/login', function (req, res){
     const email = req.body.email;
 
@@ -31,5 +31,13 @@ router.post('/login', function (req, res){
 {
     "email": "example@example.com"
 }*/
+
+//Implementación JWT
+const authenticateToken = require('./authenticateToken');
+router.use('/test', authenticateToken);
+//GET para comprobar que el token es válido
+router.get('/test', function (req, res) {
+    res.status(200).send("Token válido");
+});
 
 module.exports = router;
