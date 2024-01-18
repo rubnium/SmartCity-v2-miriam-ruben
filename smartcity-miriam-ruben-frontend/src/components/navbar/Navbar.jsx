@@ -4,6 +4,8 @@ import PlaceIcon from '@mui/icons-material/Place';
 import PedalBikeIcon from '@mui/icons-material/PedalBike';
 import NoiseAwareIcon from '@mui/icons-material/NoiseAware';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import PersonIcon from '@mui/icons-material/Person';
+
 import { AppBar, Button, Drawer, IconButton, Toolbar, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { useState } from 'react';
@@ -16,7 +18,8 @@ const navLinks = [
     { title: "Paradas", path: "/paradas", icon:<PlaceIcon /> },
     { title: "Bicicletas", path: "/bicicletas", icon: <PedalBikeIcon /> },
     { title: "Contaminación", path: "/contaminacion", icon: <NoiseAwareIcon /> },
-    { title: "GitHub", path: "https://github.com/rubnium/SmartCity-miriam-ruben", icon: <GitHubIcon />}
+    { title: "GitHub", path: "https://github.com/rubnium/SmartCity-miriam-ruben", icon: <GitHubIcon />},
+    { title: "Autenticarse", path: "/login", icon: <PersonIcon />}
 ];
 
 export default function Navbar() {
