@@ -5,15 +5,14 @@ import time
 
 class Request:
     uri = ""
-    token = ""
-    reqBodyToken = { "emai": "no@thankyou.com" }
+    headers = ""
+    reqBodyToken = { "email": "no@thankyou.com" }
     endpoints = {
         "getToken": "/secure/login",
         "postEstacionAcustica": "/acustica/estacion",
         "postContaminacionAcustica": "/acustica/contaminacion",
         "postAforoBicicletas": "/bicicletasAforo"
     }
-    headers = { "Authorization": "Bearer " + token }
 
     def __init__(self, uri):
         self.token = ""
@@ -24,7 +23,7 @@ class Request:
         response = requests.post(self.uri+self.endpoints['getToken'], data=self.reqBodyToken)
         response.raise_for_status()
         response_json = response.json()
-        self.token = response_json.get("token")
+        self.headers = { "Authorization": "Bearer "+response_json.get("token") }
 
     def postBicicletas(self, date, time, latMin, latMax, lonMin, lonMax, valueMin, valueMax, delay, iterations):
         for i in range(0, iterations):
@@ -46,9 +45,10 @@ class Request:
                 "lon": str(round(random.uniform(lonMin, lonMax), 7))
             }
 
-            tries = 3
+            tries = 4
 
             while tries > 0:
+                print(self.headers)
                 try:
                     response = requests.post(self.uri+self.endpoints["postAforoBicicletas"], data=bicicletasBody, headers=self.headers)
                     response.raise_for_status()
@@ -61,6 +61,8 @@ class Request:
                     ))
                     break
                 except requests.RequestException as e:
+                    if e.response.status_code == 401:
+                        self.requestToken(self)
                     print(f"Intento fallido. Razón: {str(e)}")
                     tries -= 1
 

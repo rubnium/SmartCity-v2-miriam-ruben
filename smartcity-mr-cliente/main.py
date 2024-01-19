@@ -29,7 +29,7 @@ def checkValues(values) -> str:
     except Exception as e:
         message += "Valores no es un valor entero\n"
     
-    #comprobarcion lat
+    #comprobacion lat
     try:
         latMin = float(latMin)
         latMax = float(latMax)
@@ -118,7 +118,7 @@ while True:
             #llama a la peticion adecuada
             success = ""
             if values['estBici'] == True:
-                request.uri = "https://{}".format(values["backend"])
+                request.uri = "http://{}".format(values["backend"])
                 fecha = "{}/{}/2051".format(values["dia"], values["mes"])
                 hora = "{}/00".format(values["hora"])
                 success = request.postBicicletas(request,
