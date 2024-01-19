@@ -4,8 +4,8 @@ import requests
 import time
 
 class Request:
-    uri = "";
-    token = "";
+    uri = ""
+    token = ""
     reqBodyToken = { "emai": "no@thankyou.com" }
     endpoints = {
         "getToken": "/secure/login",
@@ -13,7 +13,7 @@ class Request:
         "postContaminacionAcustica": "/acustica/contaminacion",
         "postAforoBicicletas": "/bicicletasAforo"
     }
-    headers = { "Authorization": "Bearer " + self.token }
+    headers = { "Authorization": "Bearer " + token }
 
     def __init__(self, uri):
         self.token = ""
@@ -26,14 +26,14 @@ class Request:
         response_json = response.json()
         self.token = response_json.get("token")
 
-    def postBicicletas(self, latMin, latMax, lonMin, lonMax, valueMin, valueMax, delay, iterations): #todo: falta fecha
+    def postBicicletas(self, date, time, latMin, latMax, lonMin, lonMax, valueMin, valueMax, delay, iterations):
         for i in range(0, iterations):
             if (i != 0):
                 time.sleep(delay)
             actualDate = datetime.now()
             bicicletasBody = {
-                "fecha": "", #TODO: sacar fecha
-                "hora": "", #TODO: sacar hora
+                "fecha": date, 
+                "hora": time, 
                 "id": "IoT {}".format(actualDate.strftime("%d/%m/%Y %H:%M")),
                 "bicicletas": random.randint(valueMin, valueMax),
                 "num_distrito": 0,
@@ -60,15 +60,15 @@ class Request:
                         lon=bicicletasBody["lon"]
                     ))
                     break
-                except RequestException as e:
+                except requests.RequestException as e:
                     print(f"Intento fallido. Razón: {str(e)}")
                     tries -= 1
 
             if tries == 0:
                 print("Se han agotado los intentos. No se pudo realizar el post de bicicletas")
-                return false
+                return False
 
-        return true
+        return True
     
 
     def postEstacion(self, lat, lon):
