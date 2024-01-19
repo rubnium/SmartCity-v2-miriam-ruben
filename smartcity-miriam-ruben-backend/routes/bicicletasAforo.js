@@ -40,4 +40,12 @@ router.get('/:dia/:mes/:ano/:hora', function (req, res){
     });
 });
 
+router.post('/', function (req, res){
+  var Aforo = mongoose.model(collection, BicicletaAforoSchema);
+  Aforo.create(req.body, function(err,  aforo){
+    if (err) res.status(500).send(err);
+    else res.sendStatus(200);
+  })
+});
+
 module.exports = router;

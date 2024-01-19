@@ -75,6 +75,22 @@ router.get('/riesgos', function (req, res){
       .catch(err => {
         res.status(500).send(err);
       });
-  });
-  
+ });
+
+router.post('/estacion', function (req, res){
+  var Estacion = mongoose.model(collection, EstacionAcusticaSchema);
+  Estacion.create(req.body, function(err,  estacion){
+    if (err) res.status(500).send(err);
+    else res.sendStatus(200);
+  })
+});
+
+router.post('/contaminacion', function (req, res){
+  var Contaminacion = mongoose.model(collection, ContaminacionAcusticaSchema);
+  Contaminacion.create(req.body, function(err,  contaminacion){
+    if (err) res.status(500).send(err);
+    else res.sendStatus(200);
+  })
+});
+
 module.exports = router;
