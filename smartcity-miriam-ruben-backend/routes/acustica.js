@@ -78,7 +78,7 @@ router.get('/riesgos', function (req, res){
  });
 
 router.post('/estacion', async function (req, res){
-  var Estacion = mongoose.model(collection, EstacionAcusticaSchema);
+  var Estacion = mongoose.model(collectionEstaciones, EstacionAcusticaSchema);
   try {
     await Estacion.create(req.body);
     res.sendStatus(200);
@@ -88,9 +88,8 @@ router.post('/estacion', async function (req, res){
 });
 
 router.post('/contaminacion', async function (req, res){
-  var Contaminacion = mongoose.model(collection, ContaminacionAcusticaSchema);
   try {
-    await Contaminacion.create(req.body);
+    await ContaminacionAcusticaModel.create(req.body);
     res.sendStatus(200);
   } catch (err) {
     res.status(500).send(err.message || err);
