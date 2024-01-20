@@ -1,50 +1,33 @@
 # Ceretopía V2 - Proyecto Smart City de Miriam y Rubén
-Ceretopía es un sistema gestor de ciudad inteligente basada en la capital española de Madrid. Tiene como objetivo combatir con las cuestiones medioambientales y accesibilidad de la información sobre el transporte público tan denostado en nuestra sociedad.  
-El proyecto hace uso de MERN, donde MongoDB trata los datos proporcionados para llevar a cabo el gestor de ciudad inteligente, Express gestiona las solicitudes HTTP que envía el usuario y React lleva a cabo el frontend para ofrecer al usuario interfaces interactivas y reutilizables.  
-Siendo una ciudad inteligente, entre las funcionalidades del proyecto se encuentra la de mostrar las paradas y el recorrido que siguen los numerosos medios de transporte que dispone Madrid, clasificados por el tipo de transporte: autobús, cercanías, interurbano, metro, y metro ligero. Se ofrece también una visión general de los puntos de encuentro de bicicletas, mostrando la cantidad de bicis que quedan disponibles en cada punto, esto puede permitir a la civilización prever qué momento es más idóneo para tomar una bicicleta. Y como última funcionalidad, se muestran las áreas castigadas por la contaminación acústica, un factor importante en la salud de los ciudadanos.
+Ceretopía es un sistema gestor de ciudad inteligente basada en la capital española de Madrid. Tiene como objetivo combatir con las cuestiones medioambientales y accesibilidad de la información sobre el transporte público tan denostado en nuestra sociedad. Este repositorio alberga una modificación del [proyecto original](https://github.com/rubnium/SmartCity-miriam-ruben) que implementa el uso de API securizada mediante JWT y un cliente que simula lecturas como un sensor IoT.
 
 
 ## Preparativos:
-1. Tener Docker (además del comando `docker-compose`) y Node.js (además de `npm`) instalados y operativos.
-2. Descargar el contenido de este repositorio.
-3. Ejecutar, dentro de las carpetas [smartcity-miriam-ruben-backend](smartcity-miriam-ruben-backend/) y [smartcity-miriam-ruben-frontend](smartcity-miriam-ruben-frontend/), el comando `npm install`.
+1. Realizar los [preparativos originales](https://github.com/rubnium/SmartCity-miriam-ruben).
+2. Descargar este repositorio.
+3. Tener Python >=3.10.
+4. Instalar los módulos de Python necesarios:
+    - Dentro de la carpeta [smartcity-mr-cliente](smartcity-mr-cliente/), ejecutar el comando `pip install -r requirements.txt`.
 
 
 ## Instrucciones:
-#### 1. Preparar la base de datos.
-Hay 3 opciones posibles (escoger solo una):
-- *Usar la base de datos de MongoDB Atlas*:  
-Ésta se ha probado por última vez en enero de 2024, por lo que una ejecución posterior a dicha fecha no asegura su funcionamiento. No hay que preparar nada, [ve al paso 2](#2-ejecutar-el-backend). En caso de no funcionar, pasar a la siguiente opción.
-- *Usar la base de datos MongoDB desplegada con Docker* (recomendado):  
-Dentro de la carpeta [smartcity-mr-db](smartcity-mr-db/) ejecutar el comando `docker-compose up -d`. Se iniciará la base de datos en el puerto 27018 (en el caso de querer utilizar un puerto distinto habrá que modificar el [docker-compose.yml](smartcity-mr-db/docker-compose.yml)). Tras este paso, la base de datos estará desplegada en `mongodb://localhost:27018`. [Continuar en el paso 2](#2-ejecutar-el-backend).
-- *Crear una base de datos MongoDB con los JSON proporcionados*:  
-Será necesario montar una base de datos MongoDB, crear una base de datos "*data*" y una colección por cada [.json de la carpeta proporcionada](smartcity-mr-db/data). Habrá que tomar nota de la dirección y el puerto de la base de datos para el [paso 2](#2-ejecutar-el-backend).  
+### 1. Preparar la base de datos, ejecutar el backend y ejecutar el frontend
+Seguir las [instrucciones originales](https://github.com/rubnium/SmartCity-miriam-ruben).
 
-#### 2. Ejecutar el backend.
-El backend cogerá los datos de la base de datos y los pondrá a disposición según sea necesario.  
-Primero será necesario preparar el backend para que acceda a la base de datos. Dependiendo de lo realizado en el paso 1, habrá que editar el [.env](smartcity-miriam-ruben-backend/.env) (para así reflejar la opción escogida y/o un puerto modificado).  
-El backend está configurado para ejecutarse en el puerto 5000. En caso de error o de ser necesario desplegarlo en otro puerto, habrá que reemplazar en el [package.json](smartcity-miriam-ruben-backend/package.json) todos los valores `PORT=5000` con `PORT=<nuevo puerto>`.  
-Dentro de la carpeta [smartcity-miriam-ruben-backend](smartcity-miriam-ruben-backend/), ejecutar finalmente el backend con el siguiente comando dependiendo de la plataforma:
-- Windows: `npm run start:dev_windows`
-- Linux o Mac: `npm run start:dev_linux`
 
-Por defecto este paso desplegará el backend en `http://localhost:5000`.
-
-#### 3. Ejecutar el frontend.
-El frontend usará todos los datos del backend y los irá renderizando de distintas maneras.  
-En el caso de haber desplegado el backend en una dirección/puerto distinto al predeterminado, será necesario modificar el [.env](smartcity-miriam-ruben-frontend/.env).  
-El frontend está configurado para ejecutarse en el puerto 3000. Si la ejecución del frontend lanza error o es necesario usar otro puerto, habrá que modificar el [.env](smartcity-miriam-ruben-frontend/.env).  
-Dentro de la carpeta [smartcity-miriam-ruben-frontend](smartcity-miriam-ruben-frontend/), ejecutar finalmente el frontend con el siguiente comando `npm run start`.  
-Por defecto este paso desplegará el frontend en `http://localhost:3000`.
-
-#### 4. Disfrutar la aplicación.
-Introduciendo la dirección del frontend en un navegador web, se podrán experimentar todas las funciones que ofrece esta aplicación. Más detalles en el apartado [Funciones.Frontend](#frontend).
+### Ejecutar el sensor IoT simulado
+Para poder utilizar el cliente, primero debe estar desplegada la base de datos y en ejecución el backend. Posteriormente, hay que realizar los siguientes pasos:
+1. Acceder a la carpeta [smartcity-mr-cliente](smartcity-mr-cliente/).
+2. Ejecutar `python main.py`
+    - Dependiendo del sistema que lo ejecute, podría ser `python` o `python3`.
+3. Rellenar la ventana de interfaz con los datos deseados (tipo de dato a generar, rango de valores, latitud, longitud, URI de backend...).
+4. Presionar el botón "Ejecutar" y disfrutar de los resultados. Durante la ejecución se puede comprobar el estado observando la terminal desde la que fue ejecutado.
 
 
 ## Funciones:
 ### Backend:
 Para utilizarlas, casi todas requieren introducir el token en la cabecera. Suponiendo que se ejecuta en local y en el puerto 5000 (http://localhost:5000):  
-- Seguridad:
+- 🆕Seguridad:
 	- POST `/secure/login`: Enviar una dirección de correo electrónico para recibir un token de uso (no necesita token en la cabecera, ya que es para obtener uno).
 	  Ejemplo de cuerpo de la petición:
       ```
@@ -85,6 +68,25 @@ Para utilizarlas, casi todas requieren introducir el token en la cabecera. Supon
     Los valores `dia/mes/año` deben estar entre el `01/01/2051` y el `31/12/2051`.  
     El valor `hora` está compuesto por dos dígitos, `hora:minuto`. `hora` debe ser un valor entre `'0'` y `'23'`, y `minuto` debe ser `00`.
 
+    - 🆕POST `/bicicletasAforo`: Insertar nuevas lecturas de bicicletas.  
+      Ejemplo de cuerpo de la petición:
+      ```
+      {
+        "fecha": "01/01/2051",
+        "hora": "7:00",
+        "id": "PERM_BICI01_PM01",
+        "bicicletas": 0,
+        "num_distrito": 2,
+        "distrito": "Arganzuela",
+        "nombre_vial": "Calle Toledo ",
+        "numero": "133",
+        "codigo_postal": 28005,
+        "observaciones_direccion": "Sentido Gta. Pirámides ",
+        "lat": "40.40547173",
+        "lon": "-3.711960704"
+      }
+      ```
+
 - Disponibilidad de bicicletas:
     - GET `/bicicletasDisponibilidad/:dia/:mes/:año`: Obtener la información de disponibilidad de bicicletas de una fecha determinada.  
     Los valores `dia/mes/año` deben estar entre el `01/01/2051` y el `31/12/2051`.  
@@ -95,10 +97,44 @@ Para utilizarlas, casi todas requieren introducir el token en la cabecera. Supon
 
     - GET `/acustica/riesgos`: Obtener la lista de riesgos posibles de un alto ruido en las calles.
 
+    - 🆕POST `/acustica/estacion`: Insertar una nueva estación.  
+      Ejemplo de cuerpo de la petición:
+      ```
+      {
+        "id": 1,
+        "nombre": "Pº Recoletos",
+        "codigo_via": "633005",
+        "direccion": "Frente calle Almirante",
+        "fecha_alta": "07/03/2011",
+        "altura": 648,
+        "lat": "40.42262",
+        "lon": "-3.6919264"
+      }
+      ```
+
+    - 🆕POST `/acustica/contaminacion`: Insertar nuevos datos de contaminación.  
+      Ejemplo de cuerpo de la petición:
+      ```
+      {
+        "mes": 1,
+        "ano": 2051,
+        "estacion": 6,
+        "med_diurno": 71.9,
+        "med_vespertino": 71.6,
+        "med_nocturno": 67.1,
+        "LAeq24": 70.8,
+        "med_percentil01": 77.7,
+        "med_percentil10": 74.3,
+        "med_percentil50": 67.7,
+        "med_percentil90": 60,
+        "med_percentil99": 51.3
+      }
+      ```
+
 ### Frontend:
 Suponiendo que se ejecuta en local y en el puerto 3000 (http://localhost:3000):
 - [`/`](http://localhost:3000): página de inicio
-- [`/login`](http://localhost:3000/login): muestra si el usuario está autenticado, además de un formulario para realizar la autenticación, en el cual el usuario introduce sus datos y acepta las cookies. Esta parte del sistema permite acceder al resto de páginas.
+- 🆕[`/login`](http://localhost:3000/login): muestra si el usuario está autenticado, además de un formulario para realizar la autenticación, en el cual el usuario introduce sus datos y acepta las cookies. Esta parte del sistema permite acceder al resto de páginas.
 - [`/paradas`](http://localhost:3000/paradas): muestra un mapa con todas las paradas y líneas del tipo de transporte seleccionado. Al hacer clic en las paradas o en las líneas, se muestra breve información de las mismas. Permite deshabilitar y volver a habilitar las paradas al seleccionarlas en el mapa.
 - [`/bicicletas`](http://localhost:3000/bicicletas): muestra información útil sobre las bicicletas de préstamo en la ciudad. Por una parte, permite al usuario elegir una fecha y muestra las estadísticas de disponibilidad y uso de las bicicletas. Por otra parte, el usuario además puede escoger una hora, y el mapa se mostrará con el aforo de bicicletas en dicha fecha y hora. Además, dicho mapa tiene sus puntos diferenciados según la disponibilidad de bicicletas, y al seleccionarlos muestra la cantidad de bicicletas, información del punto y un enlace para mostrar las direcciones de cómo llegar a través de Google Maps.
 - [`/contaminacion`](http://localhost:3000/contaminacion): muestra la intensidad de ruido en distintos puntos de la ciudad. Luego de que el usuario seleccione un mes y el periodo en el que se midieron los datos, un mapa se muestra con los distintos puntos diferenciados según el riesgo de la intensidad de ruido medida. El mapa permite mostrar más datos de la medición al hacer clic en sus puntos, como la altura de la estación de medida y el nombre de la calle.
