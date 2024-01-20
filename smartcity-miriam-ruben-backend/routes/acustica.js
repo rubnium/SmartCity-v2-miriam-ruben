@@ -77,20 +77,24 @@ router.get('/riesgos', function (req, res){
       });
  });
 
-router.post('/estacion', function (req, res){
+router.post('/estacion', async function (req, res){
   var Estacion = mongoose.model(collection, EstacionAcusticaSchema);
-  Estacion.create(req.body, function(err,  estacion){
-    if (err) res.status(500).send(err);
-    else res.sendStatus(200);
-  })
+  try {
+    await Estacion.create(req.body);
+    res.sendStatus(200);
+  } catch (err) {
+    res.status(500).send(err.message || err);
+  }
 });
 
-router.post('/contaminacion', function (req, res){
+router.post('/contaminacion', async function (req, res){
   var Contaminacion = mongoose.model(collection, ContaminacionAcusticaSchema);
-  Contaminacion.create(req.body, function(err,  contaminacion){
-    if (err) res.status(500).send(err);
-    else res.sendStatus(200);
-  })
+  try {
+    await Contaminacion.create(req.body);
+    res.sendStatus(200);
+  } catch (err) {
+    res.status(500).send(err.message || err);
+  }
 });
 
 module.exports = router;
